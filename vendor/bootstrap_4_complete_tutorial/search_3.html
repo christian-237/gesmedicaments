@@ -1,0 +1,2718 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+	<head>
+		<title>Advanced Search - W3Schools Forum</title>
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="//content.invisioncic.com/r49260/css_built_1/5e61784858ad3c11f00b5706d12afe52_ie8.css.c5142613804911fde71e69a59000ea68.css.gz">
+		    <script src="//w3schools.invisionzone.com/applications/core/interface/html5shiv/html5shiv.js"></script>
+		<![endif]-->
+		
+<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+	<meta name="twitter:card" content="summary" />
+
+
+
+	
+		
+			
+				<meta name="robots" content="noindex">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:site_name" content="W3Schools Forum">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:locale" content="en_US">
+			
+		
+	
+
+<meta name="theme-color" content="#3d6594">
+
+
+
+		
+
+
+	
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet" referrerpolicy="origin">
+	
+
+
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/341e4a57816af3ba440d891ca87450ff_framework.css.b11fada0b460248cf5c60110e1bd9d04.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/05e81b71abe4f22d6eb8d1a929494829_responsive.css.1687c00ce56df83680067015ee625aa3.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/90eb5adf50a8c640f633d47fd7eb1778_core.css.56d095c7139eeb8cbbf2e23f9a3fecbf.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/5a0da001ccc2200dc5625c3f3934497d_core_responsive.css.202f497ac11b3eb4c46a4601709bc659.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/f2ef08fd7eaff94a9763df0d2e2aaa1f_streams.css.8fd41fbc7295a70f4ef03bb9ab287a23.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/802f8406e60523fd5b2af0bb4d7ccf04_search.css.0151e481168dc6a073adc2f3c68ff2e0.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/ae8d39c59d6f1b4d32a059629f12aaf5_search_responsive.css.d4e8b9e129eef01dd2401e7f3d694117.css.gz?v=225d2b9d62' media='all'>
+
+
+
+
+<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/258adbb6e4f3e83cd3b355f84e3fa002_custom.css.1d0858bb999472331f4950d359a8833e.css.gz?v=225d2b9d62' media='all'>
+
+
+
+		
+		
+
+	</head>
+	<body class='ipsApp ipsApp_front ipsJS_none ipsClearfix' data-controller='core.front.core.app' data-message="" data-pageApp='core' data-pageLocation='front' data-pageModule='search' data-pageController='search'>
+		<a href='#elContent' class='ipsHide' title='Go to main content on this page' accesskey='m'>Jump to content</a>
+		
+		<div id='ipsLayout_header' class='ipsClearfix'>
+			
+
+
+
+
+			
+
+
+			
+<ul id='elMobileNav' class='ipsList_inline ipsResponsive_hideDesktop ipsResponsive_block' data-controller='core.front.core.mobileNav'>
+	
+		
+			<li id='elMobileBreadcrumb'>
+				<a href='http://w3schools.invisionzone.com/'>
+					<span>Home</span>
+				</a>
+			</li>
+		
+	
+	
+	
+	<li >
+		<a data-action="defaultStream" class='ipsType_light'  href='http://w3schools.invisionzone.com/discover/'><i class='icon-newspaper'></i></a>
+	</li>
+
+	
+		<li class='ipsJS_show'>
+			<a href='http://w3schools.invisionzone.com/search/'><i class='fa fa-search'></i></a>
+		</li>
+	
+	<li data-ipsDrawer data-ipsDrawer-drawerElem='#elMobileDrawer'>
+		<a href='#'>
+			
+			
+				
+			
+			
+			
+			<i class='fa fa-navicon'></i>
+		</a>
+	</li>
+</ul>
+			<header>
+				<div class='ipsLayout_container'>
+					
+
+
+<a href='http://w3schools.invisionzone.com/' id='elLogo' accesskey='1'><img src="//content.invisioncic.com/r49260/monthly_2017_03/w3schools.png.9a860c675c07154b1ec49276a2a69658.png" alt='W3Schools Forum'></a>
+
+					
+
+	<ul id='elUserNav' class='ipsList_inline cSignedOut ipsClearfix ipsResponsive_hidePhone ipsResponsive_block'>
+		
+		<li id='elSignInLink'>
+			<a href='http://w3schools.invisionzone.com/login/' data-ipsMenu-closeOnClick="false" data-ipsMenu id='elUserSignIn'>
+				Existing user? Sign In &nbsp;<i class='fa fa-caret-down'></i>
+			</a>
+			
+<div id='elUserSignIn_menu' class='ipsMenu ipsMenu_auto ipsHide'>
+	<form accept-charset='utf-8' method='post' action='http://w3schools.invisionzone.com/login/' data-controller="core.global.core.login">
+		<input type="hidden" name="csrfKey" value="432d61e51499c5976d790c1513da0d76">
+		<input type="hidden" name="ref" value="aHR0cDovL3czc2Nob29scy5pbnZpc2lvbnpvbmUuY29tL3NlYXJjaC8=">
+		<div data-role="loginForm">
+			
+			
+			
+				
+<div class="ipsPad ipsForm ipsForm_vertical">
+	<h4 class="ipsType_sectionHead">Sign In</h4>
+	<br><br>
+	<ul class='ipsList_reset'>
+		<li class="ipsFieldRow ipsFieldRow_noLabel ipsFieldRow_fullWidth">
+			
+			
+				<input type="text" placeholder="Display Name" name="auth">
+			
+		</li>
+		<li class="ipsFieldRow ipsFieldRow_noLabel ipsFieldRow_fullWidth">
+			<input type="password" placeholder="Password" name="password">
+		</li>
+		<li class="ipsFieldRow ipsFieldRow_checkbox ipsClearfix">
+			<span class="ipsCustomInput">
+				<input type="checkbox" name="remember_me" id="remember_me_checkbox" value="1" checked aria-checked="true">
+				<span></span>
+			</span>
+			<div class="ipsFieldRow_content">
+				<label class="ipsFieldRow_label" for="remember_me_checkbox">Remember me</label>
+				<span class="ipsFieldRow_desc">Not recommended on shared computers</span>
+			</div>
+		</li>
+		
+		<li class="ipsFieldRow ipsFieldRow_fullWidth">
+			<br>
+			<button type="submit" name="_processLogin" value="usernamepassword" class="ipsButton ipsButton_primary ipsButton_small" id="elSignIn_submit">Sign In</button>
+			
+				<br>
+				<p class="ipsType_right ipsType_small">
+					
+						<a href='http://w3schools.invisionzone.com/lostpassword/' data-ipsDialog data-ipsDialog-title='Forgot your password?'>
+					
+					Forgot your password?</a>
+				</p>
+			
+		</li>
+	</ul>
+</div>
+			
+		</div>
+	</form>
+</div>
+		</li>
+		
+			<li>
+				
+					<a href='http://w3schools.invisionzone.com/register/' data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Sign Up' id='elRegisterButton' class='ipsButton ipsButton_normal ipsButton_primary'>Sign Up</a>
+				
+			</li>
+		
+	</ul>
+
+				</div>
+			</header>
+			
+
+	<nav data-controller='core.front.core.navBar' class=''>
+		<div class='ipsNavBar_primary ipsLayout_container  ipsClearfix'>
+			
+
+	<div id="elSearchWrapper" class="ipsPos_right">
+		<div id='elSearch' class='' data-controller='core.front.core.quickSearch'>
+			<form accept-charset='utf-8' action='//w3schools.invisionzone.com/search/?do=quicksearch' method='post'>
+				<input type='search' id='elSearchField' placeholder='Search...' name='q'>
+				<button class='cSearchSubmit' type="submit"><i class="fa fa-search"></i></button>
+				<div id="elSearchExpanded">
+					<div class="ipsMenu_title">
+						Search In
+					</div>
+					<ul class="ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-role="searchContexts">
+						<li>
+							<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='all'>
+								<input type="radio" name="type" value="all" checked id="elQuickSearchRadio_type_all">
+								<label for='elQuickSearchRadio_type_all' id='elQuickSearchRadio_type_all_label'>Everywhere</label>
+							</span>
+						</li>
+						
+						
+						
+						<li data-role="showMoreSearchContexts">
+							<span class='ipsSideMenu_item' data-action="showMoreSearchContexts" data-exclude="all">
+								More options...
+							</span>
+						</li>
+					</ul>
+					<div class="ipsMenu_title">
+						Find results that contain...
+					</div>
+					<ul class='ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal' role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='andOr'>
+						
+							<li>
+								<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='or'>
+									<input type="radio" name="search_and_or" value="or" checked id="elRadio_andOr_or">
+									<label for='elRadio_andOr_or' id='elField_andOr_label_or'><em>Any</em> of my search term words</label>
+								</span>
+							</li>
+						
+							<li>
+								<span class='ipsSideMenu_item ' data-ipsMenuValue='and'>
+									<input type="radio" name="search_and_or" value="and"  id="elRadio_andOr_and">
+									<label for='elRadio_andOr_and' id='elField_andOr_label_and'><em>All</em> of my search term words</label>
+								</span>
+							</li>
+						
+					</ul>
+					<div class="ipsMenu_title">
+						Find results in...
+					</div>
+					<ul class='ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal' role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='searchIn'>
+						<li>
+							<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='all'>
+								<input type="radio" name="search_in" value="all" checked id="elRadio_searchIn_and">
+								<label for='elRadio_searchIn_and' id='elField_searchIn_label_all'>Content titles and body</label>
+							</span>
+						</li>
+						<li>
+							<span class='ipsSideMenu_item' data-ipsMenuValue='titles'>
+								<input type="radio" name="search_in" value="titles" id="elRadio_searchIn_titles">
+								<label for='elRadio_searchIn_titles' id='elField_searchIn_label_titles'>Content titles only</label>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+
+			<ul data-role="primaryNavBar" class='ipsResponsive_showDesktop ipsResponsive_block'>
+				
+
+
+	
+		
+		
+		<li  id='elNavSecondary_1' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="http://w3schools.invisionzone.com"  data-navItem-id="1" >
+					Browse
+				</a>
+			
+			
+				<ul class='ipsNavBar_secondary ipsHide' data-role='secondaryNavBar'>
+					
+
+
+	
+		
+		
+		<li  id='elNavSecondary_8' data-role="navBarItem" data-navApp="forums" data-navExt="Forums">
+			
+			
+				<a href="http://w3schools.invisionzone.com"  data-navItem-id="8" >
+					Forums
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_9' data-role="navBarItem" data-navApp="calendar" data-navExt="Calendar">
+			
+			
+				<a href="http://w3schools.invisionzone.com/calendar/"  data-navItem-id="9" >
+					Calendar
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_11' data-role="navBarItem" data-navApp="core" data-navExt="StaffDirectory">
+			
+			
+				<a href="http://w3schools.invisionzone.com/staff/"  data-navItem-id="11" >
+					Staff
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_12' data-role="navBarItem" data-navApp="core" data-navExt="OnlineUsers">
+			
+			
+				<a href="http://w3schools.invisionzone.com/online/"  data-navItem-id="12" >
+					Online Users
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_13' data-role="navBarItem" data-navApp="core" data-navExt="Leaderboard">
+			
+			
+				<a href="http://w3schools.invisionzone.com/leaderboard/"  data-navItem-id="13" >
+					Leaderboard
+				</a>
+			
+			
+		</li>
+	
+	
+
+					<li class='ipsHide' id='elNavigationMore_1' data-role='navMore'>
+						<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_1' id='elNavigationMore_1_dropdown'>More <i class='fa fa-caret-down'></i></a>
+						<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_1_dropdown_menu' data-role='moreDropdown'></ul>
+					</li>
+				</ul>
+			
+		</li>
+	
+	
+
+	
+		
+		
+			
+		
+		<li class='ipsNavBar_active' data-active id='elNavSecondary_2' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="http://w3schools.invisionzone.com/discover/"  data-navItem-id="2" data-navDefault>
+					Activity
+				</a>
+			
+			
+				<ul class='ipsNavBar_secondary ' data-role='secondaryNavBar'>
+					
+
+
+	
+		
+		
+		<li  id='elNavSecondary_3' data-role="navBarItem" data-navApp="core" data-navExt="AllActivity">
+			
+			
+				<a href="http://w3schools.invisionzone.com/discover/"  data-navItem-id="3" >
+					All Activity
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+		
+		
+			
+		
+		<li class='ipsNavBar_active' data-active id='elNavSecondary_7' data-role="navBarItem" data-navApp="core" data-navExt="Search">
+			
+			
+				<a href="http://w3schools.invisionzone.com/search/"  data-navItem-id="7" data-navDefault>
+					Search
+				</a>
+			
+			
+		</li>
+	
+	
+
+					<li class='ipsHide' id='elNavigationMore_2' data-role='navMore'>
+						<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_2' id='elNavigationMore_2_dropdown'>More <i class='fa fa-caret-down'></i></a>
+						<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_2_dropdown_menu' data-role='moreDropdown'></ul>
+					</li>
+				</ul>
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_14' data-role="navBarItem" data-navApp="core" data-navExt="Leaderboard">
+			
+			
+				<a href="http://w3schools.invisionzone.com/leaderboard/"  data-navItem-id="14" >
+					Leaderboard
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+	
+	
+
+				<li class='ipsHide' id='elNavigationMore' data-role='navMore'>
+					<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore' id='elNavigationMore_dropdown'>More</a>
+					<ul class='ipsNavBar_secondary ipsHide' data-role='secondaryNavBar'>
+						<li class='ipsHide' id='elNavigationMore_more' data-role='navMore'>
+							<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_more' id='elNavigationMore_more_dropdown'>More <i class='fa fa-caret-down'></i></a>
+							<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_more_dropdown_menu' data-role='moreDropdown'></ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+		</div>
+		<main id='ipsLayout_body' class='ipsLayout_container'>
+			<div id='ipsLayout_contentArea'>
+				<div id='ipsLayout_contentWrapper'>
+					
+<nav class='ipsBreadcrumb ipsBreadcrumb_top ipsFaded_withHover'>
+	
+
+	<ul class='ipsList_inline ipsPos_right'>
+		
+		<li >
+			<a data-action="defaultStream" class='ipsType_light '  href='http://w3schools.invisionzone.com/discover/'><i class='icon-newspaper'></i> <span>All Activity</span></a>
+		</li>
+		
+	</ul>
+
+	<ul data-role="breadcrumbList">
+		<li>
+			<a title="Home" href='http://w3schools.invisionzone.com/'>
+				<span><i class='fa fa-home'></i> Home <i class='fa fa-angle-right'></i></span>
+			</a>
+		</li>
+		
+		
+			<li>
+				
+					<a href='http://w3schools.invisionzone.com/search/'>
+						<span>Search </span>
+					</a>
+				
+			</li>
+		
+	</ul>
+</nav>
+					
+					<div id='ipsLayout_mainArea'>
+						<a id='elContent'></a>
+						
+						
+						
+						
+
+	
+
+
+
+
+						
+
+<div data-controller='core.front.search.main' data-baseURL='http://w3schools.invisionzone.com/search/'>
+	<div class='ipsResponsive_hidePhone ipsResponsive_block ipsPageHeader'>
+		<h1 class='ipsType_pageTitle'>Search the Community</h1>
+		<p class='ipsType_reset ipsType_large ipsHide' data-role='searchBlurb'></p>
+	</div>
+	
+	
+
+	<div class='ipsAreaBackground ipsPad ipsSpacer_top' data-controller='core.front.search.filters' id='elSearchFilters'>
+		
+
+
+<form accept-charset='utf-8' class="ipsForm ipsForm_vertical" method='post' action='http://w3schools.invisionzone.com/search/' data-ipsForm id='elSearchFilters_content'>
+	<input type="hidden" name="form_submitted" value="1">
+	
+		<input type="hidden" name="csrfKey" value="432d61e51499c5976d790c1513da0d76">
+	
+		<input type="hidden" name="__advanced" value="1">
+	
+
+	
+
+	<div class='ipsPhotoPanel ipsPhotoPanel_mini cSearchMainBar'>
+		<button type='submit' class='cSearchPretendButton ipsPos_left' tabindex='-1'><i class='fa fa-search ipsType_huge'></i></button>
+		<div>
+			<input type='text' id='elMainSearchInput' name='q' value='' placeholder='Search Term' autofocus class='ipsField_primary ipsField_fullWidth'>
+			<button type='submit' id='elSearchSubmit' class='ipsButton ipsButton_primary ipsButton_verySmall ipsPos_right ipsResponsive_hidePhone ipsHide' data-action='searchAgain'>Search Again</button>
+			<br>
+			<div class='ipsSpacer_top ipsSpacer_half' data-role="hints">
+			
+
+			
+			</div>
+			<hr class='ipsHr'>
+			<p class='ipsType_reset ipsSpacer_top ipsSpacer_half ipsHide' data-action='showFilters'>
+				<a href='#' class='ipsType_medium'><i class='fa fa-plus'></i> More search options</a>
+			</p>
+		</div>
+	</div>
+
+	<div data-role='searchFilters' class='ipsSpacer_top ipsBox '>
+		
+		<div class='ipsTabs ipsTabs_stretch ipsClearfix' id='elTabs_search' data-ipsTabBar data-ipsTabBar-contentArea='#elTabs_search_content'>
+			<a href="#elTabs_search" data-action="expandTabs"><i class="fa fa-caret-down"></i></a>
+			<ul role='tablist'>
+				<li>
+					<a href='#' id="elTab_searchContent" class="ipsTabs_item ipsTabs_activeItem ipsType_center" title="Search in our content" role="tab" aria-selected="true">
+						Content Search
+					</a>
+				</li>
+				<li>
+					<a href='#' id="elTab_searchMembers" class="ipsTabs_item  ipsType_center" title="Search our members" role="tab" >
+						Member Search
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<section id='elTabs_search_content' class='ipsTabs_panels'>
+			<div id='ipsTabs_elTabs_search_elTab_searchContent_panel' class='ipsTabs_panel' data-tabType='content'>
+				<div class='ipsPad_double'>
+					<div class=''>		
+						<ul class='ipsList_reset'>
+							
+								
+									<li class='ipsSpacer_half ipsHide ipsFieldRow_fullWidth' data-role='searchTags'>
+										<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Search By Tags</h3>
+										
+
+
+
+	
+
+
+
+
+
+	
+		
+
+
+<div>
+
+<textarea
+	name="tags"
+	id='elInput_tags'
+	class=""
+	
+	
+	
+	
+	data-ipsAutocomplete
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	data-ipsAutocomplete-minimized
+></textarea>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+										<span class='ipsType_light ipsType_small'>Type tags separated by commas.</span>
+									</li>
+								
+								
+									<li class='ipsSpacer_top ipsSpacer_half ipsHide' data-role='searchTermsOrTags'>
+										<ul class='ipsFieldRow_content ipsList_reset'>
+											<li class='ipsFieldRow_inlineCheckbox'>
+												<span class='ipsCustomInput'>
+													<input type='radio' name="eitherTermsOrTags" value="or" id='elRadio_eitherTermsOrTags_or' checked>
+													<span></span>
+												</span> <label for='elRadio_eitherTermsOrTags_or'>Match term <strong>OR</strong> tags</label>
+											</li>
+											<li class='ipsFieldRow_inlineCheckbox'>
+												<span class='ipsCustomInput'>
+													<input type='radio' name="eitherTermsOrTags" value="and" id='elRadio_eitherTermsOrTags_and' >
+													<span></span>
+												</span> <label for='elRadio_eitherTermsOrTags_and'>Match term <strong>AND</strong> tags</label>
+											</li>
+										</ul>
+									</li>
+								
+							
+							
+								<li class='ipsSpacer_top ipsHide ipsFieldRow_fullWidth' data-role='searchAuthors'>
+									<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Search By Author</h3>
+									
+
+
+
+	
+
+
+
+
+
+
+<div>
+
+<textarea
+	name="author"
+	id='elInput_author'
+	class=""
+	
+	
+	
+	
+	data-ipsAutocomplete
+	
+	
+	data-ipsAutocomplete-maxItems='1'
+	
+		data-ipsAutocomplete-unique
+	
+	
+		data-ipsAutocomplete-dataSource="http://w3schools.invisionzone.com/index.php?app=core&amp;module=system&amp;controller=ajax&amp;do=findMember"
+		data-ipsAutocomplete-queryParam='input'
+	
+	
+		data-ipsAutocomplete-resultItemTemplate="core.autocomplete.memberItem"
+	
+	
+	
+	data-ipsAutocomplete-minAjaxLength='3'
+	data-ipsAutocomplete-disallowedCharacters='[]'
+	data-ipsAutocomplete-commaTrigger='false'
+	
+></textarea>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+								</li>
+							
+						</ul>
+						
+							<ul class="ipsList_inline ipsType_normal ipsJS_show">
+								
+									<li><a href="#" data-action="searchByTags" data-opens='searchTags'><i class="fa fa-plus"></i> Search By Tags</a></li>
+								
+								
+									<li><a href="#" data-action="searchByAuthors" data-opens='searchAuthors'><i class="fa fa-plus"></i> Search By Author</a></li>
+								
+							</ul>
+						
+					</div>
+
+					<div class='ipsGrid ipsGrid_collapsePhone ipsSpacer_top ipsSpacer_double'>
+						
+							
+							<div class='ipsGrid_span3'>
+								<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Content Type</h3>
+								<ul class="ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal" data-role='searchApp' data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false">
+									
+										
+										<li>
+											<span id='elSearchToggle_' class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue=''>
+												<input type="radio" name="type" value="" checked id="elRadio_type_" data-control="toggle" data-toggles="club" data-toggle-visibleCheck='#elSearchToggle_'>
+												<label for='elRadio_type_' id='elField_type__label' data-role='searchAppTitle'>All Content</label>
+											</span>
+										</li>
+									
+										
+										<li>
+											<span id='elSearchToggle_core_statuses_status' class='ipsSideMenu_item ' data-ipsMenuValue='core_statuses_status'>
+												<input type="radio" name="type" value="core_statuses_status"  id="elRadio_type_core_statuses_status" data-control="toggle" data-toggles="core_statuses_status_node,search_min_comments" data-toggle-visibleCheck='#elSearchToggle_core_statuses_status'>
+												<label for='elRadio_type_core_statuses_status' id='elField_type_core_statuses_status_label' data-role='searchAppTitle'>Status Updates</label>
+											</span>
+										</li>
+									
+										
+										<li>
+											<span id='elSearchToggle_forums_topic' class='ipsSideMenu_item ' data-ipsMenuValue='forums_topic'>
+												<input type="radio" name="type" value="forums_topic"  id="elRadio_type_forums_topic" data-control="toggle" data-toggles="forums_topic_node,search_min_views,search_min_replies" data-toggle-visibleCheck='#elSearchToggle_forums_topic'>
+												<label for='elRadio_type_forums_topic' id='elField_type_forums_topic_label' data-role='searchAppTitle'>Topics</label>
+											</span>
+										</li>
+									
+										
+										<li>
+											<span id='elSearchToggle_calendar_event' class='ipsSideMenu_item ' data-ipsMenuValue='calendar_event'>
+												<input type="radio" name="type" value="calendar_event"  id="elRadio_type_calendar_event" data-control="toggle" data-toggles="calendar_event_node,search_min_comments,search_min_reviews" data-toggle-visibleCheck='#elSearchToggle_calendar_event'>
+												<label for='elRadio_type_calendar_event' id='elField_type_calendar_event_label' data-role='searchAppTitle'>Events</label>
+											</span>
+										</li>
+									
+								</ul>
+								
+								
+									<br>
+									
+										<div id="forums_topic_node">
+											<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Forums</h3>
+											
+<div class='ipsSelectTree ipsJS_show' data-name='forums_topic_node' data-ipsSelectTree data-ipsSelectTree-url="http://w3schools.invisionzone.com/search/?_nodeSelectName=forums_topic_node" data-ipsSelectTree-multiple data-ipsSelectTree-selected='[]'>
+	<input type="hidden" name="forums_topic_node" value="" data-role="nodeValue">
+	<div class='ipsSelectTree_value ipsSelectTree_placeholder'></div>
+	<span class='ipsSelectTree_expand'><i class='fa fa-chevron-down'></i></span>
+	<div class='ipsSelectTree_nodes ipsHide'>
+		<div data-role='nodeList' class='ipsScrollbar'>
+			
+				
+
+	<ul class='ipsList_reset'>
+		
+			
+				<li>
+					
+						
+							<div class='ipsSelectTree_item ipsSelectTree_itemDisabled ipsSelectTree_withChildren ipsSelectTree_itemOpen' data-id="44" data-breadcrumb='[]' data-childrenloaded="true">
+								
+									<a href='#' data-action="getChildren" class='ipsSelectTree_toggle'></a>
+								
+								<span data-role="nodeTitle">
+									
+										W3Schools
+									
+								</span>
+							</div>
+							
+								<div data-role="childWrapper">
+									
+
+	<ul class='ipsList_reset'>
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="45" data-breadcrumb='[&quot;W3Schools&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									General
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="46" data-breadcrumb='[&quot;W3Schools&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									Suggestions
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="53" data-breadcrumb='[&quot;W3Schools&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									Critiques
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+		
+	</ul>
+
+								</div>
+							
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						
+							<div class='ipsSelectTree_item ipsSelectTree_itemDisabled ipsSelectTree_withChildren ipsSelectTree_itemOpen' data-id="3" data-breadcrumb='[]' data-childrenloaded="true">
+								
+									<a href='#' data-action="getChildren" class='ipsSelectTree_toggle'></a>
+								
+								<span data-role="nodeTitle">
+									
+										HTML Forums
+									
+								</span>
+							</div>
+							
+								<div data-role="childWrapper">
+									
+
+	<ul class='ipsList_reset'>
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="4" data-breadcrumb='[&quot;HTML Forums&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									HTML/XHTML
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="6" data-breadcrumb='[&quot;HTML Forums&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									CSS
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+		
+	</ul>
+
+								</div>
+							
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						
+							<div class='ipsSelectTree_item ipsSelectTree_itemDisabled ipsSelectTree_withChildren ipsSelectTree_itemOpen' data-id="25" data-breadcrumb='[]' data-childrenloaded="true">
+								
+									<a href='#' data-action="getChildren" class='ipsSelectTree_toggle'></a>
+								
+								<span data-role="nodeTitle">
+									
+										Browser Scripting
+									
+								</span>
+							</div>
+							
+								<div data-role="childWrapper">
+									
+
+	<ul class='ipsList_reset'>
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="26" data-breadcrumb='[&quot;Browser Scripting&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									JavaScript
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="28" data-breadcrumb='[&quot;Browser Scripting&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									VBScript
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+		
+	</ul>
+
+								</div>
+							
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						
+							<div class='ipsSelectTree_item ipsSelectTree_itemDisabled ipsSelectTree_withChildren ipsSelectTree_itemOpen' data-id="31" data-breadcrumb='[]' data-childrenloaded="true">
+								
+									<a href='#' data-action="getChildren" class='ipsSelectTree_toggle'></a>
+								
+								<span data-role="nodeTitle">
+									
+										Server Scripting
+									
+								</span>
+							</div>
+							
+								<div data-role="childWrapper">
+									
+
+	<ul class='ipsList_reset'>
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="60" data-breadcrumb='[&quot;Server Scripting&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									Web Servers
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="61" data-breadcrumb='[&quot;Server Scripting&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									Version Control
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="32" data-breadcrumb='[&quot;Server Scripting&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									SQL
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="33" data-breadcrumb='[&quot;Server Scripting&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									ASP
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="35" data-breadcrumb='[&quot;Server Scripting&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									PHP
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="38" data-breadcrumb='[&quot;Server Scripting&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									.NET
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="49" data-breadcrumb='[&quot;Server Scripting&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									ColdFusion
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="52" data-breadcrumb='[&quot;Server Scripting&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									Java/JSP/J2EE
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						
+							<div class='ipsSelectTree_item ipsSelectTree_itemDisabled ipsSelectTree_withChildren ' data-id="54" data-breadcrumb='[&quot;Server Scripting&quot;]' >
+								
+									<a href='#' data-action="getChildren" class='ipsSelectTree_toggle'></a>
+								
+								<span data-role="nodeTitle">
+									
+										CGI
+									
+								</span>
+							</div>
+							
+						
+					
+				</li>
+			
+		
+		
+	</ul>
+
+								</div>
+							
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						
+							<div class='ipsSelectTree_item ipsSelectTree_itemDisabled ipsSelectTree_withChildren ipsSelectTree_itemOpen' data-id="7" data-breadcrumb='[]' data-childrenloaded="true">
+								
+									<a href='#' data-action="getChildren" class='ipsSelectTree_toggle'></a>
+								
+								<span data-role="nodeTitle">
+									
+										XML Forums
+									
+								</span>
+							</div>
+							
+								<div data-role="childWrapper">
+									
+
+	<ul class='ipsList_reset'>
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="8" data-breadcrumb='[&quot;XML Forums&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									XML
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="10" data-breadcrumb='[&quot;XML Forums&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									XSLT/XSL-FO
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="17" data-breadcrumb='[&quot;XML Forums&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									Schema
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="21" data-breadcrumb='[&quot;XML Forums&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									Web Services
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+		
+	</ul>
+
+								</div>
+							
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						
+							<div class='ipsSelectTree_item ipsSelectTree_itemDisabled ipsSelectTree_withChildren ipsSelectTree_itemOpen' data-id="40" data-breadcrumb='[]' data-childrenloaded="true">
+								
+									<a href='#' data-action="getChildren" class='ipsSelectTree_toggle'></a>
+								
+								<span data-role="nodeTitle">
+									
+										Multimedia
+									
+								</span>
+							</div>
+							
+								<div data-role="childWrapper">
+									
+
+	<ul class='ipsList_reset'>
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="41" data-breadcrumb='[&quot;Multimedia&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									Multimedia
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="43" data-breadcrumb='[&quot;Multimedia&quot;]'  >
+							
+							<span data-role="nodeTitle">
+								
+									FLASH
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+		
+	</ul>
+
+								</div>
+							
+						
+					
+				</li>
+			
+		
+		
+	</ul>
+
+			
+		</div>
+	</div>
+</div>
+
+<noscript>
+	
+		<a href="http://w3schools.invisionzone.com/search/?_nodeSelectName=forums_topic_node&amp;_noJs=1">Click here to reload the page in order to enable certain features</a>
+	
+</noscript>
+										</div>
+									
+										<div id="calendar_event_node">
+											<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Calendars</h3>
+											
+<div class='ipsSelectTree ipsJS_show' data-name='calendar_event_node' data-ipsSelectTree data-ipsSelectTree-url="http://w3schools.invisionzone.com/search/?_nodeSelectName=calendar_event_node" data-ipsSelectTree-multiple data-ipsSelectTree-selected='[]'>
+	<input type="hidden" name="calendar_event_node" value="" data-role="nodeValue">
+	<div class='ipsSelectTree_value ipsSelectTree_placeholder'></div>
+	<span class='ipsSelectTree_expand'><i class='fa fa-chevron-down'></i></span>
+	<div class='ipsSelectTree_nodes ipsHide'>
+		<div data-role='nodeList' class='ipsScrollbar'>
+			
+				
+
+	<ul class='ipsList_reset'>
+		
+			
+				<li>
+					
+						<div data-action="nodeSelect" class='ipsSelectTree_item  ' data-id="1" data-breadcrumb='[]'  >
+							
+							<span data-role="nodeTitle">
+								
+									Community Calendar
+								
+							</span>
+						</div>
+						
+					
+				</li>
+			
+		
+		
+	</ul>
+
+			
+		</div>
+	</div>
+</div>
+
+<noscript>
+	
+		<a href="http://w3schools.invisionzone.com/search/?_nodeSelectName=calendar_event_node&amp;_noJs=1">Click here to reload the page in order to enable certain features</a>
+	
+</noscript>
+										</div>
+									
+								
+								
+								
+
+								<hr class='ipsHr ipsSpacer_both ipsResponsive_showPhone ipsResponsive_block'>
+							</div>
+						
+						<div class='ipsGrid_span9'>
+							<div class='ipsGrid_span9' data-role='searchFilters' id='elSearchFiltersMain'>
+								<div class='ipsGrid ipsGrid_collapsePhone'>
+									<div class='ipsGrid_span6'>
+										<h3 class="ipsType_reset ipsType_large cStreamForm_title">Find results in...</h3>
+										<ul class='ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal ipsSpacer_top ipsSpacer_half' role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='searchIn'>
+											
+												<li>
+													<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='all'>
+														<input type="radio" name="search_in" value="all" checked id="elRadio_searchIn_full_all">
+														<label for='elRadio_searchIn_full_all' id='elField_searchIn_full_label_all'>Content titles and body</label>
+													</span>
+												</li>
+											
+												<li>
+													<span class='ipsSideMenu_item ' data-ipsMenuValue='titles'>
+														<input type="radio" name="search_in" value="titles"  id="elRadio_searchIn_full_titles">
+														<label for='elRadio_searchIn_full_titles' id='elField_searchIn_full_label_titles'>Content titles only</label>
+													</span>
+												</li>
+											
+										</ul>
+									</div>
+									<div class='ipsGrid_span6'>
+										<h3 class="ipsType_reset ipsType_large cStreamForm_title">Find results that contain...</h3>
+										<ul class='ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal ipsSpacer_top ipsSpacer_half' role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='andOr'>
+											
+												<li>
+													<span class='ipsSideMenu_item ' data-ipsMenuValue='and'>
+														<input type="radio" name="search_and_or" value="and"  id="elRadio_andOr_full_and">
+														<label for='elRadio_andOr_full_and' id='elField_andOr_full_label_and'><em>All</em> of my search term words</label>
+													</span>
+												</li>
+											
+												<li>
+													<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='or'>
+														<input type="radio" name="search_and_or" value="or" checked id="elRadio_andOr_full_or">
+														<label for='elRadio_andOr_full_or' id='elField_andOr_full_label_or'><em>Any</em> of my search term words</label>
+													</span>
+												</li>
+											
+										</ul>
+									</div>
+								</div>
+								<br>
+								<div class='ipsGrid ipsGrid_collapsePhone'>
+									
+										<div class='ipsGrid_span6'>
+											<h3 class="ipsType_reset ipsType_large cStreamForm_title">Date Created</h3>
+											<ul class="ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal ipsSpacer_top ipsSpacer_half" role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='dateCreated'>
+												
+													<li>
+														<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='any'>
+															<input type="radio" name="startDate" value="any" checked id="elRadio_startDate_any">
+															<label for='elRadio_startDate_any' id='elField_startDate_label_any'>Any</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='day'>
+															<input type="radio" name="startDate" value="day"  id="elRadio_startDate_day">
+															<label for='elRadio_startDate_day' id='elField_startDate_label_day'>Last 24 hours</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='week'>
+															<input type="radio" name="startDate" value="week"  id="elRadio_startDate_week">
+															<label for='elRadio_startDate_week' id='elField_startDate_label_week'>Last week</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='month'>
+															<input type="radio" name="startDate" value="month"  id="elRadio_startDate_month">
+															<label for='elRadio_startDate_month' id='elField_startDate_label_month'>Last month</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='six_months'>
+															<input type="radio" name="startDate" value="six_months"  id="elRadio_startDate_six_months">
+															<label for='elRadio_startDate_six_months' id='elField_startDate_label_six_months'>Last six months</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='year'>
+															<input type="radio" name="startDate" value="year"  id="elRadio_startDate_year">
+															<label for='elRadio_startDate_year' id='elField_startDate_label_year'>Last year</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='custom'>
+															<input type="radio" name="startDate" value="custom"  id="elRadio_startDate_custom">
+															<label for='elRadio_startDate_custom' id='elField_startDate_label_custom'>Custom</label>
+														</span>
+													</li>
+												
+												<li class='ipsGrid ipsGrid_collapsePhone cStreamForm_dates ipsAreaBackground_light ipsPad_half ipsJS_hide' data-role="dateForm">
+													<div class='ipsGrid_span6'>
+														<h4 class='ipsType_minorHeading'>Start</h4>
+														<input type='date' name='startDateCustom[start]' data-control='date' data-role='start' value=''>	
+													</div>
+													<div class='ipsGrid_span6'>
+														<h4 class='ipsType_minorHeading'>End</h4>
+														<input type='date' name='startDateCustom[end]' data-control='date' data-role='end' value=''>
+													</div>
+												</li>
+											</ul>
+											<hr class='ipsHr ipsSpacer_both ipsResponsive_showPhone ipsResponsive_block'>
+										</div>
+									
+									
+										<div class='ipsGrid_span6'>
+											<h3 class="ipsType_reset ipsType_large cStreamForm_title">Last Updated</h3>
+											<ul class="ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal ipsSpacer_top ipsSpacer_half" role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='dateUpdated'>
+												
+													<li>
+														<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='any'>
+															<input type="radio" name="updatedDate" value="any" checked id="elRadio_updatedDate_any">
+															<label for='elRadio_updatedDate_any' id='elField_updatedDate_label_any'>Any</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='day'>
+															<input type="radio" name="updatedDate" value="day"  id="elRadio_updatedDate_day">
+															<label for='elRadio_updatedDate_day' id='elField_updatedDate_label_day'>Last 24 hours</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='week'>
+															<input type="radio" name="updatedDate" value="week"  id="elRadio_updatedDate_week">
+															<label for='elRadio_updatedDate_week' id='elField_updatedDate_label_week'>Last week</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='month'>
+															<input type="radio" name="updatedDate" value="month"  id="elRadio_updatedDate_month">
+															<label for='elRadio_updatedDate_month' id='elField_updatedDate_label_month'>Last month</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='six_months'>
+															<input type="radio" name="updatedDate" value="six_months"  id="elRadio_updatedDate_six_months">
+															<label for='elRadio_updatedDate_six_months' id='elField_updatedDate_label_six_months'>Last six months</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='year'>
+															<input type="radio" name="updatedDate" value="year"  id="elRadio_updatedDate_year">
+															<label for='elRadio_updatedDate_year' id='elField_updatedDate_label_year'>Last year</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ' data-ipsMenuValue='custom'>
+															<input type="radio" name="updatedDate" value="custom"  id="elRadio_updatedDate_custom">
+															<label for='elRadio_updatedDate_custom' id='elField_updatedDate_label_custom'>Custom</label>
+														</span>
+													</li>
+												
+												<li class='ipsGrid ipsGrid_collapsePhone cStreamForm_dates ipsAreaBackground_light ipsPad_half ipsJS_hide' data-role="dateForm">
+													<div class='ipsGrid_span6'>
+														<h4 class='ipsType_minorHeading'>Start</h4>
+														<input type='date' name='updatedDateCustom[start]' data-control='date' data-role='start' value=''>	
+													</div>
+													<div class='ipsGrid_span6'>
+														<h4 class='ipsType_minorHeading'>End</h4>
+														<input type='date' name='updatedDateCustom[end]' data-control='date' data-role='end' value=''>
+													</div>
+												</li>
+											</ul>
+										</div>
+									
+								</div>
+
+								<hr class='ipsHr'>
+
+								<h3 class="ipsType_reset ipsType_large cStreamForm_title" id="elSearch_filter_by_number">Filter by number of...</h3>
+								<ul class="ipsList_inline ipsSpacer_top ipsSpacer_half ipsType_normal">
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+											<li id='search_min_comments'>
+												<a href="#elSearch_search_min_comments_menu" data-ipsMenu data-ipsMenu-appendTo='#elSearchFilters_content' data-ipsMenu-closeOnClick='false' id='elSearch_search_min_comments' data-role='search_min_comments_link'><span class='ipsBadge ipsBadge_small ipsBadge_style1 ipsHide' data-role='fieldCount'>0</span> Comments <i class='fa fa-caret-down'></i></a>
+												<div class='ipsMenu ipsMenu_medium ipsFieldRow_fullWidth ipsPad ipsHide' id='elSearch_search_min_comments_menu'>
+													<h4 class="ipsType_reset ipsType_minorHeading ipsSpacer_bottom ipsSpacer_half">Minimum number of comments</h4>
+													<div class='ipsFieldRow_fullWidth'>
+														
+
+<input
+	type="number"
+	name="search_min_comments"
+	
+	size="5"
+	
+	
+		value="0"
+	
+	class="ipsField_short"
+	
+		min="0"
+	
+	
+	
+		step="any"
+	
+	
+	
+>
+
+
+
+
+													</div>
+												</div>
+											</li>
+										
+									
+										
+											<li id='search_min_replies'>
+												<a href="#elSearch_search_min_replies_menu" data-ipsMenu data-ipsMenu-appendTo='#elSearchFilters_content' data-ipsMenu-closeOnClick='false' id='elSearch_search_min_replies' data-role='search_min_replies_link'><span class='ipsBadge ipsBadge_small ipsBadge_style1 ipsHide' data-role='fieldCount'>0</span> Replies <i class='fa fa-caret-down'></i></a>
+												<div class='ipsMenu ipsMenu_medium ipsFieldRow_fullWidth ipsPad ipsHide' id='elSearch_search_min_replies_menu'>
+													<h4 class="ipsType_reset ipsType_minorHeading ipsSpacer_bottom ipsSpacer_half">Minimum number of replies</h4>
+													<div class='ipsFieldRow_fullWidth'>
+														
+
+<input
+	type="number"
+	name="search_min_replies"
+	
+	size="5"
+	
+	
+		value="0"
+	
+	class="ipsField_short"
+	
+		min="0"
+	
+	
+	
+		step="any"
+	
+	
+	
+>
+
+
+
+
+													</div>
+												</div>
+											</li>
+										
+									
+										
+											<li id='search_min_reviews'>
+												<a href="#elSearch_search_min_reviews_menu" data-ipsMenu data-ipsMenu-appendTo='#elSearchFilters_content' data-ipsMenu-closeOnClick='false' id='elSearch_search_min_reviews' data-role='search_min_reviews_link'><span class='ipsBadge ipsBadge_small ipsBadge_style1 ipsHide' data-role='fieldCount'>0</span> Reviews <i class='fa fa-caret-down'></i></a>
+												<div class='ipsMenu ipsMenu_medium ipsFieldRow_fullWidth ipsPad ipsHide' id='elSearch_search_min_reviews_menu'>
+													<h4 class="ipsType_reset ipsType_minorHeading ipsSpacer_bottom ipsSpacer_half">Minimum number of reviews</h4>
+													<div class='ipsFieldRow_fullWidth'>
+														
+
+<input
+	type="number"
+	name="search_min_reviews"
+	
+	size="5"
+	
+	
+		value="0"
+	
+	class="ipsField_short"
+	
+		min="0"
+	
+	
+	
+		step="any"
+	
+	
+	
+>
+
+
+
+
+													</div>
+												</div>
+											</li>
+										
+									
+										
+											<li id='search_min_views'>
+												<a href="#elSearch_search_min_views_menu" data-ipsMenu data-ipsMenu-appendTo='#elSearchFilters_content' data-ipsMenu-closeOnClick='false' id='elSearch_search_min_views' data-role='search_min_views_link'><span class='ipsBadge ipsBadge_small ipsBadge_style1 ipsHide' data-role='fieldCount'>0</span> Views <i class='fa fa-caret-down'></i></a>
+												<div class='ipsMenu ipsMenu_medium ipsFieldRow_fullWidth ipsPad ipsHide' id='elSearch_search_min_views_menu'>
+													<h4 class="ipsType_reset ipsType_minorHeading ipsSpacer_bottom ipsSpacer_half">Minimum number of views</h4>
+													<div class='ipsFieldRow_fullWidth'>
+														
+
+<input
+	type="number"
+	name="search_min_views"
+	
+	size="5"
+	
+	
+		value="0"
+	
+	class="ipsField_short"
+	
+		min="0"
+	
+	
+	
+		step="any"
+	
+	
+	
+>
+
+
+
+
+													</div>
+												</div>
+											</li>
+										
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+				<div id='ipsTabs_elTabs_search_elTab_searchMembers_panel' class='ipsTabs_panel' data-tabType='members'>
+					
+					
+					
+					<div class='ipsPad_double'>
+						<span class='ipsJS_hide'>
+							<input type="radio" name="type" value="core_members"  id="elRadio_type_core_members">
+							<label for='elRadio_type_core_members' id='elField_type_core_members_label' data-role='searchAppTitle'>core_members</label>
+						</span>
+						<div class='ipsGrid ipsGrid_collapsePhone'>
+							<div class='ipsGrid_span4'>
+								
+									<h3 class="ipsType_reset ipsType_large cStreamForm_title">Joined</h3>
+									<ul class="ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal ipsSpacer_top ipsSpacer_half" role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='joinedDate'>
+										
+											<li>
+												<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='any'>
+													<input type="radio" name="joinedDate" value="any" checked id="elRadio_joinedDate_any">
+													<label for='elRadio_joinedDate_any' id='elField_joinedDate_label'>Any</label>
+												</span>
+											</li>
+										
+											<li>
+												<span class='ipsSideMenu_item ' data-ipsMenuValue='day'>
+													<input type="radio" name="joinedDate" value="day"  id="elRadio_joinedDate_day">
+													<label for='elRadio_joinedDate_day' id='elField_joinedDate_label'>Last 24 hours</label>
+												</span>
+											</li>
+										
+											<li>
+												<span class='ipsSideMenu_item ' data-ipsMenuValue='week'>
+													<input type="radio" name="joinedDate" value="week"  id="elRadio_joinedDate_week">
+													<label for='elRadio_joinedDate_week' id='elField_joinedDate_label'>Last week</label>
+												</span>
+											</li>
+										
+											<li>
+												<span class='ipsSideMenu_item ' data-ipsMenuValue='month'>
+													<input type="radio" name="joinedDate" value="month"  id="elRadio_joinedDate_month">
+													<label for='elRadio_joinedDate_month' id='elField_joinedDate_label'>Last month</label>
+												</span>
+											</li>
+										
+											<li>
+												<span class='ipsSideMenu_item ' data-ipsMenuValue='six_months'>
+													<input type="radio" name="joinedDate" value="six_months"  id="elRadio_joinedDate_six_months">
+													<label for='elRadio_joinedDate_six_months' id='elField_joinedDate_label'>Last six months</label>
+												</span>
+											</li>
+										
+											<li>
+												<span class='ipsSideMenu_item ' data-ipsMenuValue='year'>
+													<input type="radio" name="joinedDate" value="year"  id="elRadio_joinedDate_year">
+													<label for='elRadio_joinedDate_year' id='elField_joinedDate_label'>Last year</label>
+												</span>
+											</li>
+										
+											<li>
+												<span class='ipsSideMenu_item ' data-ipsMenuValue='custom'>
+													<input type="radio" name="joinedDate" value="custom"  id="elRadio_joinedDate_custom">
+													<label for='elRadio_joinedDate_custom' id='elField_joinedDate_label'>Custom</label>
+												</span>
+											</li>
+										
+										<li class='ipsGrid ipsGrid_collapsePhone cStreamForm_dates ipsAreaBackground_light ipsPad_half ipsJS_hide' data-role="dateForm">
+											<div class='ipsGrid_span6'>
+												<h4 class='ipsType_minorHeading'>Start</h4>
+												<input type='date' name='joinedDateCustom[start]' data-control='date' data-role='start' value=''>	
+											</div>
+											<div class='ipsGrid_span6'>
+												<h4 class='ipsType_minorHeading'>End</h4>
+												<input type='date' name='joinedDateCustom[end]' data-control='date' data-role='end' value=''>
+											</div>
+										</li>
+									</ul>
+									<hr class='ipsHr ipsSpacer_both ipsResponsive_showPhone ipsResponsive_block'>
+								
+							</div>
+							<div class='ipsGrid_span8' data-role='searchFilters' id='elSearchFiltersMain'>
+								<div class='ipsGrid ipsGrid_collapsePhone'>
+									<div class='ipsGrid_span6'>
+										
+											<h3 class="ipsType_reset ipsType_large cStreamForm_title">Group</h3>
+											<ul class="ipsSideMenu_list ipsSideMenu_withChecks ipsSideMenu_small ipsType_normal ipsSpacer_top ipsSpacer_half" data-ipsSideMenu data-ipsSideMenu-type="check" data-ipsSideMenu-responsive="false" data-filterType='group'>
+												
+													<li>
+														<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='4'>
+															<input type="checkbox" name="group" value="4" checked id="elCheck_group_4">
+															<label for='elRadio_group_4' id='elField_group_label'>Admin</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='5'>
+															<input type="checkbox" name="group" value="5" checked id="elCheck_group_5">
+															<label for='elRadio_group_5' id='elField_group_label'>Banned</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='3'>
+															<input type="checkbox" name="group" value="3" checked id="elCheck_group_3">
+															<label for='elRadio_group_3' id='elField_group_label'>Members</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='8'>
+															<input type="checkbox" name="group" value="8" checked id="elCheck_group_8">
+															<label for='elRadio_group_8' id='elField_group_label'>ModAdmin</label>
+														</span>
+													</li>
+												
+													<li>
+														<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='6'>
+															<input type="checkbox" name="group" value="6" checked id="elCheck_group_6">
+															<label for='elRadio_group_6' id='elField_group_label'>Moderator</label>
+														</span>
+													</li>
+												
+											</ul>
+										
+	
+										
+										
+											
+												
+													
+												
+													
+												
+													
+												
+												
+	
+												<hr class='ipsHr'>
+												<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">AIM</h3>
+												<div class='ipsFieldRow_fullWidth'>
+													
+
+
+
+	<input
+		type="text"
+		name="core_pfield_2"
+		value=""
+		id="elInput_core_pfield_2"
+		
+		
+		
+		
+		
+		
+	>
+	
+	
+	
+
+												</div>
+												
+												
+											
+												
+												
+	
+												<hr class='ipsHr'>
+												<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">MSN</h3>
+												<div class='ipsFieldRow_fullWidth'>
+													
+
+
+
+	<input
+		type="text"
+		name="core_pfield_3"
+		value=""
+		id="elInput_core_pfield_3"
+		
+		
+		
+		
+		
+		
+	>
+	
+	
+	
+
+												</div>
+												
+												
+											
+												
+												
+	
+												<hr class='ipsHr'>
+												<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Website URL</h3>
+												<div class='ipsFieldRow_fullWidth'>
+													
+
+
+
+	<input
+		type="text"
+		name="core_pfield_4"
+		value=""
+		id="elInput_core_pfield_4"
+		
+		
+		
+		
+		
+		
+	>
+	
+	
+	
+
+												</div>
+												
+												
+											
+												
+												
+	
+												<hr class='ipsHr'>
+												<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">ICQ</h3>
+												<div class='ipsFieldRow_fullWidth'>
+													
+
+
+
+	<input
+		type="text"
+		name="core_pfield_5"
+		value=""
+		id="elInput_core_pfield_5"
+		
+		
+		
+		
+		
+		
+	>
+	
+	
+	
+
+												</div>
+												
+												
+											
+												
+												
+	
+												<hr class='ipsHr'>
+												<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Yahoo</h3>
+												<div class='ipsFieldRow_fullWidth'>
+													
+
+
+
+	<input
+		type="text"
+		name="core_pfield_9"
+		value=""
+		id="elInput_core_pfield_9"
+		
+		
+		
+		
+		
+		
+	>
+	
+	
+	
+
+												</div>
+												
+												
+													
+										
+										<hr class='ipsHr ipsSpacer_both ipsResponsive_showPhone ipsResponsive_block'>
+									</div>
+									<div class='ipsGrid_span6'>
+										
+										
+										
+											
+												
+											
+												
+											
+												
+											
+											
+	
+											
+												
+											
+											
+	
+											
+												
+											
+											
+	
+											
+												
+											
+											
+	
+											
+												
+											
+											
+	
+											
+												
+											
+											
+	
+											
+
+											
+
+											<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Jabber</h3>
+											<div class='ipsFieldRow_fullWidth'>
+												
+
+
+
+	<input
+		type="text"
+		name="core_pfield_10"
+		value=""
+		id="elInput_core_pfield_10"
+		
+		
+		
+		
+		
+		
+	>
+	
+	
+	
+
+											</div>
+											
+											
+										
+											
+											
+	
+											
+
+											
+												<!-- HR except for first item -->
+												<hr class='ipsHr'>
+											
+
+											<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Skype</h3>
+											<div class='ipsFieldRow_fullWidth'>
+												
+
+
+
+	<input
+		type="text"
+		name="core_pfield_11"
+		value=""
+		id="elInput_core_pfield_11"
+		
+		
+		
+		
+		
+		
+	>
+	
+	
+	
+
+											</div>
+											
+											
+										
+											
+											
+	
+											
+
+											
+												<!-- HR except for first item -->
+												<hr class='ipsHr'>
+											
+
+											<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Location</h3>
+											<div class='ipsFieldRow_fullWidth'>
+												
+
+
+
+	<input
+		type="text"
+		name="core_pfield_7"
+		value=""
+		id="elInput_core_pfield_7"
+		
+		
+		
+		
+		
+		
+	>
+	
+	
+	
+
+											</div>
+											
+											
+										
+											
+											
+	
+											
+
+											
+												<!-- HR except for first item -->
+												<hr class='ipsHr'>
+											
+
+											<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Interests</h3>
+											<div class='ipsFieldRow_fullWidth'>
+												
+
+
+
+	<input
+		type="text"
+		name="core_pfield_8"
+		value=""
+		id="elInput_core_pfield_8"
+		
+		
+		
+		
+		
+		
+	>
+	
+	
+	
+
+											</div>
+											
+											
+										
+											
+											
+	
+											
+
+											
+												<!-- HR except for first item -->
+												<hr class='ipsHr'>
+											
+
+											<h3 class="ipsType_reset ipsType_large cStreamForm_title ipsSpacer_bottom ipsSpacer_half">Languages</h3>
+											<div class='ipsFieldRow_fullWidth'>
+												
+
+
+
+	<input
+		type="text"
+		name="core_pfield_1"
+		value=""
+		id="elInput_core_pfield_1"
+		
+		
+		
+		
+		
+		
+	>
+	
+	
+	
+
+											</div>
+											
+											
+												
+									</div>			
+								</div>			
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		</section>
+		<div class='ipsAreaBackground_light ipsPad cSearchFiltersSubmit'>
+			<ul class='ipsToolList ipsToolList_horizontal ipsClearfix'>
+				<li class='ipsPos_right'>
+					<button type="submit" class="ipsButton ipsButton_primary ipsButton_medium ipsButton_fullWidth" data-action="updateResults">
+						
+							Search Content
+						
+					</button>
+				</li>
+				<li class='ipsPos_right'>
+					<button type="button" class="ipsButton ipsButton_link ipsButton_medium ipsButton_fullWidth ipsHide" data-action="cancelFilters">Cancel</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</form>
+	</div>
+
+	<div id="elSearch_main" class='ipsSpacer_top' data-role='filterContent'>
+		
+	</div>
+</div>
+
+						
+
+
+					</div>
+					
+
+
+					
+<nav class='ipsBreadcrumb ipsBreadcrumb_bottom ipsFaded_withHover'>
+	
+		
+
+
+	
+
+	<ul class='ipsList_inline ipsPos_right'>
+		
+		<li >
+			<a data-action="defaultStream" class='ipsType_light '  href='http://w3schools.invisionzone.com/discover/'><i class='icon-newspaper'></i> <span>All Activity</span></a>
+		</li>
+		
+	</ul>
+
+	<ul data-role="breadcrumbList">
+		<li>
+			<a title="Home" href='http://w3schools.invisionzone.com/'>
+				<span><i class='fa fa-home'></i> Home <i class='fa fa-angle-right'></i></span>
+			</a>
+		</li>
+		
+		
+			<li>
+				
+					<a href='http://w3schools.invisionzone.com/search/'>
+						<span>Search </span>
+					</a>
+				
+			</li>
+		
+	</ul>
+</nav>
+				</div>
+			</div>
+			
+		</main>
+		<footer id='ipsLayout_footer' class='ipsClearfix'>
+			<div class='ipsLayout_container'>
+				
+				
+
+
+<ul class='ipsList_inline ipsType_center ipsSpacer_top' id="elFooterLinks">
+	
+	
+	
+	
+	
+	
+		<li><a rel="nofollow" href='http://w3schools.invisionzone.com/contact/' data-ipsdialog data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='Thanks, your message has been sent to the administrators.' data-ipsdialog-title="Contact Us">Contact Us</a></li>
+	
+</ul>	
+
+
+<p id='elCopyright'>
+	<span id='elCopyright_userLine'></span>
+	<a rel='nofollow' title='Invision Community' href='https://www.invisioncommunity.com/'>Powered by Invision Community</a>
+</p>
+			</div>
+		</footer>
+		
+<div id='elMobileDrawer' class='ipsDrawer ipsHide'>
+	<a href='#' class='ipsDrawer_close' data-action='close'><span>&times;</span></a>
+	<div class='ipsDrawer_menu'>
+		<div class='ipsDrawer_content'>
+			
+
+			<div class='ipsSpacer_bottom ipsPad'>
+				<ul class='ipsToolList ipsToolList_vertical'>
+					
+						<li>
+							<a href='http://w3schools.invisionzone.com/login/' class='ipsButton ipsButton_light ipsButton_small ipsButton_fullWidth'>Existing user? Sign In</a>
+						</li>
+						
+							<li>
+								
+									<a href='http://w3schools.invisionzone.com/register/' data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Sign Up' id='elRegisterButton_mobile' class='ipsButton ipsButton_small ipsButton_fullWidth ipsButton_important'>Sign Up</a>
+								
+							</li>
+						
+					
+
+					
+				</ul>
+			</div>
+
+			<ul class='ipsDrawer_list'>
+				
+
+				
+				
+				
+				
+					
+						
+						
+							<li class='ipsDrawer_itemParent'>
+								<h4 class='ipsDrawer_title'><a href='#'>Browse</a></h4>
+								<ul class='ipsDrawer_list'>
+									<li data-action="back"><a href='#'>Back</a></li>
+									
+										<li><a href='http://w3schools.invisionzone.com'>Browse</a></li>
+									
+									
+									
+										
+
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com' >
+					Forums
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/calendar/' >
+					Calendar
+				</a>
+			</li>
+		
+	
+
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/staff/' >
+					Staff
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/online/' >
+					Online Users
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/leaderboard/' >
+					Leaderboard
+				</a>
+			</li>
+		
+	
+
+										
+								</ul>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li class='ipsDrawer_itemParent'>
+								<h4 class='ipsDrawer_title'><a href='#'>Activity</a></h4>
+								<ul class='ipsDrawer_list'>
+									<li data-action="back"><a href='#'>Back</a></li>
+									
+										<li><a href='http://w3schools.invisionzone.com/discover/'>Activity</a></li>
+									
+									
+									
+										
+
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/discover/' >
+					All Activity
+				</a>
+			</li>
+		
+	
+
+	
+
+	
+
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/search/' >
+					Search
+				</a>
+			</li>
+		
+	
+
+										
+								</ul>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li><a href='http://w3schools.invisionzone.com/leaderboard/' >Leaderboard</a></li>
+						
+					
+				
+					
+				
+					
+				
+			</ul>
+		</div>
+	</div>
+</div>
+		
+
+	<script type='text/javascript'>
+		var ipsDebug = false;		
+	
+		var CKEDITOR_BASEPATH = '//w3schools.invisionzone.com/applications/core/interface/ckeditor/ckeditor/';
+	
+		var ipsSettings = {
+			
+			
+			cookie_path: "/",
+			
+			cookie_prefix: "ips4_",
+			
+			
+			cookie_ssl: false,
+			
+			upload_imgURL: "//content.invisioncic.com/r49260/set_resources_1/0cb563f8144768654a2205065d13abd6_upload.png",
+			message_imgURL: "//content.invisioncic.com/r49260/set_resources_1/0cb563f8144768654a2205065d13abd6_message.png",
+			notification_imgURL: "//content.invisioncic.com/r49260/set_resources_1/0cb563f8144768654a2205065d13abd6_notification.png",
+			baseURL: "//w3schools.invisionzone.com/",
+			jsURL: "//w3schools.invisionzone.com/applications/core/interface/js/js.php",
+			csrfKey: "432d61e51499c5976d790c1513da0d76",
+			antiCache: "225d2b9d62",
+			disableNotificationSounds: false,
+			useCompiledFiles: true,
+			links_external: true,
+			memberID: 0,
+			analyticsProvider: "none",
+			viewProfiles: true,
+			mapProvider: 'none',
+			mapApiKey: '',
+			
+		};
+	</script>
+
+
+
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_library.js.83581e37d7b4aa8eaf956484081de68f.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_js_lang_1.js.669aa62e1eaf3094bc709c2805979474.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_framework.js.382aba2e65d18441602dadb08ef0d3c2.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_core/global_global_core.js.a0dfc0580dba1beb30939e1c1ce62fd6.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//w3schools.invisionzone.com/applications/core/interface/howler/howler.core.min.js?v=225d2b9d62' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_front.js.470f7c9d31558a12ef36248b952d003c.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_core/front_front_search.js.a8bf961c8f4879488be6c4c31bb975ad.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//w3schools.invisionzone.com/applications/core/interface/jquery/jquery-ui.js?v=225d2b9d62' data-ips></script>
+
+
+<script type='text/javascript' src='//w3schools.invisionzone.com/applications/core/interface/jquery/jquery-touchpunch.js?v=225d2b9d62' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_core/front_app.js.cf4ef3c0d7e03c02394558e100a08aa7.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_map.js.75fee57ba02a4b8785472db3d404fc41.js.gz' data-ips></script>
+
+
+
+	<script type='text/javascript'>
+		
+			ips.setSetting( 'date_format', jQuery.parseJSON('"mm\/dd\/yy"') );
+		
+			ips.setSetting( 'date_first_day', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'remote_image_proxy', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'ipb_url_filter_option', jQuery.parseJSON('"none"') );
+		
+			ips.setSetting( 'url_filter_any_action', jQuery.parseJSON('"allow"') );
+		
+			ips.setSetting( 'bypass_profanity', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'emoji_style', jQuery.parseJSON('"native"') );
+		
+			ips.setSetting( 'emoji_shortcodes', jQuery.parseJSON('"1"') );
+		
+			ips.setSetting( 'emoji_ascii', jQuery.parseJSON('"1"') );
+		
+			ips.setSetting( 'emoji_cache', jQuery.parseJSON('"1"') );
+		
+		
+	</script>
+
+
+
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "WebSite",
+    "name": "W3Schools Forum",
+    "url": "http://w3schools.invisionzone.com/",
+    "potentialAction": {
+        "type": "SearchAction",
+        "query-input": "required name=query",
+        "target": "http://w3schools.invisionzone.com/search/?q={query}"
+    },
+    "inLanguage": [
+        {
+            "@type": "Language",
+            "name": "English (USA)",
+            "alternateName": "en-US"
+        }
+    ]
+}	
+</script>
+
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "Organization",
+    "name": "W3Schools Forum",
+    "url": "http://w3schools.invisionzone.com/",
+    "logo": "//content.invisioncic.com/r49260/monthly_2017_03/w3schools.png.9a860c675c07154b1ec49276a2a69658.png",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": null,
+        "addressRegion": null,
+        "postalCode": null,
+        "addressCountry": null
+    }
+}	
+</script>
+
+<script type='application/ld+json'>
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "http://w3schools.invisionzone.com/search/",
+                "name": "Search"
+            }
+        }
+    ]
+}	
+</script>
+
+<script type='application/ld+json'>
+{
+    "@context": "http://schema.org",
+    "@type": "ContactPage",
+    "url": "http://w3schools.invisionzone.com/contact/"
+}	
+</script>
+
+
+		
+		
+		
+		<!--ipsQueryLog-->
+		<!--ipsCachingLog-->
+		
+		
+	</body>
+</html>

@@ -1,0 +1,4057 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+	<head>
+		<title>Web Servers - W3Schools Forum</title>
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="//content.invisioncic.com/r49260/css_built_1/5e61784858ad3c11f00b5706d12afe52_ie8.css.c5142613804911fde71e69a59000ea68.css.gz">
+		    <script src="//w3schools.invisionzone.com/applications/core/interface/html5shiv/html5shiv.js"></script>
+		<![endif]-->
+		
+<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+	<meta name="twitter:card" content="summary" />
+
+
+
+	
+		
+	
+
+	
+		
+			
+				<meta name="description" content="Issues related to installing and configuring web servers, htaccess, mod_rewrite, etc.">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:title" content="Web Servers">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:description" content="Issues related to installing and configuring web servers, htaccess, mod_rewrite, etc.">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:site_name" content="W3Schools Forum">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:locale" content="en_US">
+			
+		
+	
+
+<meta name="theme-color" content="#3d6594">
+
+	
+		<link rel="canonical" href="http://w3schools.invisionzone.com/forum/60-web-servers/" />
+	
+
+	
+		<link rel="next" href="http://w3schools.invisionzone.com/forum/60-web-servers/?page=2" />
+	
+
+	
+		<link rel="last" href="http://w3schools.invisionzone.com/forum/60-web-servers/?page=19" />
+	
+
+<link rel="alternate" type="application/rss+xml" title="Web Servers Latest Topics" href="http://w3schools.invisionzone.com/forum/60-web-servers.xml/" />
+
+		
+
+
+	
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet" referrerpolicy="origin">
+	
+
+
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/341e4a57816af3ba440d891ca87450ff_framework.css.b11fada0b460248cf5c60110e1bd9d04.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/05e81b71abe4f22d6eb8d1a929494829_responsive.css.1687c00ce56df83680067015ee625aa3.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/90eb5adf50a8c640f633d47fd7eb1778_core.css.56d095c7139eeb8cbbf2e23f9a3fecbf.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/5a0da001ccc2200dc5625c3f3934497d_core_responsive.css.202f497ac11b3eb4c46a4601709bc659.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/62e269ced0fdab7e30e026f1d30ae516_forums.css.a7f04bd0d1734f4caa411d180828caba.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/76e62c573090645fb99a15a363d8620e_forums_responsive.css.d72b19296c601a58f819640611f2e689.css.gz?v=225d2b9d62' media='all'>
+
+
+
+
+<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/258adbb6e4f3e83cd3b355f84e3fa002_custom.css.1d0858bb999472331f4950d359a8833e.css.gz?v=225d2b9d62' media='all'>
+
+
+
+		
+		
+
+	</head>
+	<body class='ipsApp ipsApp_front ipsJS_none ipsClearfix' data-controller='core.front.core.app' data-message="" data-pageApp='forums' data-pageLocation='front' data-pageModule='forums' data-pageController='forums'>
+		<a href='#elContent' class='ipsHide' title='Go to main content on this page' accesskey='m'>Jump to content</a>
+		
+		<div id='ipsLayout_header' class='ipsClearfix'>
+			
+
+
+
+
+			
+
+
+			
+<ul id='elMobileNav' class='ipsList_inline ipsResponsive_hideDesktop ipsResponsive_block' data-controller='core.front.core.mobileNav'>
+	
+		
+			
+			
+				
+					<li id='elMobileBreadcrumb'>
+						<a href='http://w3schools.invisionzone.com/forum/31-server-scripting/'>
+							<span>Server Scripting</span>
+						</a>
+					</li>
+				
+				
+			
+				
+				
+			
+		
+	
+	
+	
+	<li >
+		<a data-action="defaultStream" class='ipsType_light'  href='http://w3schools.invisionzone.com/discover/'><i class='icon-newspaper'></i></a>
+	</li>
+
+	
+		<li class='ipsJS_show'>
+			<a href='http://w3schools.invisionzone.com/search/'><i class='fa fa-search'></i></a>
+		</li>
+	
+	<li data-ipsDrawer data-ipsDrawer-drawerElem='#elMobileDrawer'>
+		<a href='#'>
+			
+			
+				
+			
+			
+			
+			<i class='fa fa-navicon'></i>
+		</a>
+	</li>
+</ul>
+			<header>
+				<div class='ipsLayout_container'>
+					
+
+
+<a href='http://w3schools.invisionzone.com/' id='elLogo' accesskey='1'><img src="//content.invisioncic.com/r49260/monthly_2017_03/w3schools.png.9a860c675c07154b1ec49276a2a69658.png" alt='W3Schools Forum'></a>
+
+					
+
+	<ul id='elUserNav' class='ipsList_inline cSignedOut ipsClearfix ipsResponsive_hidePhone ipsResponsive_block'>
+		
+		<li id='elSignInLink'>
+			<a href='http://w3schools.invisionzone.com/login/' data-ipsMenu-closeOnClick="false" data-ipsMenu id='elUserSignIn'>
+				Existing user? Sign In &nbsp;<i class='fa fa-caret-down'></i>
+			</a>
+			
+<div id='elUserSignIn_menu' class='ipsMenu ipsMenu_auto ipsHide'>
+	<form accept-charset='utf-8' method='post' action='http://w3schools.invisionzone.com/login/' data-controller="core.global.core.login">
+		<input type="hidden" name="csrfKey" value="432d61e51499c5976d790c1513da0d76">
+		<input type="hidden" name="ref" value="aHR0cDovL3czc2Nob29scy5pbnZpc2lvbnpvbmUuY29tL2ZvcnVtLzYwLXdlYi1zZXJ2ZXJzLw==">
+		<div data-role="loginForm">
+			
+			
+			
+				
+<div class="ipsPad ipsForm ipsForm_vertical">
+	<h4 class="ipsType_sectionHead">Sign In</h4>
+	<br><br>
+	<ul class='ipsList_reset'>
+		<li class="ipsFieldRow ipsFieldRow_noLabel ipsFieldRow_fullWidth">
+			
+			
+				<input type="text" placeholder="Display Name" name="auth">
+			
+		</li>
+		<li class="ipsFieldRow ipsFieldRow_noLabel ipsFieldRow_fullWidth">
+			<input type="password" placeholder="Password" name="password">
+		</li>
+		<li class="ipsFieldRow ipsFieldRow_checkbox ipsClearfix">
+			<span class="ipsCustomInput">
+				<input type="checkbox" name="remember_me" id="remember_me_checkbox" value="1" checked aria-checked="true">
+				<span></span>
+			</span>
+			<div class="ipsFieldRow_content">
+				<label class="ipsFieldRow_label" for="remember_me_checkbox">Remember me</label>
+				<span class="ipsFieldRow_desc">Not recommended on shared computers</span>
+			</div>
+		</li>
+		
+		<li class="ipsFieldRow ipsFieldRow_fullWidth">
+			<br>
+			<button type="submit" name="_processLogin" value="usernamepassword" class="ipsButton ipsButton_primary ipsButton_small" id="elSignIn_submit">Sign In</button>
+			
+				<br>
+				<p class="ipsType_right ipsType_small">
+					
+						<a href='http://w3schools.invisionzone.com/lostpassword/' data-ipsDialog data-ipsDialog-title='Forgot your password?'>
+					
+					Forgot your password?</a>
+				</p>
+			
+		</li>
+	</ul>
+</div>
+			
+		</div>
+	</form>
+</div>
+		</li>
+		
+			<li>
+				
+					<a href='http://w3schools.invisionzone.com/register/' data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Sign Up' id='elRegisterButton' class='ipsButton ipsButton_normal ipsButton_primary'>Sign Up</a>
+				
+			</li>
+		
+	</ul>
+
+				</div>
+			</header>
+			
+
+	<nav data-controller='core.front.core.navBar' class=''>
+		<div class='ipsNavBar_primary ipsLayout_container  ipsClearfix'>
+			
+
+	<div id="elSearchWrapper" class="ipsPos_right">
+		<div id='elSearch' class='' data-controller='core.front.core.quickSearch'>
+			<form accept-charset='utf-8' action='//w3schools.invisionzone.com/search/?do=quicksearch' method='post'>
+				<input type='search' id='elSearchField' placeholder='Search...' name='q'>
+				<button class='cSearchSubmit' type="submit"><i class="fa fa-search"></i></button>
+				<div id="elSearchExpanded">
+					<div class="ipsMenu_title">
+						Search In
+					</div>
+					<ul class="ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-role="searchContexts">
+						<li>
+							<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='all'>
+								<input type="radio" name="type" value="all" checked id="elQuickSearchRadio_type_all">
+								<label for='elQuickSearchRadio_type_all' id='elQuickSearchRadio_type_all_label'>Everywhere</label>
+							</span>
+						</li>
+						
+						
+							<li>
+								<span class='ipsSideMenu_item' data-ipsMenuValue='forums_topic'>
+									<input type="radio" name="type" value="forums_topic" id="elQuickSearchRadio_type_forums_topic">
+									<label for='elQuickSearchRadio_type_forums_topic' id='elQuickSearchRadio_type_forums_topic_label'>Topics</label>
+								</span>
+							</li>
+						
+						
+							
+								<li>
+									<span class='ipsSideMenu_item' data-ipsMenuValue='contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;nodes&quot;:60}'>
+										<input type="radio" name="type" value='contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;nodes&quot;:60}' id='elQuickSearchRadio_type_contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;nodes&quot;:60}'>
+										<label for='elQuickSearchRadio_type_contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;nodes&quot;:60}' id='elQuickSearchRadio_type_contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;nodes&quot;:60}_label'>This Forum</label>
+									</span>
+								</li>
+							
+						
+						<li data-role="showMoreSearchContexts">
+							<span class='ipsSideMenu_item' data-action="showMoreSearchContexts" data-exclude="forums_topic">
+								More options...
+							</span>
+						</li>
+					</ul>
+					<div class="ipsMenu_title">
+						Find results that contain...
+					</div>
+					<ul class='ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal' role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='andOr'>
+						
+							<li>
+								<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='or'>
+									<input type="radio" name="search_and_or" value="or" checked id="elRadio_andOr_or">
+									<label for='elRadio_andOr_or' id='elField_andOr_label_or'><em>Any</em> of my search term words</label>
+								</span>
+							</li>
+						
+							<li>
+								<span class='ipsSideMenu_item ' data-ipsMenuValue='and'>
+									<input type="radio" name="search_and_or" value="and"  id="elRadio_andOr_and">
+									<label for='elRadio_andOr_and' id='elField_andOr_label_and'><em>All</em> of my search term words</label>
+								</span>
+							</li>
+						
+					</ul>
+					<div class="ipsMenu_title">
+						Find results in...
+					</div>
+					<ul class='ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal' role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='searchIn'>
+						<li>
+							<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='all'>
+								<input type="radio" name="search_in" value="all" checked id="elRadio_searchIn_and">
+								<label for='elRadio_searchIn_and' id='elField_searchIn_label_all'>Content titles and body</label>
+							</span>
+						</li>
+						<li>
+							<span class='ipsSideMenu_item' data-ipsMenuValue='titles'>
+								<input type="radio" name="search_in" value="titles" id="elRadio_searchIn_titles">
+								<label for='elRadio_searchIn_titles' id='elField_searchIn_label_titles'>Content titles only</label>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+
+			<ul data-role="primaryNavBar" class='ipsResponsive_showDesktop ipsResponsive_block'>
+				
+
+
+	
+		
+		
+			
+		
+		<li class='ipsNavBar_active' data-active id='elNavSecondary_1' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="http://w3schools.invisionzone.com"  data-navItem-id="1" data-navDefault>
+					Browse
+				</a>
+			
+			
+				<ul class='ipsNavBar_secondary ' data-role='secondaryNavBar'>
+					
+
+
+	
+		
+		
+			
+		
+		<li class='ipsNavBar_active' data-active id='elNavSecondary_8' data-role="navBarItem" data-navApp="forums" data-navExt="Forums">
+			
+			
+				<a href="http://w3schools.invisionzone.com"  data-navItem-id="8" data-navDefault>
+					Forums
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_9' data-role="navBarItem" data-navApp="calendar" data-navExt="Calendar">
+			
+			
+				<a href="http://w3schools.invisionzone.com/calendar/"  data-navItem-id="9" >
+					Calendar
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_11' data-role="navBarItem" data-navApp="core" data-navExt="StaffDirectory">
+			
+			
+				<a href="http://w3schools.invisionzone.com/staff/"  data-navItem-id="11" >
+					Staff
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_12' data-role="navBarItem" data-navApp="core" data-navExt="OnlineUsers">
+			
+			
+				<a href="http://w3schools.invisionzone.com/online/"  data-navItem-id="12" >
+					Online Users
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_13' data-role="navBarItem" data-navApp="core" data-navExt="Leaderboard">
+			
+			
+				<a href="http://w3schools.invisionzone.com/leaderboard/"  data-navItem-id="13" >
+					Leaderboard
+				</a>
+			
+			
+		</li>
+	
+	
+
+					<li class='ipsHide' id='elNavigationMore_1' data-role='navMore'>
+						<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_1' id='elNavigationMore_1_dropdown'>More <i class='fa fa-caret-down'></i></a>
+						<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_1_dropdown_menu' data-role='moreDropdown'></ul>
+					</li>
+				</ul>
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_2' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="http://w3schools.invisionzone.com/discover/"  data-navItem-id="2" >
+					Activity
+				</a>
+			
+			
+				<ul class='ipsNavBar_secondary ipsHide' data-role='secondaryNavBar'>
+					
+
+
+	
+		
+		
+		<li  id='elNavSecondary_3' data-role="navBarItem" data-navApp="core" data-navExt="AllActivity">
+			
+			
+				<a href="http://w3schools.invisionzone.com/discover/"  data-navItem-id="3" >
+					All Activity
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_7' data-role="navBarItem" data-navApp="core" data-navExt="Search">
+			
+			
+				<a href="http://w3schools.invisionzone.com/search/"  data-navItem-id="7" >
+					Search
+				</a>
+			
+			
+		</li>
+	
+	
+
+					<li class='ipsHide' id='elNavigationMore_2' data-role='navMore'>
+						<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_2' id='elNavigationMore_2_dropdown'>More <i class='fa fa-caret-down'></i></a>
+						<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_2_dropdown_menu' data-role='moreDropdown'></ul>
+					</li>
+				</ul>
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_14' data-role="navBarItem" data-navApp="core" data-navExt="Leaderboard">
+			
+			
+				<a href="http://w3schools.invisionzone.com/leaderboard/"  data-navItem-id="14" >
+					Leaderboard
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+	
+	
+
+				<li class='ipsHide' id='elNavigationMore' data-role='navMore'>
+					<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore' id='elNavigationMore_dropdown'>More</a>
+					<ul class='ipsNavBar_secondary ipsHide' data-role='secondaryNavBar'>
+						<li class='ipsHide' id='elNavigationMore_more' data-role='navMore'>
+							<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_more' id='elNavigationMore_more_dropdown'>More <i class='fa fa-caret-down'></i></a>
+							<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_more_dropdown_menu' data-role='moreDropdown'></ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+		</div>
+		<main id='ipsLayout_body' class='ipsLayout_container'>
+			<div id='ipsLayout_contentArea'>
+				<div id='ipsLayout_contentWrapper'>
+					
+<nav class='ipsBreadcrumb ipsBreadcrumb_top ipsFaded_withHover'>
+	
+
+	<ul class='ipsList_inline ipsPos_right'>
+		
+		<li >
+			<a data-action="defaultStream" class='ipsType_light '  href='http://w3schools.invisionzone.com/discover/'><i class='icon-newspaper'></i> <span>All Activity</span></a>
+		</li>
+		
+	</ul>
+
+	<ul data-role="breadcrumbList">
+		<li>
+			<a title="Home" href='http://w3schools.invisionzone.com/'>
+				<span><i class='fa fa-home'></i> Home <i class='fa fa-angle-right'></i></span>
+			</a>
+		</li>
+		
+		
+			<li>
+				
+					<a href='http://w3schools.invisionzone.com/forum/31-server-scripting/'>
+						<span>Server Scripting <i class='fa fa-angle-right'></i></span>
+					</a>
+				
+			</li>
+		
+			<li>
+				
+					Web Servers
+				
+			</li>
+		
+	</ul>
+</nav>
+					
+					<div id='ipsLayout_mainArea'>
+						<a id='elContent'></a>
+						
+						
+						
+						
+
+	
+
+
+
+
+						
+
+
+
+
+	
+	<div class="ipsPageHeader ipsClearfix">
+		<header class='ipsSpacer_bottom'>
+			
+			<h1 class="ipsType_pageTitle">Web Servers</h1>
+			
+				<div class='ipsPos_right ipsResponsive_noFloat ipsResponsive_hidePhone'>
+					
+
+<div data-followApp='forums' data-followArea='forum' data-followID='60' data-controller='core.front.core.followButton'>
+	
+		<span class='ipsType_light ipsType_blendLinks ipsResponsive_hidePhone ipsResponsive_inline'><i class='fa fa-info-circle'></i> <a href='http://w3schools.invisionzone.com/login/' title='Go to the sign in page'>Sign in to follow this</a>&nbsp;&nbsp;</span>
+	
+	
+
+	<div class="ipsFollow ipsPos_middle ipsButton ipsButton_link ipsButton_verySmall " data-role="followButton">
+		
+			<a href='http://w3schools.invisionzone.com/index.php?app=core&amp;module=system&amp;controller=notifications&amp;do=followers&amp;follow_app=forums&amp;follow_area=forum&amp;follow_id=60' title='See who follows this' class='ipsType_blendLinks ipsType_noUnderline' data-ipsTooltip data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Who follows this'>Followers</a>
+			<a class='ipsCommentCount' href='http://w3schools.invisionzone.com/index.php?app=core&amp;module=system&amp;controller=notifications&amp;do=followers&amp;follow_app=forums&amp;follow_area=forum&amp;follow_id=60' title='See who follows this' data-ipsTooltip data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Who follows this'>19</a>
+		
+	</div>
+
+</div>
+				</div>
+			
+			
+				<div class='ipsType_richText ipsType_normal'>
+					<p>Issues related to installing and configuring web servers, htaccess, mod_rewrite, etc.</p>
+				</div>
+			
+
+			
+		</header>
+	</div>
+	
+	
+
+<div data-controller='forums.front.forum.forumPage'>
+	<ul class="ipsToolList ipsToolList_horizontal ipsClearfix ipsSpacer_both">
+		
+
+
+	</ul>
+	
+<div class='ipsBox' data-baseurl='http://w3schools.invisionzone.com/forum/60-web-servers/?page=1' data-resort='listResort' data-tableID='topics'  data-controller='core.global.core.table'>
+	
+		<h2 class='ipsType_sectionTitle ipsHide ipsType_medium ipsType_reset ipsClear'>473 topics in this forum</h2>
+	
+
+	
+	<div class="ipsButtonBar ipsPad_half ipsClearfix ipsClear">
+		
+
+		<ul class="ipsButtonRow ipsPos_right ipsClearfix">
+			
+				<li>
+					<a href="#elSortByMenu_menu" id="elSortByMenu_ad86bf78e69c9de9589c6a04bf65be3c" data-role='sortButton' data-ipsMenu data-ipsMenu-activeClass="ipsButtonRow_active" data-ipsMenu-selectable="radio">Sort By <i class="fa fa-caret-down"></i></a>
+					<ul class="ipsMenu ipsMenu_auto ipsMenu_withStem ipsMenu_selectable ipsHide" id="elSortByMenu_ad86bf78e69c9de9589c6a04bf65be3c_menu">
+						
+						
+							<li class="ipsMenu_item ipsMenu_itemChecked" data-ipsMenuValue="last_post" data-sortDirection='desc'><a href="http://w3schools.invisionzone.com/forum/60-web-servers/?page=1&amp;sortby=last_post&amp;sortdirection=desc">Recently Updated</a></li>
+						
+							<li class="ipsMenu_item " data-ipsMenuValue="last_real_post" data-sortDirection='desc'><a href="http://w3schools.invisionzone.com/forum/60-web-servers/?page=1&amp;sortby=last_real_post&amp;sortdirection=desc">Last Reply</a></li>
+						
+							<li class="ipsMenu_item " data-ipsMenuValue="title" data-sortDirection='asc'><a href="http://w3schools.invisionzone.com/forum/60-web-servers/?page=1&amp;sortby=title&amp;sortdirection=asc">Title</a></li>
+						
+							<li class="ipsMenu_item " data-ipsMenuValue="start_date" data-sortDirection='desc'><a href="http://w3schools.invisionzone.com/forum/60-web-servers/?page=1&amp;sortby=start_date&amp;sortdirection=desc">Start Date</a></li>
+						
+							<li class="ipsMenu_item " data-ipsMenuValue="views" data-sortDirection='desc'><a href="http://w3schools.invisionzone.com/forum/60-web-servers/?page=1&amp;sortby=views&amp;sortdirection=desc">Most Viewed</a></li>
+						
+							<li class="ipsMenu_item " data-ipsMenuValue="posts" data-sortDirection='desc'><a href="http://w3schools.invisionzone.com/forum/60-web-servers/?page=1&amp;sortby=posts&amp;sortdirection=desc">Most Replies</a></li>
+						
+						
+							<li class="ipsMenu_item " data-noSelect="true">
+								<a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=1&amp;advancedSearchForm=1&amp;sortby=forums_topics.last_post&amp;sortdirection=DESC' data-ipsDialog data-ipsDialog-title='Custom Sort'>Custom</a>
+							</li>
+						
+					</ul>
+				</li>
+			
+			
+		</ul>
+
+		
+			<div data-role="tablePagination">
+				
+
+	
+	<ul class='ipsPagination' id='elPagination_b64601c620edf3eeb4402947736f1ea9_1670325561' data-pages='19' data-ipsPagination  data-ipsPagination-pages="19" data-ipsPagination-perPage='25'>
+		
+			
+				<li class='ipsPagination_first ipsPagination_inactive'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/' rel="first" data-page='1' data-ipsTooltip title='First page'><i class='fa fa-angle-double-left'></i></a></li>
+				<li class='ipsPagination_prev ipsPagination_inactive'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=0' rel="prev" data-page='0' data-ipsTooltip title='Previous page'>Prev</a></li>
+			
+			<li class='ipsPagination_page ipsPagination_active'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/' data-page='1'>1</a></li>
+			
+				
+					<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=2' data-page='2'>2</a></li>
+				
+					<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=3' data-page='3'>3</a></li>
+				
+					<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=4' data-page='4'>4</a></li>
+				
+					<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=5' data-page='5'>5</a></li>
+				
+					<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=6' data-page='6'>6</a></li>
+				
+				<li class='ipsPagination_next'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=2' rel="next" data-page='2' data-ipsTooltip title='Next page'>Next</a></li>
+				<li class='ipsPagination_last'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=19' rel="last" data-page='19' data-ipsTooltip title='Last page'><i class='fa fa-angle-double-right'></i></a></li>
+			
+			
+				<li class='ipsPagination_pageJump'>
+					<a href='#' data-ipsMenu data-ipsMenu-closeOnClick='false' data-ipsMenu-appendTo='#elPagination_b64601c620edf3eeb4402947736f1ea9_1670325561' id='elPagination_b64601c620edf3eeb4402947736f1ea9_1670325561_jump'>Page 1 of 19 &nbsp;<i class='fa fa-caret-down'></i></a>
+					<div class='ipsMenu ipsMenu_narrow ipsPad ipsHide' id='elPagination_b64601c620edf3eeb4402947736f1ea9_1670325561_jump_menu'>
+						<form accept-charset='utf-8' method='post' action='http://w3schools.invisionzone.com/forum/60-web-servers/' data-role="pageJump">
+							<ul class='ipsForm ipsForm_horizontal'>
+								<li class='ipsFieldRow'>
+									<input type='number' min='1' max='19' placeholder='Page number' class='ipsField_fullWidth' name='page'>
+								</li>
+								<li class='ipsFieldRow ipsFieldRow_fullWidth'>
+									<input type='submit' class='ipsButton_fullWidth ipsButton ipsButton_verySmall ipsButton_primary' value='Go'>
+								</li>
+							</ul>
+						</form>
+					</div>
+				</li>
+			
+		
+	</ul>
+
+			</div>
+		
+	</div>
+	
+	
+		
+			<ol class='ipsDataList ipsDataList_zebra ipsClear cForumTopicTable  cTopicList ' id='elTable_ad86bf78e69c9de9589c6a04bf65be3c' data-role="tableRows">
+				
+
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+
+	
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='3770'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+														
+							
+								<span><span class="ipsBadge ipsBadge_icon ipsBadge_small ipsBadge_positive" data-ipsTooltip title='Pinned'><i class='fa fa-thumb-tack'></i></span></span>
+							
+							
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/3770-host-and-dns-discussion/' class='' title='Host and DNS Discussion '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/3770-host-and-dns-discussion/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Host and DNS Discussion
+								</span>
+							</a>
+
+							
+								
+
+	<ul class='ipsPagination ipsPagination_mini' id='elPagination_f0fd453f2dfcad8fa66e700beb2d3127'>
+		
+			<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/topic/3770-host-and-dns-discussion/?page=1' data-ipsTooltip title='Go to page 1'>1</a></li>
+		
+			<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/topic/3770-host-and-dns-discussion/?page=2' data-ipsTooltip title='Go to page 2'>2</a></li>
+		
+			<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/topic/3770-host-and-dns-discussion/?page=3' data-ipsTooltip title='Go to page 3'>3</a></li>
+		
+			<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/topic/3770-host-and-dns-discussion/?page=4' data-ipsTooltip title='Go to page 4'>4</a></li>
+		
+		
+	</ul>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/70-boen_robot/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/70-boen_robot/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to boen_robot's profile" class="ipsType_break">boen_robot</a>, 
+						</span><time datetime='2006-04-07T22:24:46Z' title='04/07/2006 10:24  PM' data-short='12 yr'>April 7, 2006</time>
+						
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>98</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>673,267</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/212772-yodo/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/212772-yodo/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to Yodo's profile">
+		<img src='//content.invisioncic.com/r49260/monthly_2017_08/Y.png.4b9ccc748eecbda171fcc40449671cce.png' alt='Yodo'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/212772-yodo/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/212772-yodo/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to Yodo's profile" class="ipsType_break">Yodo</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/3770-host-and-dns-discussion/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-03-29T17:51:13Z' title='03/29/2017 05:51  PM' data-short='1 yr'>March 29, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='33420'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+							<span>
+								<i class='ipsType_medium fa fa-lock' data-ipsTooltip title='This topic is locked'></i>
+							</span>	
+							
+						
+
+						
+						
+						
+														
+							
+								<span><span class="ipsBadge ipsBadge_icon ipsBadge_small ipsBadge_positive" data-ipsTooltip title='Pinned'><i class='fa fa-thumb-tack'></i></span></span>
+							
+							
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/33420-tutorials-and-references-for-web-servers/' class='' title='Tutorials and References for Web Servers '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/33420-tutorials-and-references-for-web-servers/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Tutorials and References for Web Servers
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/70-boen_robot/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/70-boen_robot/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to boen_robot's profile" class="ipsType_break">boen_robot</a>, 
+						</span><time datetime='2010-09-13T12:22:00Z' title='09/13/2010 12:22  PM' data-short='7 yr'>September 13, 2010</time>
+						
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>3</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>29,130</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/70-boen_robot/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/70-boen_robot/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to boen_robot's profile">
+		<img src='//content.invisioncic.com/r49260/av-70.jpg' alt='boen_robot'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/70-boen_robot/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/70-boen_robot/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to boen_robot's profile" class="ipsType_break">boen_robot</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/33420-tutorials-and-references-for-web-servers/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2010-09-13T14:02:20Z' title='09/13/2010 02:02  PM' data-short='7 yr'>September 13, 2010</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='57802'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/57802-nodejs-file-server-problems/' class='' title='Node.js file server problems '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/57802-nodejs-file-server-problems/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Node.js file server problems
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/217231-disease/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/217231-disease/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to disease's profile" class="ipsType_break">disease</a>, 
+						</span><time datetime='2018-04-24T00:45:15Z' title='04/24/2018 12:45  AM' data-short='Apr 24'>April 24</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/node/" class='ipsTag' title="Find other content tagged with 'node'" rel="tag"><span>node</span></a>
+	
+</li>
+					
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/js/" class='ipsTag' title="Find other content tagged with 'js'" rel="tag"><span>js</span></a>
+	
+</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+			
+			
+				<li class='ipsType_small'>
+					<span class='ipsType_light ipsCursor_pointer' data-ipsMenu id='elTags_1855717241'>(and 8 more) <i class='fa fa-caret-down ipsJS_show'></i></span>
+					<div class='ipsHide ipsMenu ipsMenu_normal ipsPad_half cTagPopup' id='elTags_1855717241_menu'>
+						<p class='ipsType_medium ipsType_reset ipsType_light'>Tagged with:</p>
+						<ul class='ipsTags ipsList_inline'>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/node/" class='ipsTag' title="Find other content tagged with 'node'" rel="tag"><span>node</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/js/" class='ipsTag' title="Find other content tagged with 'js'" rel="tag"><span>js</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/node.js/" class='ipsTag' title="Find other content tagged with 'node.js'" rel="tag"><span>node.js</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/express.static/" class='ipsTag' title="Find other content tagged with 'express.static'" rel="tag"><span>express.static</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/raspberry/" class='ipsTag' title="Find other content tagged with 'raspberry'" rel="tag"><span>raspberry</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/pi/" class='ipsTag' title="Find other content tagged with 'pi'" rel="tag"><span>pi</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/file/" class='ipsTag' title="Find other content tagged with 'file'" rel="tag"><span>file</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/server/" class='ipsTag' title="Find other content tagged with 'server'" rel="tag"><span>server</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/gpio/" class='ipsTag' title="Find other content tagged with 'gpio'" rel="tag"><span>gpio</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/led/" class='ipsTag' title="Find other content tagged with 'led'" rel="tag"><span>led</span></a>
+	
+</li>
+							
+						</ul>
+					</div>
+				</li>
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>3</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>343</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/57802-nodejs-file-server-problems/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2018-05-03T17:03:30Z' title='05/03/2018 05:03  PM' data-short='May 3'>May 3</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='57824'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/57824-read-php-file-with-the-browser-from-local-host/' class='' title='read php-file with the browser from local host '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/57824-read-php-file-with-the-browser-from-local-host/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									read php-file with the browser from local host
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/165128-pavlin24/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/165128-pavlin24/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to Pavlin24's profile" class="ipsType_break">Pavlin24</a>, 
+						</span><time datetime='2018-04-29T18:58:30Z' title='04/29/2018 06:58  PM' data-short='Apr 29'>April 29</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/php/" class='ipsTag' title="Find other content tagged with 'php'" rel="tag"><span>php</span></a>
+	
+</li>
+					
+				
+			
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>8</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>145</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/57824-read-php-file-with-the-browser-from-local-host/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2018-04-30T18:05:40Z' title='04/30/2018 06:05  PM' data-short='Apr 30'>April 30</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='57702'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/57702-cron-job-stopped-working/' class='' title='Cron job stopped working '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/57702-cron-job-stopped-working/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Cron job stopped working
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/82329-westman/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/82329-westman/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to westman's profile" class="ipsType_break">westman</a>, 
+						</span><time datetime='2018-03-22T23:33:43Z' title='03/22/2018 11:33  PM' data-short='Mar 22'>March 22</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/cron%20job/" class='ipsTag' title="Find other content tagged with 'cron job'" rel="tag"><span>cron job</span></a>
+	
+</li>
+					
+				
+			
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>8</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>623</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/57702-cron-job-stopped-working/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2018-03-23T21:38:54Z' title='03/23/2018 09:38  PM' data-short='Mar 23'>March 23</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='56189'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/56189-htaccess-file/' class='' title='.htaccess File '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/56189-htaccess-file/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									.htaccess File
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/177755-jsilver/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/177755-jsilver/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to j.silver's profile" class="ipsType_break">j.silver</a>, 
+						</span><time datetime='2016-11-30T15:44:15Z' title='11/30/2016 03:44  PM' data-short='1 yr'>November 30, 2016</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/.htaccess/" class='ipsTag' title="Find other content tagged with '.htaccess'" rel="tag"><span>.htaccess</span></a>
+	
+</li>
+					
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/Appache/" class='ipsTag' title="Find other content tagged with 'Appache'" rel="tag"><span>Appache</span></a>
+	
+</li>
+					
+				
+					
+				
+			
+			
+				<li class='ipsType_small'>
+					<span class='ipsType_light ipsCursor_pointer' data-ipsMenu id='elTags_4934235'>(and 1 more) <i class='fa fa-caret-down ipsJS_show'></i></span>
+					<div class='ipsHide ipsMenu ipsMenu_normal ipsPad_half cTagPopup' id='elTags_4934235_menu'>
+						<p class='ipsType_medium ipsType_reset ipsType_light'>Tagged with:</p>
+						<ul class='ipsTags ipsList_inline'>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/.htaccess/" class='ipsTag' title="Find other content tagged with '.htaccess'" rel="tag"><span>.htaccess</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/Appache/" class='ipsTag' title="Find other content tagged with 'Appache'" rel="tag"><span>Appache</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/security/" class='ipsTag' title="Find other content tagged with 'security'" rel="tag"><span>security</span></a>
+	
+</li>
+							
+						</ul>
+					</div>
+				</li>
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>11</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>5,578</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/216056-kumkum/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/216056-kumkum/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to kumkum's profile">
+		<img src='//content.invisioncic.com/r49260/monthly_2017_12/K.png.0010955d820a538a5730bebcc1b756d3.png' alt='kumkum'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/216056-kumkum/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/216056-kumkum/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to kumkum's profile" class="ipsType_break">kumkum</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/56189-htaccess-file/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-12-25T08:09:15Z' title='12/25/2017 08:09  AM' data-short='Dec 25'>December 25, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='57341'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/57341-rule-being-ignored/' class='' title='Rule being ignored '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/57341-rule-being-ignored/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Rule being ignored
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/24176-ben03/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/24176-ben03/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to ben03's profile" class="ipsType_break">ben03</a>, 
+						</span><time datetime='2017-12-04T17:17:49Z' title='12/04/2017 05:17  PM' data-short='Dec 4'>December 4, 2017</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/.htaccess/" class='ipsTag' title="Find other content tagged with '.htaccess'" rel="tag"><span>.htaccess</span></a>
+	
+</li>
+					
+				
+			
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>3</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>787</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/69628-don-e/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/69628-don-e/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to Don E's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-69628.jpg' alt='Don E'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/69628-don-e/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/69628-don-e/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to Don E's profile" class="ipsType_break">Don E</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/57341-rule-being-ignored/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-12-04T20:18:21Z' title='12/04/2017 08:18  PM' data-short='Dec 4'>December 4, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='57261'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/57261-hello-type-of-server-in-world/' class='' title='Hello type of server in world? '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/57261-hello-type-of-server-in-world/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Hello type of server in world?
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/214792-html29/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/214792-html29/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to html29's profile" class="ipsType_break">html29</a>, 
+						</span><time datetime='2017-10-31T11:41:52Z' title='10/31/2017 11:41  AM' data-short='Oct 31'>October 31, 2017</time>
+						
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>3</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>1,353</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/18212-ingolme/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/18212-ingolme/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to Ingolme's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-18212.png' alt='Ingolme'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/18212-ingolme/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/18212-ingolme/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to Ingolme's profile" class="ipsType_break">Ingolme</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/57261-hello-type-of-server-in-world/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-11-02T16:36:11Z' title='11/02/2017 04:36  PM' data-short='Nov 2'>November 2, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='57197'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/57197-apache-control-panel-not-coming-up-via-httplocalhost-approach/' class='' title='Apache Control panel not coming up via http://localhost approach '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/57197-apache-control-panel-not-coming-up-via-httplocalhost-approach/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Apache Control panel not coming up via http://localhost approach
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/215420-livinglearning/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/215420-livinglearning/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to LivingLearning's profile" class="ipsType_break">LivingLearning</a>, 
+						</span><time datetime='2017-10-16T04:39:43Z' title='10/16/2017 04:39  AM' data-short='Oct 16'>October 16, 2017</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/apache%20control%20panel/" class='ipsTag' title="Find other content tagged with 'apache control panel'" rel="tag"><span>apache control panel</span></a>
+	
+</li>
+					
+				
+			
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>2</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>730</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/215699-codeminer/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/215699-codeminer/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to codeminer's profile">
+		<img src='//content.invisioncic.com/r49260/monthly_2017_11/buttonplay.thumb.png.43d247e805972e0b1ecdb9e158a2f024.png' alt='codeminer'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/215699-codeminer/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/215699-codeminer/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to codeminer's profile" class="ipsType_break">codeminer</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/57197-apache-control-panel-not-coming-up-via-httplocalhost-approach/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-11-01T23:04:49Z' title='11/01/2017 11:04  PM' data-short='Nov 1'>November 1, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='57199'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/57199-how-to-upload-website-to-server/' class='' title='How to upload website to server '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/57199-how-to-upload-website-to-server/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									How to upload website to server
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/214792-html29/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/214792-html29/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to html29's profile" class="ipsType_break">html29</a>, 
+						</span><time datetime='2017-10-17T07:50:26Z' title='10/17/2017 07:50  AM' data-short='Oct 17'>October 17, 2017</time>
+						
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>10</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>1,028</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/57199-how-to-upload-website-to-server/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-10-23T17:51:39Z' title='10/23/2017 05:51  PM' data-short='Oct 23'>October 23, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='57186'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/57186-which-apache-ver-to-use-22-or-24/' class='' title='Which Apache ver to use:  2.2 or 2.4 '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/57186-which-apache-ver-to-use-22-or-24/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Which Apache ver to use:  2.2 or 2.4
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/215420-livinglearning/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/215420-livinglearning/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to LivingLearning's profile" class="ipsType_break">LivingLearning</a>, 
+						</span><time datetime='2017-10-12T16:45:55Z' title='10/12/2017 04:45  PM' data-short='Oct 12'>October 12, 2017</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/apache%20ver/" class='ipsTag' title="Find other content tagged with 'apache ver'" rel="tag"><span>apache ver</span></a>
+	
+</li>
+					
+				
+			
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>2</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>747</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/215420-livinglearning/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/215420-livinglearning/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to LivingLearning's profile">
+		<img src='//content.invisioncic.com/r49260/monthly_2017_10/L.png.f70507020f86a3d55a3812c855e15c50.png' alt='LivingLearning'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/215420-livinglearning/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/215420-livinglearning/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to LivingLearning's profile" class="ipsType_break">LivingLearning</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/57186-which-apache-ver-to-use-22-or-24/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-10-16T04:41:44Z' title='10/16/2017 04:41  AM' data-short='Oct 16'>October 16, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='57185'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/57185-htaccess-rule-not-working/' class='' title='htaccess rule not working '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/57185-htaccess-rule-not-working/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									htaccess rule not working
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/24176-ben03/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/24176-ben03/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to ben03's profile" class="ipsType_break">ben03</a>, 
+						</span><time datetime='2017-10-12T08:32:02Z' title='10/12/2017 08:32  AM' data-short='Oct 12'>October 12, 2017</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/htaccess/" class='ipsTag' title="Find other content tagged with 'htaccess'" rel="tag"><span>htaccess</span></a>
+	
+</li>
+					
+				
+			
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>3</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>765</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/57185-htaccess-rule-not-working/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-10-13T17:46:00Z' title='10/13/2017 05:46  PM' data-short='Oct 13'>October 13, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='57050'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/57050-localhost/' class='' title='Localhost '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/57050-localhost/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Localhost
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/214754-weiss/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/214754-weiss/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to Weiss's profile" class="ipsType_break">Weiss</a>, 
+						</span><time datetime='2017-08-22T09:25:37Z' title='08/22/2017 09:25  AM' data-short='Aug 22'>August 22, 2017</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/localhost%20ip%20dns/" class='ipsTag' title="Find other content tagged with 'localhost ip dns'" rel="tag"><span>localhost ip dns</span></a>
+	
+</li>
+					
+				
+			
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>4</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>1,731</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/57050-localhost/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-08-22T17:10:00Z' title='08/22/2017 05:10  PM' data-short='Aug 22'>August 22, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='55359'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/55359-crontab-database-backup/' class='' title='Crontab - Database Backup '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/55359-crontab-database-backup/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Crontab - Database Backup
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/21915-manny/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/21915-manny/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to Manny's profile" class="ipsType_break">Manny</a>, 
+						</span><time datetime='2016-05-22T16:11:43Z' title='05/22/2016 04:11  PM' data-short='1 yr'>May 22, 2016</time>
+						
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>2</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>3,284</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/214702-htmlcolor/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/214702-htmlcolor/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to htmlcolor's profile">
+		<img src='//content.invisioncic.com/r49260/monthly_2017_08/H.png.3eb164d942a155280a432e3c3a55d64c.png' alt='htmlcolor'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/214702-htmlcolor/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/214702-htmlcolor/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to htmlcolor's profile" class="ipsType_break">htmlcolor</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/55359-crontab-database-backup/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-08-12T03:13:17Z' title='08/12/2017 03:13  AM' data-short='Aug 12'>August 12, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='56950'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/56950-proper-html-caching/' class='' title='Proper HTML caching '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/56950-proper-html-caching/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Proper HTML caching
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/174761-notretsam/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/174761-notretsam/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to Notretsam's profile" class="ipsType_break">Notretsam</a>, 
+						</span><time datetime='2017-07-18T16:14:55Z' title='07/18/2017 04:14  PM' data-short='Jul 18'>July 18, 2017</time>
+						
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>7</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>1,360</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/56950-proper-html-caching/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-07-27T16:54:01Z' title='07/27/2017 04:54  PM' data-short='Jul 27'>July 27, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='56857'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/56857-how-does-one-implement-htcacheclean-manually/' class='' title='How does one implement htcacheclean manually? '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/56857-how-does-one-implement-htcacheclean-manually/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									How does one implement htcacheclean manually?
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/27638-iwato/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to iwato's profile" class="ipsType_break">iwato</a>, 
+						</span><time datetime='2017-06-09T01:57:18Z' title='06/09/2017 01:57  AM' data-short='Jun 9'>June 9, 2017</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/apache2.4/" class='ipsTag' title="Find other content tagged with 'apache2.4'" rel="tag"><span>apache2.4</span></a>
+	
+</li>
+					
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/htcacheclean/" class='ipsTag' title="Find other content tagged with 'htcacheclean'" rel="tag"><span>htcacheclean</span></a>
+	
+</li>
+					
+				
+					
+				
+			
+			
+				<li class='ipsType_small'>
+					<span class='ipsType_light ipsCursor_pointer' data-ipsMenu id='elTags_1256671543'>(and 1 more) <i class='fa fa-caret-down ipsJS_show'></i></span>
+					<div class='ipsHide ipsMenu ipsMenu_normal ipsPad_half cTagPopup' id='elTags_1256671543_menu'>
+						<p class='ipsType_medium ipsType_reset ipsType_light'>Tagged with:</p>
+						<ul class='ipsTags ipsList_inline'>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/apache2.4/" class='ipsTag' title="Find other content tagged with 'apache2.4'" rel="tag"><span>apache2.4</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/htcacheclean/" class='ipsTag' title="Find other content tagged with 'htcacheclean'" rel="tag"><span>htcacheclean</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/manual%20implementation/" class='ipsTag' title="Find other content tagged with 'manual implementation'" rel="tag"><span>manual implementation</span></a>
+	
+</li>
+							
+						</ul>
+					</div>
+				</li>
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>8</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>1,525</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/27638-iwato/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to iwato's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-27638.png' alt='iwato'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/27638-iwato/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to iwato's profile" class="ipsType_break">iwato</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/56857-how-does-one-implement-htcacheclean-manually/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-06-19T02:15:09Z' title='06/19/2017 02:15  AM' data-short='Jun 19'>June 19, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='56874'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/56874-specified-driver-could-not-be-loaded/' class='' title='Specified Driver Could Not Be Loaded '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/56874-specified-driver-could-not-be-loaded/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Specified Driver Could Not Be Loaded
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/33550-shadowmage/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/33550-shadowmage/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to ShadowMage's profile" class="ipsType_break">ShadowMage</a>, 
+						</span><time datetime='2017-06-15T15:04:02Z' title='06/15/2017 03:04  PM' data-short='Jun 15'>June 15, 2017</time>
+						
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>5</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>1,152</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/33550-shadowmage/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/33550-shadowmage/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to ShadowMage's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-33550.jpg' alt='ShadowMage'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/33550-shadowmage/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/33550-shadowmage/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to ShadowMage's profile" class="ipsType_break">ShadowMage</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/56874-specified-driver-could-not-be-loaded/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-06-16T15:36:05Z' title='06/16/2017 03:36  PM' data-short='Jun 16'>June 16, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='56864'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/56864-how-to-make-a-blog-site-and-make-it-work/' class='' title='How to make a blog site, and make it work? '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/56864-how-to-make-a-blog-site-and-make-it-work/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									How to make a blog site, and make it work?
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/201976-yvzslm/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/201976-yvzslm/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to Yvzslm's profile" class="ipsType_break">Yvzslm</a>, 
+						</span><time datetime='2017-06-10T21:03:35Z' title='06/10/2017 09:03  PM' data-short='Jun 10'>June 10, 2017</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/blog%20site/" class='ipsTag' title="Find other content tagged with 'blog site'" rel="tag"><span>blog site</span></a>
+	
+</li>
+					
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/work/" class='ipsTag' title="Find other content tagged with 'work'" rel="tag"><span>work</span></a>
+	
+</li>
+					
+				
+					
+				
+			
+			
+				<li class='ipsType_small'>
+					<span class='ipsType_light ipsCursor_pointer' data-ipsMenu id='elTags_1095651775'>(and 1 more) <i class='fa fa-caret-down ipsJS_show'></i></span>
+					<div class='ipsHide ipsMenu ipsMenu_normal ipsPad_half cTagPopup' id='elTags_1095651775_menu'>
+						<p class='ipsType_medium ipsType_reset ipsType_light'>Tagged with:</p>
+						<ul class='ipsTags ipsList_inline'>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/blog%20site/" class='ipsTag' title="Find other content tagged with 'blog site'" rel="tag"><span>blog site</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/work/" class='ipsTag' title="Find other content tagged with 'work'" rel="tag"><span>work</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/back-end/" class='ipsTag' title="Find other content tagged with 'back-end'" rel="tag"><span>back-end</span></a>
+	
+</li>
+							
+						</ul>
+					</div>
+				</li>
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>1</span>
+							<span class='ipsDataItem_stats_type'> reply</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>1,063</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/56864-how-to-make-a-blog-site-and-make-it-work/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-06-12T16:20:35Z' title='06/12/2017 04:20  PM' data-short='Jun 12'>June 12, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='56655'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/56655-cron-job-linux/' class='' title='Cron job -- linux '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/56655-cron-job-linux/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Cron job -- linux
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/82329-westman/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/82329-westman/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to westman's profile" class="ipsType_break">westman</a>, 
+						</span><time datetime='2017-04-18T01:07:56Z' title='04/18/2017 01:07  AM' data-short='1 yr'>April 18, 2017</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/cron%20job%20command/" class='ipsTag' title="Find other content tagged with 'cron job command'" rel="tag"><span>cron job command</span></a>
+	
+</li>
+					
+				
+			
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>5</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>1,831</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/82329-westman/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/82329-westman/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to westman's profile">
+		<img src='//content.invisioncic.com/r49260/monthly_2017_08/W.png.6538b0418c21ce4f725a48da4e1f0cf7.png' alt='westman'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/82329-westman/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/82329-westman/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to westman's profile" class="ipsType_break">westman</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/56655-cron-job-linux/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-04-24T00:22:48Z' title='04/24/2017 12:22  AM' data-short='1 yr'>April 24, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='56514'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/56514-www-redirect-issue/' class='' title='www redirect issue '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/56514-www-redirect-issue/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									www redirect issue
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/43113-dizzydan/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/43113-dizzydan/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to DizzyDan's profile" class="ipsType_break">DizzyDan</a>, 
+						</span><time datetime='2017-03-06T18:51:35Z' title='03/06/2017 06:51  PM' data-short='1 yr'>March 6, 2017</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/www%20redirect/" class='ipsTag' title="Find other content tagged with 'www redirect'" rel="tag"><span>www redirect</span></a>
+	
+</li>
+					
+				
+			
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>6</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>1,562</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/43113-dizzydan/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/43113-dizzydan/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to DizzyDan's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-43113.jpg' alt='DizzyDan'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/43113-dizzydan/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/43113-dizzydan/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to DizzyDan's profile" class="ipsType_break">DizzyDan</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/56514-www-redirect-issue/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-03-07T14:18:42Z' title='03/07/2017 02:18  PM' data-short='1 yr'>March 7, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='56494'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/56494-getting-error-524-from-my-website/' class='' title='Getting Error 524 from my website '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/56494-getting-error-524-from-my-website/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Getting Error 524 from my website
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/202916-jaytech/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/202916-jaytech/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to Jaytech's profile" class="ipsType_break">Jaytech</a>, 
+						</span><time datetime='2017-02-28T11:35:15Z' title='02/28/2017 11:35  AM' data-short='1 yr'>February 28, 2017</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/server/" class='ipsTag' title="Find other content tagged with 'server'" rel="tag"><span>server</span></a>
+	
+</li>
+					
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/error524/" class='ipsTag' title="Find other content tagged with 'error524'" rel="tag"><span>error524</span></a>
+	
+</li>
+					
+				
+			
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>3</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>1,572</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/29663-dsonesuk/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/29663-dsonesuk/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to dsonesuk's profile">
+		<img src='//content.invisioncic.com/r49260/av-29663.png' alt='dsonesuk'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/29663-dsonesuk/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/29663-dsonesuk/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to dsonesuk's profile" class="ipsType_break">dsonesuk</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/56494-getting-error-524-from-my-website/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-02-28T17:32:33Z' title='02/28/2017 05:32  PM' data-short='1 yr'>February 28, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='56382'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/56382-pgp-public-key-on-my-site/' class='' title='pgp public key on my site '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/56382-pgp-public-key-on-my-site/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									pgp public key on my site
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/82329-westman/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/82329-westman/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to westman's profile" class="ipsType_break">westman</a>, 
+						</span><time datetime='2017-01-28T01:06:06Z' title='01/28/2017 01:06  AM' data-short='1 yr'>January 28, 2017</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/pgp/" class='ipsTag' title="Find other content tagged with 'pgp'" rel="tag"><span>pgp</span></a>
+	
+</li>
+					
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/php/" class='ipsTag' title="Find other content tagged with 'php'" rel="tag"><span>php</span></a>
+	
+</li>
+					
+				
+					
+				
+					
+				
+			
+			
+				<li class='ipsType_small'>
+					<span class='ipsType_light ipsCursor_pointer' data-ipsMenu id='elTags_556425170'>(and 2 more) <i class='fa fa-caret-down ipsJS_show'></i></span>
+					<div class='ipsHide ipsMenu ipsMenu_normal ipsPad_half cTagPopup' id='elTags_556425170_menu'>
+						<p class='ipsType_medium ipsType_reset ipsType_light'>Tagged with:</p>
+						<ul class='ipsTags ipsList_inline'>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/pgp/" class='ipsTag' title="Find other content tagged with 'pgp'" rel="tag"><span>pgp</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/php/" class='ipsTag' title="Find other content tagged with 'php'" rel="tag"><span>php</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/site/" class='ipsTag' title="Find other content tagged with 'site'" rel="tag"><span>site</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/wamp/" class='ipsTag' title="Find other content tagged with 'wamp'" rel="tag"><span>wamp</span></a>
+	
+</li>
+							
+						</ul>
+					</div>
+				</li>
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>3</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>2,343</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/56382-pgp-public-key-on-my-site/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2017-01-31T17:59:18Z' title='01/31/2017 05:59  PM' data-short='1 yr'>January 31, 2017</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='56223'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/56223-http-error/' class='' title='Http error '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/56223-http-error/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Http error
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/166284-chikwado/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/166284-chikwado/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to Chikwado's profile" class="ipsType_break">Chikwado</a>, 
+						</span><time datetime='2016-12-11T16:30:37Z' title='12/11/2016 04:30  PM' data-short='1 yr'>December 11, 2016</time>
+						
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>3</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>6,596</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/56223-http-error/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2016-12-12T20:56:35Z' title='12/12/2016 08:56  PM' data-short='1 yr'>December 12, 2016</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='56163'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/56163-http-error/' class='' title='Http Error '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/56163-http-error/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									Http Error
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/166284-chikwado/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/166284-chikwado/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to Chikwado's profile" class="ipsType_break">Chikwado</a>, 
+						</span><time datetime='2016-11-23T17:54:02Z' title='11/23/2016 05:54  PM' data-short='1 yr'>November 23, 2016</time>
+						
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>1</span>
+							<span class='ipsDataItem_stats_type'> reply</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>2,830</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/56163-http-error/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2016-11-23T17:58:46Z' title='11/23/2016 05:58  PM' data-short='1 yr'>November 23, 2016</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+		
+		
+		
+		
+			<li class="ipsDataItem ipsDataItem_responsivePhoto   " data-rowID='54948'>
+				
+				<div class='ipsDataItem_main'>
+					<h4 class='ipsDataItem_title ipsContained_container'>
+						
+
+						
+						
+						
+										
+												
+						
+						<span class='ipsType_break ipsContained'>
+							<a href='http://w3schools.invisionzone.com/topic/54948-ssl-or-encryption-or-both/' class='' title='SSL or encryption or both? '  data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/topic/54948-ssl-or-encryption-or-both/?preview=1' data-ipsHover-timeout='1.5'>
+								<span>
+									SSL or encryption or both?
+								</span>
+							</a>
+
+							
+						</span>
+					</h4>
+					<div class='ipsDataItem_meta ipsType_reset ipsType_light ipsType_blendLinks'>
+						<span>
+							By 
+<a href='http://w3schools.invisionzone.com/profile/180689-wesleya/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/180689-wesleya/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to WesleyA's profile" class="ipsType_break">WesleyA</a>, 
+						</span><time datetime='2016-03-06T13:00:18Z' title='03/06/2016 01:00  PM' data-short='2 yr'>March 6, 2016</time>
+						
+						
+							&nbsp;&nbsp;
+							
+
+
+	
+		<ul class='ipsTags ipsTags_inline ipsList_inline '>
+			
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/SSL/" class='ipsTag' title="Find other content tagged with 'SSL'" rel="tag"><span>SSL</span></a>
+	
+</li>
+					
+				
+					
+						
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/encryption/" class='ipsTag' title="Find other content tagged with 'encryption'" rel="tag"><span>encryption</span></a>
+	
+</li>
+					
+				
+					
+				
+					
+				
+			
+			
+				<li class='ipsType_small'>
+					<span class='ipsType_light ipsCursor_pointer' data-ipsMenu id='elTags_1985136813'>(and 2 more) <i class='fa fa-caret-down ipsJS_show'></i></span>
+					<div class='ipsHide ipsMenu ipsMenu_normal ipsPad_half cTagPopup' id='elTags_1985136813_menu'>
+						<p class='ipsType_medium ipsType_reset ipsType_light'>Tagged with:</p>
+						<ul class='ipsTags ipsList_inline'>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/SSL/" class='ipsTag' title="Find other content tagged with 'SSL'" rel="tag"><span>SSL</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/encryption/" class='ipsTag' title="Find other content tagged with 'encryption'" rel="tag"><span>encryption</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/SHA%20256/" class='ipsTag' title="Find other content tagged with 'SHA 256'" rel="tag"><span>SHA 256</span></a>
+	
+</li>
+							
+								
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/clientside/" class='ipsTag' title="Find other content tagged with 'clientside'" rel="tag"><span>clientside</span></a>
+	
+</li>
+							
+						</ul>
+					</div>
+				</li>
+			
+		</ul>
+	
+
+						
+					</div>
+				</div>
+				<ul class='ipsDataItem_stats'>
+					
+						<li >
+							<span class='ipsDataItem_stats_number'>8</span>
+							<span class='ipsDataItem_stats_type'> replies</span>
+							
+						</li>
+					
+						<li class='ipsType_light'>
+							<span class='ipsDataItem_stats_number'>5,882</span>
+							<span class='ipsDataItem_stats_type'> views</span>
+							
+						</li>
+					
+				</ul>
+				<ul class='ipsDataItem_lastPoster ipsDataItem_withPhoto ipsType_blendLinks'>
+					<li>
+						
+							
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_tiny" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+						
+					</li>
+					<li>
+						
+							
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Fforum%252F60-web-servers%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+						
+					</li>
+					<li class="ipsType_light">
+						<a href='http://w3schools.invisionzone.com/topic/54948-ssl-or-encryption-or-both/?do=getLastComment' title='Go to last post' class='ipsType_blendLinks'>
+							<time datetime='2016-11-22T19:37:03Z' title='11/22/2016 07:37  PM' data-short='1 yr'>November 22, 2016</time>
+						</a>
+					</li>
+				</ul>
+				
+			</li>
+		
+	
+
+			</ol>
+		
+	
+
+	
+		<div class="ipsButtonBar ipsPad_half ipsClearfix ipsClear">
+			<div data-role="tablePagination">
+				
+
+	
+	<ul class='ipsPagination' id='elPagination_b64601c620edf3eeb4402947736f1ea9_306948792' data-pages='19' data-ipsPagination  data-ipsPagination-pages="19" data-ipsPagination-perPage='25'>
+		
+			
+				<li class='ipsPagination_first ipsPagination_inactive'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/' rel="first" data-page='1' data-ipsTooltip title='First page'><i class='fa fa-angle-double-left'></i></a></li>
+				<li class='ipsPagination_prev ipsPagination_inactive'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=0' rel="prev" data-page='0' data-ipsTooltip title='Previous page'>Prev</a></li>
+			
+			<li class='ipsPagination_page ipsPagination_active'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/' data-page='1'>1</a></li>
+			
+				
+					<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=2' data-page='2'>2</a></li>
+				
+					<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=3' data-page='3'>3</a></li>
+				
+					<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=4' data-page='4'>4</a></li>
+				
+					<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=5' data-page='5'>5</a></li>
+				
+					<li class='ipsPagination_page'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=6' data-page='6'>6</a></li>
+				
+				<li class='ipsPagination_next'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=2' rel="next" data-page='2' data-ipsTooltip title='Next page'>Next</a></li>
+				<li class='ipsPagination_last'><a href='http://w3schools.invisionzone.com/forum/60-web-servers/?page=19' rel="last" data-page='19' data-ipsTooltip title='Last page'><i class='fa fa-angle-double-right'></i></a></li>
+			
+			
+				<li class='ipsPagination_pageJump'>
+					<a href='#' data-ipsMenu data-ipsMenu-closeOnClick='false' data-ipsMenu-appendTo='#elPagination_b64601c620edf3eeb4402947736f1ea9_306948792' id='elPagination_b64601c620edf3eeb4402947736f1ea9_306948792_jump'>Page 1 of 19 &nbsp;<i class='fa fa-caret-down'></i></a>
+					<div class='ipsMenu ipsMenu_narrow ipsPad ipsHide' id='elPagination_b64601c620edf3eeb4402947736f1ea9_306948792_jump_menu'>
+						<form accept-charset='utf-8' method='post' action='http://w3schools.invisionzone.com/forum/60-web-servers/' data-role="pageJump">
+							<ul class='ipsForm ipsForm_horizontal'>
+								<li class='ipsFieldRow'>
+									<input type='number' min='1' max='19' placeholder='Page number' class='ipsField_fullWidth' name='page'>
+								</li>
+								<li class='ipsFieldRow ipsFieldRow_fullWidth'>
+									<input type='submit' class='ipsButton_fullWidth ipsButton ipsButton_verySmall ipsButton_primary' value='Go'>
+								</li>
+							</ul>
+						</form>
+					</div>
+				</li>
+			
+		
+	</ul>
+
+			</div>
+		</div>
+	
+</div>
+</div>
+
+	<div class='ipsResponsive_showPhone ipsResponsive_block ipsSpacer ipsSpacer_both'>
+		
+
+<div data-followApp='forums' data-followArea='forum' data-followID='60' data-controller='core.front.core.followButton'>
+	
+		<span class='ipsType_light ipsType_blendLinks ipsResponsive_hidePhone ipsResponsive_inline'><i class='fa fa-info-circle'></i> <a href='http://w3schools.invisionzone.com/login/' title='Go to the sign in page'>Sign in to follow this</a>&nbsp;&nbsp;</span>
+	
+	
+
+	<div class="ipsFollow ipsPos_middle ipsButton ipsButton_link ipsButton_verySmall " data-role="followButton">
+		
+			<a href='http://w3schools.invisionzone.com/index.php?app=core&amp;module=system&amp;controller=notifications&amp;do=followers&amp;follow_app=forums&amp;follow_area=forum&amp;follow_id=60' title='See who follows this' class='ipsType_blendLinks ipsType_noUnderline' data-ipsTooltip data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Who follows this'>Followers</a>
+			<a class='ipsCommentCount' href='http://w3schools.invisionzone.com/index.php?app=core&amp;module=system&amp;controller=notifications&amp;do=followers&amp;follow_app=forums&amp;follow_area=forum&amp;follow_id=60' title='See who follows this' data-ipsTooltip data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Who follows this'>19</a>
+		
+	</div>
+
+</div>
+	</div>
+
+
+
+						
+
+
+					</div>
+					
+
+
+					
+<nav class='ipsBreadcrumb ipsBreadcrumb_bottom ipsFaded_withHover'>
+	
+		
+
+
+	<a href='#' id='elRSS' class='ipsPos_right ipsType_large' title='Available RSS feeds' data-ipsTooltip data-ipsMenu data-ipsMenu-above><i class='fa fa-rss-square'></i></a>
+	<ul id='elRSS_menu' class='ipsMenu ipsMenu_auto ipsHide'>
+		
+			<li class='ipsMenu_item'><a title="Web Servers Latest Topics" href="http://w3schools.invisionzone.com/forum/60-web-servers.xml/">Web Servers Latest Topics</a></li>
+		
+	</ul>
+
+	
+
+	<ul class='ipsList_inline ipsPos_right'>
+		
+		<li >
+			<a data-action="defaultStream" class='ipsType_light '  href='http://w3schools.invisionzone.com/discover/'><i class='icon-newspaper'></i> <span>All Activity</span></a>
+		</li>
+		
+	</ul>
+
+	<ul data-role="breadcrumbList">
+		<li>
+			<a title="Home" href='http://w3schools.invisionzone.com/'>
+				<span><i class='fa fa-home'></i> Home <i class='fa fa-angle-right'></i></span>
+			</a>
+		</li>
+		
+		
+			<li>
+				
+					<a href='http://w3schools.invisionzone.com/forum/31-server-scripting/'>
+						<span>Server Scripting <i class='fa fa-angle-right'></i></span>
+					</a>
+				
+			</li>
+		
+			<li>
+				
+					Web Servers
+				
+			</li>
+		
+	</ul>
+</nav>
+				</div>
+			</div>
+			
+		</main>
+		<footer id='ipsLayout_footer' class='ipsClearfix'>
+			<div class='ipsLayout_container'>
+				
+				
+
+
+<ul class='ipsList_inline ipsType_center ipsSpacer_top' id="elFooterLinks">
+	
+	
+	
+	
+	
+	
+		<li><a rel="nofollow" href='http://w3schools.invisionzone.com/contact/' data-ipsdialog data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='Thanks, your message has been sent to the administrators.' data-ipsdialog-title="Contact Us">Contact Us</a></li>
+	
+</ul>	
+
+
+<p id='elCopyright'>
+	<span id='elCopyright_userLine'></span>
+	<a rel='nofollow' title='Invision Community' href='https://www.invisioncommunity.com/'>Powered by Invision Community</a>
+</p>
+			</div>
+		</footer>
+		
+<div id='elMobileDrawer' class='ipsDrawer ipsHide'>
+	<a href='#' class='ipsDrawer_close' data-action='close'><span>&times;</span></a>
+	<div class='ipsDrawer_menu'>
+		<div class='ipsDrawer_content'>
+			
+
+			<div class='ipsSpacer_bottom ipsPad'>
+				<ul class='ipsToolList ipsToolList_vertical'>
+					
+						<li>
+							<a href='http://w3schools.invisionzone.com/login/' class='ipsButton ipsButton_light ipsButton_small ipsButton_fullWidth'>Existing user? Sign In</a>
+						</li>
+						
+							<li>
+								
+									<a href='http://w3schools.invisionzone.com/register/' data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Sign Up' id='elRegisterButton_mobile' class='ipsButton ipsButton_small ipsButton_fullWidth ipsButton_important'>Sign Up</a>
+								
+							</li>
+						
+					
+
+					
+				</ul>
+			</div>
+
+			<ul class='ipsDrawer_list'>
+				
+
+				
+				
+				
+				
+					
+						
+						
+							<li class='ipsDrawer_itemParent'>
+								<h4 class='ipsDrawer_title'><a href='#'>Browse</a></h4>
+								<ul class='ipsDrawer_list'>
+									<li data-action="back"><a href='#'>Back</a></li>
+									
+										<li><a href='http://w3schools.invisionzone.com'>Browse</a></li>
+									
+									
+									
+										
+
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com' >
+					Forums
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/calendar/' >
+					Calendar
+				</a>
+			</li>
+		
+	
+
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/staff/' >
+					Staff
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/online/' >
+					Online Users
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/leaderboard/' >
+					Leaderboard
+				</a>
+			</li>
+		
+	
+
+										
+								</ul>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li class='ipsDrawer_itemParent'>
+								<h4 class='ipsDrawer_title'><a href='#'>Activity</a></h4>
+								<ul class='ipsDrawer_list'>
+									<li data-action="back"><a href='#'>Back</a></li>
+									
+										<li><a href='http://w3schools.invisionzone.com/discover/'>Activity</a></li>
+									
+									
+									
+										
+
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/discover/' >
+					All Activity
+				</a>
+			</li>
+		
+	
+
+	
+
+	
+
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/search/' >
+					Search
+				</a>
+			</li>
+		
+	
+
+										
+								</ul>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li><a href='http://w3schools.invisionzone.com/leaderboard/' >Leaderboard</a></li>
+						
+					
+				
+					
+				
+					
+				
+			</ul>
+		</div>
+	</div>
+</div>
+		
+
+	<script type='text/javascript'>
+		var ipsDebug = false;		
+	
+		var CKEDITOR_BASEPATH = '//w3schools.invisionzone.com/applications/core/interface/ckeditor/ckeditor/';
+	
+		var ipsSettings = {
+			
+			
+			cookie_path: "/",
+			
+			cookie_prefix: "ips4_",
+			
+			
+			cookie_ssl: false,
+			
+			upload_imgURL: "",
+			message_imgURL: "",
+			notification_imgURL: "",
+			baseURL: "//w3schools.invisionzone.com/",
+			jsURL: "//w3schools.invisionzone.com/applications/core/interface/js/js.php",
+			csrfKey: "432d61e51499c5976d790c1513da0d76",
+			antiCache: "225d2b9d62",
+			disableNotificationSounds: false,
+			useCompiledFiles: true,
+			links_external: true,
+			memberID: 0,
+			analyticsProvider: "none",
+			viewProfiles: true,
+			mapProvider: 'none',
+			mapApiKey: '',
+			
+		};
+	</script>
+
+
+
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_library.js.83581e37d7b4aa8eaf956484081de68f.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_js_lang_1.js.669aa62e1eaf3094bc709c2805979474.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_framework.js.382aba2e65d18441602dadb08ef0d3c2.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_core/global_global_core.js.a0dfc0580dba1beb30939e1c1ce62fd6.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//w3schools.invisionzone.com/applications/core/interface/howler/howler.core.min.js?v=225d2b9d62' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_front.js.470f7c9d31558a12ef36248b952d003c.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_map.js.75fee57ba02a4b8785472db3d404fc41.js.gz' data-ips></script>
+
+
+
+	<script type='text/javascript'>
+		
+			ips.setSetting( 'date_format', jQuery.parseJSON('"mm\/dd\/yy"') );
+		
+			ips.setSetting( 'date_first_day', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'remote_image_proxy', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'ipb_url_filter_option', jQuery.parseJSON('"none"') );
+		
+			ips.setSetting( 'url_filter_any_action', jQuery.parseJSON('"allow"') );
+		
+			ips.setSetting( 'bypass_profanity', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'emoji_style', jQuery.parseJSON('"native"') );
+		
+			ips.setSetting( 'emoji_shortcodes', jQuery.parseJSON('"1"') );
+		
+			ips.setSetting( 'emoji_ascii', jQuery.parseJSON('"1"') );
+		
+			ips.setSetting( 'emoji_cache', jQuery.parseJSON('"1"') );
+		
+		
+	</script>
+
+
+
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "WebSite",
+    "name": "W3Schools Forum",
+    "url": "http://w3schools.invisionzone.com/",
+    "potentialAction": {
+        "type": "SearchAction",
+        "query-input": "required name=query",
+        "target": "http://w3schools.invisionzone.com/search/?q={query}"
+    },
+    "inLanguage": [
+        {
+            "@type": "Language",
+            "name": "English (USA)",
+            "alternateName": "en-US"
+        }
+    ]
+}	
+</script>
+
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "Organization",
+    "name": "W3Schools Forum",
+    "url": "http://w3schools.invisionzone.com/",
+    "logo": "//content.invisioncic.com/r49260/monthly_2017_03/w3schools.png.9a860c675c07154b1ec49276a2a69658.png",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": null,
+        "addressRegion": null,
+        "postalCode": null,
+        "addressCountry": null
+    }
+}	
+</script>
+
+<script type='application/ld+json'>
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "http://w3schools.invisionzone.com/forum/31-server-scripting/",
+                "name": "Server Scripting"
+            }
+        }
+    ]
+}	
+</script>
+
+<script type='application/ld+json'>
+{
+    "@context": "http://schema.org",
+    "@type": "ContactPage",
+    "url": "http://w3schools.invisionzone.com/contact/"
+}	
+</script>
+
+
+		
+		
+		
+		<!--ipsQueryLog-->
+		<!--ipsCachingLog-->
+		
+		
+	</body>
+</html>

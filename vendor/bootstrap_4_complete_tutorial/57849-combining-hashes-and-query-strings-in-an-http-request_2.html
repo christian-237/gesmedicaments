@@ -1,0 +1,3792 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+	<head>
+		<title>Combining Hashes and Query Strings in an HTTP Request - Web Services - W3Schools Forum</title>
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="//content.invisioncic.com/r49260/css_built_1/5e61784858ad3c11f00b5706d12afe52_ie8.css.c5142613804911fde71e69a59000ea68.css.gz">
+		    <script src="//w3schools.invisionzone.com/applications/core/interface/html5shiv/html5shiv.js"></script>
+		<![endif]-->
+		
+<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+	<meta name="twitter:card" content="summary" />
+
+
+
+	
+		
+			
+				<meta name="description" content="To use PHP you require local server on your operating system that supports PHP. XAMP (cross platform) or WAMP (windows only) software combining Apache (web server), MYSQL(database), PHP (server language) are the most popular. OR You can attempt to get a free web host server that uses Linux, Apach...">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:title" content="Combining Hashes and Query Strings in an HTTP Request">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:type" content="object">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:url" content="http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:description" content="To use PHP you require local server on your operating system that supports PHP. XAMP (cross platform) or WAMP (windows only) software combining Apache (web server), MYSQL(database), PHP (server language) are the most popular. OR You can attempt to get a free web host server that uses Linux, Apach...">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:updated_time" content="2018-05-09T02:48:42Z">
+			
+		
+	
+
+	
+		
+			
+				<meta name="keywords" content="httprequest, hash, query string">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:site_name" content="W3Schools Forum">
+			
+		
+	
+
+	
+		
+			
+				<meta property="og:locale" content="en_US">
+			
+		
+	
+
+<meta name="theme-color" content="#3d6594">
+
+	
+		<link rel="canonical" href="http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/" />
+	
+
+
+
+		
+
+
+	
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet" referrerpolicy="origin">
+	
+
+
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/341e4a57816af3ba440d891ca87450ff_framework.css.b11fada0b460248cf5c60110e1bd9d04.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/05e81b71abe4f22d6eb8d1a929494829_responsive.css.1687c00ce56df83680067015ee625aa3.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/90eb5adf50a8c640f633d47fd7eb1778_core.css.56d095c7139eeb8cbbf2e23f9a3fecbf.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/5a0da001ccc2200dc5625c3f3934497d_core_responsive.css.202f497ac11b3eb4c46a4601709bc659.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/62e269ced0fdab7e30e026f1d30ae516_forums.css.a7f04bd0d1734f4caa411d180828caba.css.gz?v=225d2b9d62' media='all'>
+
+	<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/76e62c573090645fb99a15a363d8620e_forums_responsive.css.d72b19296c601a58f819640611f2e689.css.gz?v=225d2b9d62' media='all'>
+
+
+
+
+<link rel='stylesheet' href='//content.invisioncic.com/r49260/css_built_1/258adbb6e4f3e83cd3b355f84e3fa002_custom.css.1d0858bb999472331f4950d359a8833e.css.gz?v=225d2b9d62' media='all'>
+
+
+
+		
+		
+
+	</head>
+	<body class='ipsApp ipsApp_front ipsJS_none ipsClearfix' data-controller='core.front.core.app' data-message="" data-pageApp='forums' data-pageLocation='front' data-pageModule='forums' data-pageController='topic'>
+		<a href='#elContent' class='ipsHide' title='Go to main content on this page' accesskey='m'>Jump to content</a>
+		
+		<div id='ipsLayout_header' class='ipsClearfix'>
+			
+
+
+
+
+			
+
+
+			
+<ul id='elMobileNav' class='ipsList_inline ipsResponsive_hideDesktop ipsResponsive_block' data-controller='core.front.core.mobileNav'>
+	
+		
+			
+			
+				
+				
+			
+				
+					<li id='elMobileBreadcrumb'>
+						<a href='http://w3schools.invisionzone.com/forum/21-web-services/'>
+							<span>Web Services</span>
+						</a>
+					</li>
+				
+				
+			
+				
+				
+			
+		
+	
+	
+	
+	<li >
+		<a data-action="defaultStream" class='ipsType_light'  href='http://w3schools.invisionzone.com/discover/'><i class='icon-newspaper'></i></a>
+	</li>
+
+	
+		<li class='ipsJS_show'>
+			<a href='http://w3schools.invisionzone.com/search/'><i class='fa fa-search'></i></a>
+		</li>
+	
+	<li data-ipsDrawer data-ipsDrawer-drawerElem='#elMobileDrawer'>
+		<a href='#'>
+			
+			
+				
+			
+			
+			
+			<i class='fa fa-navicon'></i>
+		</a>
+	</li>
+</ul>
+			<header>
+				<div class='ipsLayout_container'>
+					
+
+
+<a href='http://w3schools.invisionzone.com/' id='elLogo' accesskey='1'><img src="//content.invisioncic.com/r49260/monthly_2017_03/w3schools.png.9a860c675c07154b1ec49276a2a69658.png" alt='W3Schools Forum'></a>
+
+					
+
+	<ul id='elUserNav' class='ipsList_inline cSignedOut ipsClearfix ipsResponsive_hidePhone ipsResponsive_block'>
+		
+		<li id='elSignInLink'>
+			<a href='http://w3schools.invisionzone.com/login/' data-ipsMenu-closeOnClick="false" data-ipsMenu id='elUserSignIn'>
+				Existing user? Sign In &nbsp;<i class='fa fa-caret-down'></i>
+			</a>
+			
+<div id='elUserSignIn_menu' class='ipsMenu ipsMenu_auto ipsHide'>
+	<form accept-charset='utf-8' method='post' action='http://w3schools.invisionzone.com/login/' data-controller="core.global.core.login">
+		<input type="hidden" name="csrfKey" value="432d61e51499c5976d790c1513da0d76">
+		<input type="hidden" name="ref" value="aHR0cDovL3czc2Nob29scy5pbnZpc2lvbnpvbmUuY29tL3RvcGljLzU3ODQ5LWNvbWJpbmluZy1oYXNoZXMtYW5kLXF1ZXJ5LXN0cmluZ3MtaW4tYW4taHR0cC1yZXF1ZXN0Lw==">
+		<div data-role="loginForm">
+			
+			
+			
+				
+<div class="ipsPad ipsForm ipsForm_vertical">
+	<h4 class="ipsType_sectionHead">Sign In</h4>
+	<br><br>
+	<ul class='ipsList_reset'>
+		<li class="ipsFieldRow ipsFieldRow_noLabel ipsFieldRow_fullWidth">
+			
+			
+				<input type="text" placeholder="Display Name" name="auth">
+			
+		</li>
+		<li class="ipsFieldRow ipsFieldRow_noLabel ipsFieldRow_fullWidth">
+			<input type="password" placeholder="Password" name="password">
+		</li>
+		<li class="ipsFieldRow ipsFieldRow_checkbox ipsClearfix">
+			<span class="ipsCustomInput">
+				<input type="checkbox" name="remember_me" id="remember_me_checkbox" value="1" checked aria-checked="true">
+				<span></span>
+			</span>
+			<div class="ipsFieldRow_content">
+				<label class="ipsFieldRow_label" for="remember_me_checkbox">Remember me</label>
+				<span class="ipsFieldRow_desc">Not recommended on shared computers</span>
+			</div>
+		</li>
+		
+		<li class="ipsFieldRow ipsFieldRow_fullWidth">
+			<br>
+			<button type="submit" name="_processLogin" value="usernamepassword" class="ipsButton ipsButton_primary ipsButton_small" id="elSignIn_submit">Sign In</button>
+			
+				<br>
+				<p class="ipsType_right ipsType_small">
+					
+						<a href='http://w3schools.invisionzone.com/lostpassword/' data-ipsDialog data-ipsDialog-title='Forgot your password?'>
+					
+					Forgot your password?</a>
+				</p>
+			
+		</li>
+	</ul>
+</div>
+			
+		</div>
+	</form>
+</div>
+		</li>
+		
+			<li>
+				
+					<a href='http://w3schools.invisionzone.com/register/' data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Sign Up' id='elRegisterButton' class='ipsButton ipsButton_normal ipsButton_primary'>Sign Up</a>
+				
+			</li>
+		
+	</ul>
+
+				</div>
+			</header>
+			
+
+	<nav data-controller='core.front.core.navBar' class=''>
+		<div class='ipsNavBar_primary ipsLayout_container  ipsClearfix'>
+			
+
+	<div id="elSearchWrapper" class="ipsPos_right">
+		<div id='elSearch' class='' data-controller='core.front.core.quickSearch'>
+			<form accept-charset='utf-8' action='//w3schools.invisionzone.com/search/?do=quicksearch' method='post'>
+				<input type='search' id='elSearchField' placeholder='Search...' name='q'>
+				<button class='cSearchSubmit' type="submit"><i class="fa fa-search"></i></button>
+				<div id="elSearchExpanded">
+					<div class="ipsMenu_title">
+						Search In
+					</div>
+					<ul class="ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-role="searchContexts">
+						<li>
+							<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='all'>
+								<input type="radio" name="type" value="all" checked id="elQuickSearchRadio_type_all">
+								<label for='elQuickSearchRadio_type_all' id='elQuickSearchRadio_type_all_label'>Everywhere</label>
+							</span>
+						</li>
+						
+						
+							<li>
+								<span class='ipsSideMenu_item' data-ipsMenuValue='forums_topic'>
+									<input type="radio" name="type" value="forums_topic" id="elQuickSearchRadio_type_forums_topic">
+									<label for='elQuickSearchRadio_type_forums_topic' id='elQuickSearchRadio_type_forums_topic_label'>Topics</label>
+								</span>
+							</li>
+						
+						
+							
+								<li>
+									<span class='ipsSideMenu_item' data-ipsMenuValue='contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;nodes&quot;:21}'>
+										<input type="radio" name="type" value='contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;nodes&quot;:21}' id='elQuickSearchRadio_type_contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;nodes&quot;:21}'>
+										<label for='elQuickSearchRadio_type_contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;nodes&quot;:21}' id='elQuickSearchRadio_type_contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;nodes&quot;:21}_label'>This Forum</label>
+									</span>
+								</li>
+							
+								<li>
+									<span class='ipsSideMenu_item' data-ipsMenuValue='contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;item&quot;:57849}'>
+										<input type="radio" name="type" value='contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;item&quot;:57849}' id='elQuickSearchRadio_type_contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;item&quot;:57849}'>
+										<label for='elQuickSearchRadio_type_contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;item&quot;:57849}' id='elQuickSearchRadio_type_contextual_{&quot;type&quot;:&quot;forums_topic&quot;,&quot;item&quot;:57849}_label'>This Topic</label>
+									</span>
+								</li>
+							
+						
+						<li data-role="showMoreSearchContexts">
+							<span class='ipsSideMenu_item' data-action="showMoreSearchContexts" data-exclude="forums_topic">
+								More options...
+							</span>
+						</li>
+					</ul>
+					<div class="ipsMenu_title">
+						Find results that contain...
+					</div>
+					<ul class='ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal' role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='andOr'>
+						
+							<li>
+								<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='or'>
+									<input type="radio" name="search_and_or" value="or" checked id="elRadio_andOr_or">
+									<label for='elRadio_andOr_or' id='elField_andOr_label_or'><em>Any</em> of my search term words</label>
+								</span>
+							</li>
+						
+							<li>
+								<span class='ipsSideMenu_item ' data-ipsMenuValue='and'>
+									<input type="radio" name="search_and_or" value="and"  id="elRadio_andOr_and">
+									<label for='elRadio_andOr_and' id='elField_andOr_label_and'><em>All</em> of my search term words</label>
+								</span>
+							</li>
+						
+					</ul>
+					<div class="ipsMenu_title">
+						Find results in...
+					</div>
+					<ul class='ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal' role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='searchIn'>
+						<li>
+							<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='all'>
+								<input type="radio" name="search_in" value="all" checked id="elRadio_searchIn_and">
+								<label for='elRadio_searchIn_and' id='elField_searchIn_label_all'>Content titles and body</label>
+							</span>
+						</li>
+						<li>
+							<span class='ipsSideMenu_item' data-ipsMenuValue='titles'>
+								<input type="radio" name="search_in" value="titles" id="elRadio_searchIn_titles">
+								<label for='elRadio_searchIn_titles' id='elField_searchIn_label_titles'>Content titles only</label>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+
+			<ul data-role="primaryNavBar" class='ipsResponsive_showDesktop ipsResponsive_block'>
+				
+
+
+	
+		
+		
+			
+		
+		<li class='ipsNavBar_active' data-active id='elNavSecondary_1' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="http://w3schools.invisionzone.com"  data-navItem-id="1" data-navDefault>
+					Browse
+				</a>
+			
+			
+				<ul class='ipsNavBar_secondary ' data-role='secondaryNavBar'>
+					
+
+
+	
+		
+		
+			
+		
+		<li class='ipsNavBar_active' data-active id='elNavSecondary_8' data-role="navBarItem" data-navApp="forums" data-navExt="Forums">
+			
+			
+				<a href="http://w3schools.invisionzone.com"  data-navItem-id="8" data-navDefault>
+					Forums
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_9' data-role="navBarItem" data-navApp="calendar" data-navExt="Calendar">
+			
+			
+				<a href="http://w3schools.invisionzone.com/calendar/"  data-navItem-id="9" >
+					Calendar
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_11' data-role="navBarItem" data-navApp="core" data-navExt="StaffDirectory">
+			
+			
+				<a href="http://w3schools.invisionzone.com/staff/"  data-navItem-id="11" >
+					Staff
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_12' data-role="navBarItem" data-navApp="core" data-navExt="OnlineUsers">
+			
+			
+				<a href="http://w3schools.invisionzone.com/online/"  data-navItem-id="12" >
+					Online Users
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_13' data-role="navBarItem" data-navApp="core" data-navExt="Leaderboard">
+			
+			
+				<a href="http://w3schools.invisionzone.com/leaderboard/"  data-navItem-id="13" >
+					Leaderboard
+				</a>
+			
+			
+		</li>
+	
+	
+
+					<li class='ipsHide' id='elNavigationMore_1' data-role='navMore'>
+						<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_1' id='elNavigationMore_1_dropdown'>More <i class='fa fa-caret-down'></i></a>
+						<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_1_dropdown_menu' data-role='moreDropdown'></ul>
+					</li>
+				</ul>
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_2' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="http://w3schools.invisionzone.com/discover/"  data-navItem-id="2" >
+					Activity
+				</a>
+			
+			
+				<ul class='ipsNavBar_secondary ipsHide' data-role='secondaryNavBar'>
+					
+
+
+	
+		
+		
+		<li  id='elNavSecondary_3' data-role="navBarItem" data-navApp="core" data-navExt="AllActivity">
+			
+			
+				<a href="http://w3schools.invisionzone.com/discover/"  data-navItem-id="3" >
+					All Activity
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_7' data-role="navBarItem" data-navApp="core" data-navExt="Search">
+			
+			
+				<a href="http://w3schools.invisionzone.com/search/"  data-navItem-id="7" >
+					Search
+				</a>
+			
+			
+		</li>
+	
+	
+
+					<li class='ipsHide' id='elNavigationMore_2' data-role='navMore'>
+						<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_2' id='elNavigationMore_2_dropdown'>More <i class='fa fa-caret-down'></i></a>
+						<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_2_dropdown_menu' data-role='moreDropdown'></ul>
+					</li>
+				</ul>
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_14' data-role="navBarItem" data-navApp="core" data-navExt="Leaderboard">
+			
+			
+				<a href="http://w3schools.invisionzone.com/leaderboard/"  data-navItem-id="14" >
+					Leaderboard
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+	
+	
+
+				<li class='ipsHide' id='elNavigationMore' data-role='navMore'>
+					<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore' id='elNavigationMore_dropdown'>More</a>
+					<ul class='ipsNavBar_secondary ipsHide' data-role='secondaryNavBar'>
+						<li class='ipsHide' id='elNavigationMore_more' data-role='navMore'>
+							<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_more' id='elNavigationMore_more_dropdown'>More <i class='fa fa-caret-down'></i></a>
+							<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_more_dropdown_menu' data-role='moreDropdown'></ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+		</div>
+		<main id='ipsLayout_body' class='ipsLayout_container'>
+			<div id='ipsLayout_contentArea'>
+				<div id='ipsLayout_contentWrapper'>
+					
+<nav class='ipsBreadcrumb ipsBreadcrumb_top ipsFaded_withHover'>
+	
+
+	<ul class='ipsList_inline ipsPos_right'>
+		
+		<li >
+			<a data-action="defaultStream" class='ipsType_light '  href='http://w3schools.invisionzone.com/discover/'><i class='icon-newspaper'></i> <span>All Activity</span></a>
+		</li>
+		
+	</ul>
+
+	<ul data-role="breadcrumbList">
+		<li>
+			<a title="Home" href='http://w3schools.invisionzone.com/'>
+				<span><i class='fa fa-home'></i> Home <i class='fa fa-angle-right'></i></span>
+			</a>
+		</li>
+		
+		
+			<li>
+				
+					<a href='http://w3schools.invisionzone.com/forum/7-xml-forums/'>
+						<span>XML Forums <i class='fa fa-angle-right'></i></span>
+					</a>
+				
+			</li>
+		
+			<li>
+				
+					<a href='http://w3schools.invisionzone.com/forum/21-web-services/'>
+						<span>Web Services <i class='fa fa-angle-right'></i></span>
+					</a>
+				
+			</li>
+		
+			<li>
+				
+					Combining Hashes and Query Strings in an HTTP Request
+				
+			</li>
+		
+	</ul>
+</nav>
+					
+					<div id='ipsLayout_mainArea'>
+						<a id='elContent'></a>
+						
+						
+						
+						
+
+	
+
+
+
+
+						
+
+
+
+
+
+
+<div class="ipsPageHeader ipsClearfix">
+	
+		<div class='ipsPos_right ipsResponsive_noFloat ipsResponsive_hidePhone'>
+			
+
+<div data-followApp='forums' data-followArea='topic' data-followID='57849' data-controller='core.front.core.followButton'>
+	
+		<span class='ipsType_light ipsType_blendLinks ipsResponsive_hidePhone ipsResponsive_inline'><i class='fa fa-info-circle'></i> <a href='http://w3schools.invisionzone.com/login/' title='Go to the sign in page'>Sign in to follow this</a>&nbsp;&nbsp;</span>
+	
+	
+
+	<div class="ipsFollow ipsPos_middle ipsButton ipsButton_link ipsButton_verySmall " data-role="followButton">
+		
+			<a href='http://w3schools.invisionzone.com/index.php?app=core&amp;module=system&amp;controller=notifications&amp;do=followers&amp;follow_app=forums&amp;follow_area=topic&amp;follow_id=57849' title='See who follows this' class='ipsType_blendLinks ipsType_noUnderline' data-ipsTooltip data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Who follows this'>Followers</a>
+			<a class='ipsCommentCount' href='http://w3schools.invisionzone.com/index.php?app=core&amp;module=system&amp;controller=notifications&amp;do=followers&amp;follow_app=forums&amp;follow_area=topic&amp;follow_id=57849' title='See who follows this' data-ipsTooltip data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Who follows this'>1</a>
+		
+	</div>
+
+</div>
+		</div>
+		<div class='ipsPos_right ipsResponsive_noFloat ipsResponsive_hidePhone'>
+			
+
+
+
+
+
+
+		</div>
+		
+	
+	<div class='ipsPhotoPanel ipsPhotoPanel_small ipsPhotoPanel_notPhone ipsClearfix'>
+		
+
+
+	<a href="http://w3schools.invisionzone.com/profile/27638-iwato/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_small" title="Go to iwato's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-27638.png' alt='iwato'>
+	</a>
+
+		<div>
+			<h1 class='ipsType_pageTitle ipsContained_container'>
+				
+
+				
+				
+					<span class='ipsType_break ipsContained'>
+						<span>Combining Hashes and Query Strings in an HTTP Request</span>
+					</span>
+				
+			</h1>
+			
+			<p class='ipsType_reset ipsType_blendLinks ipsSpacer_bottom ipsSpacer_half'>
+				<span class='ipsType_normal'>
+				
+					By 
+<a href='http://w3schools.invisionzone.com/profile/27638-iwato/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to iwato's profile" class="ipsType_break">iwato</a>,  <span class='ipsType_light'><time datetime='2018-05-08T15:12:14Z' title='05/08/2018 03:12  PM' data-short='4 dy'>Tuesday at 03:12  PM</time> in <a href="http://w3schools.invisionzone.com/forum/21-web-services/">Web Services</a></span>
+				
+				</span>
+				<br>
+			</p>
+			
+				
+
+
+	
+		<ul class='ipsTags ipsList_inline ' >
+			
+				
+					
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/httprequest/" class='ipsTag' title="Find other content tagged with 'httprequest'" rel="tag"><span>httprequest</span></a>
+	
+</li>
+				
+					
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/hash/" class='ipsTag' title="Find other content tagged with 'hash'" rel="tag"><span>hash</span></a>
+	
+</li>
+				
+					
+
+
+<li >
+	<a href="http://w3schools.invisionzone.com/tags/query%20string/" class='ipsTag' title="Find other content tagged with 'query string'" rel="tag"><span>query string</span></a>
+	
+</li>
+				
+			
+			
+		</ul>
+		
+	
+
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<div class='ipsClearfix'>
+	
+	
+	<ul class="ipsToolList ipsToolList_horizontal ipsClearfix ipsSpacer_both ipsResponsive_hidePhone">
+		
+		
+		
+	</ul>
+</div>
+
+<div data-controller='core.front.core.commentFeed,forums.front.topic.view, core.front.core.ignoredComments' data-autoPoll data-baseURL='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/' data-lastPage data-feedID='topic-57849' class='cTopic ipsClear ipsSpacer_top'>
+	
+			
+	
+
+	
+
+<div data-controller='core.front.core.recommendedComments' data-url='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?recommended=comments' class='ipsAreaBackground ipsPad ipsBox ipsBox_transparent ipsSpacer_bottom ipsRecommendedComments ipsHide'>
+	<div data-role="recommendedComments">
+		<h2 class='ipsType_sectionHead ipsType_large'>Recommended Posts</h2>
+		
+	</div>
+</div>
+	
+	<div id="elPostFeed" data-role='commentFeed' data-controller='core.front.core.moderation' >
+		<form action="http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?csrfKey=432d61e51499c5976d790c1513da0d76&amp;do=multimodComment" method="post" data-ipsPageAction data-role='moderationTools'>
+			
+			
+				
+					
+					
+					
+
+
+
+
+<a id='comment-317375'></a>
+<article  id='elComment_317375' class='cPost ipsBox  ipsComment  ipsComment_parent ipsClearfix ipsClear ipsColumns ipsColumns_noSpacing ipsColumns_collapsePhone  '>
+	
+
+	<div class='cAuthorPane cAuthorPane_mobile ipsResponsive_showPhone ipsResponsive_block'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsResponsive_showPhone ipsResponsive_inlineBlock ipsType_break ipsType_blendLinks ipsTruncate ipsTruncate_line'>
+			
+<a href='http://w3schools.invisionzone.com/profile/27638-iwato/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to iwato's profile" class="ipsType_break"><span style='color:#'>iwato</span></a>
+			<span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</span>
+		</h3>
+		<div class='cAuthorPane_photo'>
+			
+
+
+	<a href="http://w3schools.invisionzone.com/profile/27638-iwato/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to iwato's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-27638.png' alt='iwato'>
+	</a>
+
+		</div>
+	</div>
+	<aside class='ipsComment_author cAuthorPane ipsColumn ipsColumn_medium ipsResponsive_hidePhone'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsType_blendLinks ipsType_break'><strong>
+<a href='http://w3schools.invisionzone.com/profile/27638-iwato/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to iwato's profile" class="ipsType_break">iwato</a></strong> <span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</span></h3>
+		
+		<ul class='cAuthorPane_info ipsList_reset'>
+			
+				<li class='ipsType_break'>Dedicated Member</li>
+			
+			
+				<li><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span></li>
+			
+
+			<li class='cAuthorPane_photo'>
+				
+
+
+	<a href="http://w3schools.invisionzone.com/profile/27638-iwato/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to iwato's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-27638.png' alt='iwato'>
+	</a>
+
+			</li>
+			<li><span style='color:#'>Members</span></li>
+			
+			
+				<li>
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</li>
+				<li class='ipsType_light'>1,068 posts</li>
+				
+				
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Gender:</span><span class='fc'>Male</span>
+	</li>
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Location:</span><span class='fc'>Seattle, Washington  USA 98104</span>
+	</li>
+	
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class="ft">Languages:</span><span class="fc">HTML, CSS, Javascript, PHP, MySQL and Spoken Language</span>
+	</li>
+	
+
+			
+		</ul>
+	</aside>
+	<div class='ipsColumn ipsColumn_fluid'>
+		
+
+<div id='comment-317375_wrap' data-controller='core.front.core.comment' data-commentApp='forums' data-commentType='forums' data-commentID="317375" data-quoteData='{&quot;userid&quot;:27638,&quot;username&quot;:&quot;iwato&quot;,&quot;timestamp&quot;:1525792334,&quot;contentapp&quot;:&quot;forums&quot;,&quot;contenttype&quot;:&quot;forums&quot;,&quot;contentid&quot;:57849,&quot;contentclass&quot;:&quot;forums_Topic&quot;,&quot;contentcommentid&quot;:317375}' class='ipsComment_content ipsType_medium  ipsFaded_withHover'>
+	
+
+	<div class='ipsComment_meta ipsType_light'>
+		<div class='ipsPos_right ipsType_light ipsType_reset ipsFaded ipsFaded_more ipsType_blendLinks'>
+			<ul class='ipsList_inline ipsComment_tools'>
+				
+					<li><a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=reportComment&amp;comment=317375' data-ipsDialog data-ipsDialog-remoteSubmit data-ipsDialog-size='medium' data-ipsDialog-flashMessage='Thanks for your report.' data-ipsDialog-title="Report post" data-action='reportComment' title='Report this content' class='ipsFaded ipsFaded_more'><span class='ipsResponsive_showPhone ipsResponsive_inline'><i class='fa fa-flag'></i></span><span class='ipsResponsive_hidePhone ipsResponsive_inline'>Report post</span></a></li>
+				
+				
+				
+					<li><a class='ipsType_blendLinks' href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/' data-ipsTooltip title='Share this post' data-ipsMenu data-ipsMenu-closeOnClick='false' id='elSharePost_317375' data-role='shareComment'><i class='fa fa-share-alt'></i></a></li>
+				
+				
+			</ul>
+		</div>
+
+		<div class='ipsType_reset'>
+			<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317375' class='ipsType_blendLinks'>Posted <time datetime='2018-05-08T15:12:14Z' title='05/08/2018 03:12  PM' data-short='4 dy'>Tuesday at 03:12  PM</time></a>
+			<span class='ipsResponsive_hidePhone'>
+				
+				
+			</span>
+		</div>
+	</div>
+
+	
+
+
+	<div class='cPost_contentWrap ipsPad'>
+		
+		<div data-role='commentContent' class='ipsType_normal ipsType_richText ipsContained' data-controller='core.front.core.lightboxedImages'>
+			
+<p>
+	BACKGROUND:  I was recently introduced to the idea of using a hash as a means to transfer information in lieu of a query string in an HTTP request.  Having thought that I understood the idea I was then introduced to the following query string:
+</p>
+
+<pre class="ipsCode prettyprint lang-html prettyprinted">
+<span class="pln">https://www.example.com/index.php
+	?module=CoreHome
+	&amp;action=index
+	&amp;idSite=1
+	&amp;period=day
+	&amp;date=yesterday
+	#?idSite=1
+		&amp;period=day
+		&amp;date=yesterday
+		&amp;category=Dashboard_Dashboard
+		&amp;subcategory=1</span></pre>
+
+<p>
+	I do not understand the user the expression  ... #? ...   From the point of view of parsing an HTTP request are the following two hash expressions treated the same?
+</p>
+
+<p>
+	1) <a href="https://www.example.com/index.php" rel="external nofollow">https://www.example.com/index.php#blahblahblah</a>
+</p>
+
+<p>
+	2) <a href="https://www.example.com/index.php" rel="external nofollow">https://www.example.com/index.php?some_query_string#blahblahblah</a>
+</p>
+
+<p>
+	Accept for the order of parsing do items 2) and 3) achieve the same task?
+</p>
+
+<p>
+	3) <a href="https://www.example.com/index.php" rel="external nofollow">https://www.example.com/index.php#blahblahblah?some_query_string</a>
+</p>
+
+<p>
+	Roddy
+</p>
+
+<p>
+	ps:  In which forum to questions about HTTP requests belong anyway?
+</p>
+
+
+			
+		</div>
+
+		<div class='ipsItemControls'>
+			
+				
+					
+
+	<div data-controller='core.front.core.reaction' class='ipsItemControls_right ipsClearfix '>	
+		<div class='ipsReact ipsPos_right'>
+			
+				
+				<div class='ipsReact_blurb ipsHide' data-role='reactionBlurb'>
+					
+				</div>
+			
+			
+			
+		</div>
+	</div>
+
+				
+			
+			<ul class='ipsComment_controls ipsClearfix ipsItemControls_left' data-role="commentControls">
+				
+					
+					
+					
+				
+				<li class='ipsHide' data-role='commentLoading'>
+					<span class='ipsLoading ipsLoading_tiny ipsLoading_noAnim'></span>
+				</li>
+			</ul>
+		</div>
+
+		
+	</div>
+
+	<div class='ipsMenu ipsMenu_wide ipsHide cPostShareMenu' id='elSharePost_317375_menu'>
+		<div class='ipsPad'>
+			<h4 class='ipsType_sectionHead'>Share this post</h4>
+			<hr class='ipsHr'>
+			<h5 class='ipsType_normal ipsType_reset'>Link to post</h5>
+			
+			<input type='text' value='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/' class='ipsField_fullWidth'>
+			
+
+			
+				<h5 class='ipsType_normal ipsType_reset ipsSpacer_top'>Share on other sites</h5>
+				
+
+	<ul class='ipsList_inline ipsList_noSpacing ipsClearfix' data-controller="core.front.core.sharelink">
+		
+			<li>
+<a href="http://twitter.com/share?text=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request&amp;url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317375" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title='Share on Twitter' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-twitter"></i>
+</a></li>
+		
+			<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317375" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" title='Share on Facebook' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-facebook"></i>
+</a></li>
+		
+			<li>
+<a href="https://plus.google.com/share?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317375" class="cShareLink cShareLink_google" target="_blank" data-role="shareLink" title='Share on Google+' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-google-plus"></i>
+</a></li>
+		
+			<li>
+<a href="http://digg.com/submit?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317375" class="cShareLink cShareLink_digg" target="_blank" data-role="shareLink" title='Share on Digg' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-digg"></i>
+</a></li>
+		
+			<li>
+<a href="https://del.icio.us/save?jump=close&amp;noui=1&amp;v=5&amp;provider=W3Schools%2BForum&amp;url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317375&amp;title=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request" class="cShareLink cShareLink_delicious" target="_blank" data-role='shareLink' title='Save to Delicious' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-delicious"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.reddit.com/submit?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317375&amp;title=Combining+Hashes+and+Query+Strings+in+an+HTTP+Request" class="cShareLink cShareLink_reddit" target="_blank" title='Share on Reddit' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-reddit"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.stumbleupon.com/submit?url=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F%253Fdo%253DfindComment%2526comment%253D317375" class="cShareLink cShareLink_stumble" target="_blank" title='Share on StumbleUpon' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-stumbleupon"></i>
+</a></li>
+		
+			<li>
+<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=email&amp;comment=317375' rel='nofollow' class='cShareLink cShareLink_email' data-ipsDialog data-ipsDialog-title='Email this page' data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='The email has been sent' title='Share via email' data-ipsTooltip>
+	<i class="fa fa-envelope"></i>
+</a></li>
+		
+			<li>
+<a href="http://pinterest.com/pin/create/button/?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317375&amp;media=" class="cShareLink cShareLink_pinterest" target="_blank" data-role="shareLink" title='Share on Pinterest' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-pinterest"></i>
+</a></li>
+		
+	</ul>
+
+			
+		</div>
+	</div>
+</div>
+	</div>
+</article>
+					
+				
+					
+					
+					
+
+
+
+
+<a id='comment-317378'></a>
+<article  id='elComment_317378' class='cPost ipsBox  ipsComment  ipsComment_parent ipsClearfix ipsClear ipsColumns ipsColumns_noSpacing ipsColumns_collapsePhone  '>
+	
+
+	<div class='cAuthorPane cAuthorPane_mobile ipsResponsive_showPhone ipsResponsive_block'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsResponsive_showPhone ipsResponsive_inlineBlock ipsType_break ipsType_blendLinks ipsTruncate ipsTruncate_line'>
+			
+<a href='http://w3schools.invisionzone.com/profile/18212-ingolme/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/18212-ingolme/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to Ingolme's profile" class="ipsType_break">Ingolme</a>
+			<span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 877
+	
+		</span>
+	
+</span>
+		</h3>
+		<div class='cAuthorPane_photo'>
+			
+
+
+	<a href="http://w3schools.invisionzone.com/profile/18212-ingolme/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/18212-ingolme/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to Ingolme's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-18212.png' alt='Ingolme'>
+	</a>
+
+		</div>
+	</div>
+	<aside class='ipsComment_author cAuthorPane ipsColumn ipsColumn_medium ipsResponsive_hidePhone'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsType_blendLinks ipsType_break'><strong>
+<a href='http://w3schools.invisionzone.com/profile/18212-ingolme/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/18212-ingolme/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to Ingolme's profile" class="ipsType_break">Ingolme</a></strong> <span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 877
+	
+		</span>
+	
+</span></h3>
+		
+		<ul class='cAuthorPane_info ipsList_reset'>
+			
+				<li class='ipsType_break'>Foxy Mod</li>
+			
+			
+				<li><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span></li>
+			
+
+			<li class='cAuthorPane_photo'>
+				
+
+
+	<a href="http://w3schools.invisionzone.com/profile/18212-ingolme/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/18212-ingolme/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to Ingolme's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-18212.png' alt='Ingolme'>
+	</a>
+
+			</li>
+			<li>Moderator</li>
+			
+			
+				<li>
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 877
+	
+		</span>
+	
+</li>
+				<li class='ipsType_light'>13,439 posts</li>
+				
+				
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Gender:</span><span class='fc'>Not Telling</span>
+	</li>
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Interests:</span><span class='fc'>Web development, drawing, videogames, foxes.</span>
+	</li>
+	
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class="ft">Languages:</span><span class="fc">Java, PHP, MySQL, Javascript, CSS, HTML</span>
+	</li>
+	
+
+			
+		</ul>
+	</aside>
+	<div class='ipsColumn ipsColumn_fluid'>
+		
+
+<div id='comment-317378_wrap' data-controller='core.front.core.comment' data-commentApp='forums' data-commentType='forums' data-commentID="317378" data-quoteData='{&quot;userid&quot;:18212,&quot;username&quot;:&quot;Ingolme&quot;,&quot;timestamp&quot;:1525805174,&quot;contentapp&quot;:&quot;forums&quot;,&quot;contenttype&quot;:&quot;forums&quot;,&quot;contentid&quot;:57849,&quot;contentclass&quot;:&quot;forums_Topic&quot;,&quot;contentcommentid&quot;:317378}' class='ipsComment_content ipsType_medium  ipsFaded_withHover'>
+	
+
+	<div class='ipsComment_meta ipsType_light'>
+		<div class='ipsPos_right ipsType_light ipsType_reset ipsFaded ipsFaded_more ipsType_blendLinks'>
+			<ul class='ipsList_inline ipsComment_tools'>
+				
+					<li><a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=reportComment&amp;comment=317378' data-ipsDialog data-ipsDialog-remoteSubmit data-ipsDialog-size='medium' data-ipsDialog-flashMessage='Thanks for your report.' data-ipsDialog-title="Report post" data-action='reportComment' title='Report this content' class='ipsFaded ipsFaded_more'><span class='ipsResponsive_showPhone ipsResponsive_inline'><i class='fa fa-flag'></i></span><span class='ipsResponsive_hidePhone ipsResponsive_inline'>Report post</span></a></li>
+				
+				
+				
+					<li><a class='ipsType_blendLinks' href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317378' data-ipsTooltip title='Share this post' data-ipsMenu data-ipsMenu-closeOnClick='false' id='elSharePost_317378' data-role='shareComment'><i class='fa fa-share-alt'></i></a></li>
+				
+				
+			</ul>
+		</div>
+
+		<div class='ipsType_reset'>
+			<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317378' class='ipsType_blendLinks'>Posted <time datetime='2018-05-08T18:46:14Z' title='05/08/2018 06:46  PM' data-short='3 dy'>Tuesday at 06:46  PM</time></a>
+			<span class='ipsResponsive_hidePhone'>
+				
+				
+			</span>
+		</div>
+	</div>
+
+	
+
+
+	<div class='cPost_contentWrap ipsPad'>
+		
+		<div data-role='commentContent' class='ipsType_normal ipsType_richText ipsContained' data-controller='core.front.core.lightboxedImages'>
+			
+<p>
+	Nothing that follows the hash ever gets sent to the server, not even if it looks like a query string. The hash is always the last part of the URL.
+</p>
+
+<p>
+	In item 1), the server loads the index page. In item 2) the server loads the index page with access to the contents of the query string. Item 3) is identical to item 1), no additional information is sent to the server because all of the remaining data is in the hash, which is only used by the browser. 
+</p>
+
+<p>
+	HTTP is very commonly used in web services, so it's not out of place to ask about it on the Web Services forum, but most of your usage of HTTP pertains to HTML and PHP, so either of those forums would work as well. 
+</p>
+
+
+			
+		</div>
+
+		<div class='ipsItemControls'>
+			
+				
+					
+
+	<div data-controller='core.front.core.reaction' class='ipsItemControls_right ipsClearfix '>	
+		<div class='ipsReact ipsPos_right'>
+			
+				
+				<div class='ipsReact_blurb ' data-role='reactionBlurb'>
+					
+						
+
+	
+	<ul class='ipsReact_reactions'>
+	
+		
+			
+			<li class='ipsReact_reactCount'>
+				
+					<span data-ipsTooltip title="Like">
+				
+						<span>
+							<img src='//content.invisioncic.com/r49260/reactions/react_like.png' alt="Like">
+						</span>
+						<span>
+							1
+						</span>
+				
+					</span>
+				
+			</li>
+		
+	
+	</ul>
+
+<div class='ipsReact_overview ipsType_blendLinks'>
+	
+	
+</div>
+					
+				</div>
+			
+			
+			
+		</div>
+	</div>
+
+				
+			
+			<ul class='ipsComment_controls ipsClearfix ipsItemControls_left' data-role="commentControls">
+				
+					
+					
+					
+				
+				<li class='ipsHide' data-role='commentLoading'>
+					<span class='ipsLoading ipsLoading_tiny ipsLoading_noAnim'></span>
+				</li>
+			</ul>
+		</div>
+
+		
+			
+
+		
+	</div>
+
+	<div class='ipsMenu ipsMenu_wide ipsHide cPostShareMenu' id='elSharePost_317378_menu'>
+		<div class='ipsPad'>
+			<h4 class='ipsType_sectionHead'>Share this post</h4>
+			<hr class='ipsHr'>
+			<h5 class='ipsType_normal ipsType_reset'>Link to post</h5>
+			
+			<input type='text' value='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317378' class='ipsField_fullWidth'>
+			
+
+			
+				<h5 class='ipsType_normal ipsType_reset ipsSpacer_top'>Share on other sites</h5>
+				
+
+	<ul class='ipsList_inline ipsList_noSpacing ipsClearfix' data-controller="core.front.core.sharelink">
+		
+			<li>
+<a href="http://twitter.com/share?text=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request&amp;url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317378" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title='Share on Twitter' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-twitter"></i>
+</a></li>
+		
+			<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317378" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" title='Share on Facebook' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-facebook"></i>
+</a></li>
+		
+			<li>
+<a href="https://plus.google.com/share?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317378" class="cShareLink cShareLink_google" target="_blank" data-role="shareLink" title='Share on Google+' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-google-plus"></i>
+</a></li>
+		
+			<li>
+<a href="http://digg.com/submit?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317378" class="cShareLink cShareLink_digg" target="_blank" data-role="shareLink" title='Share on Digg' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-digg"></i>
+</a></li>
+		
+			<li>
+<a href="https://del.icio.us/save?jump=close&amp;noui=1&amp;v=5&amp;provider=W3Schools%2BForum&amp;url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317378&amp;title=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request" class="cShareLink cShareLink_delicious" target="_blank" data-role='shareLink' title='Save to Delicious' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-delicious"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.reddit.com/submit?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317378&amp;title=Combining+Hashes+and+Query+Strings+in+an+HTTP+Request" class="cShareLink cShareLink_reddit" target="_blank" title='Share on Reddit' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-reddit"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.stumbleupon.com/submit?url=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F%253Fdo%253DfindComment%2526comment%253D317378" class="cShareLink cShareLink_stumble" target="_blank" title='Share on StumbleUpon' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-stumbleupon"></i>
+</a></li>
+		
+			<li>
+<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=email&amp;comment=317378' rel='nofollow' class='cShareLink cShareLink_email' data-ipsDialog data-ipsDialog-title='Email this page' data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='The email has been sent' title='Share via email' data-ipsTooltip>
+	<i class="fa fa-envelope"></i>
+</a></li>
+		
+			<li>
+<a href="http://pinterest.com/pin/create/button/?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317378&amp;media=" class="cShareLink cShareLink_pinterest" target="_blank" data-role="shareLink" title='Share on Pinterest' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-pinterest"></i>
+</a></li>
+		
+	</ul>
+
+			
+		</div>
+	</div>
+</div>
+	</div>
+</article>
+					
+				
+					
+					
+					
+
+
+
+
+<a id='comment-317379'></a>
+<article  id='elComment_317379' class='cPost ipsBox  ipsComment  ipsComment_parent ipsClearfix ipsClear ipsColumns ipsColumns_noSpacing ipsColumns_collapsePhone  '>
+	
+
+	<div class='cAuthorPane cAuthorPane_mobile ipsResponsive_showPhone ipsResponsive_block'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsResponsive_showPhone ipsResponsive_inlineBlock ipsType_break ipsType_blendLinks ipsTruncate ipsTruncate_line'>
+			
+<a href='http://w3schools.invisionzone.com/profile/27638-iwato/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to iwato's profile" class="ipsType_break"><span style='color:#'>iwato</span></a>
+			<span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</span>
+		</h3>
+		<div class='cAuthorPane_photo'>
+			
+
+
+	<a href="http://w3schools.invisionzone.com/profile/27638-iwato/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to iwato's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-27638.png' alt='iwato'>
+	</a>
+
+		</div>
+	</div>
+	<aside class='ipsComment_author cAuthorPane ipsColumn ipsColumn_medium ipsResponsive_hidePhone'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsType_blendLinks ipsType_break'><strong>
+<a href='http://w3schools.invisionzone.com/profile/27638-iwato/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to iwato's profile" class="ipsType_break">iwato</a></strong> <span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</span></h3>
+		
+		<ul class='cAuthorPane_info ipsList_reset'>
+			
+				<li class='ipsType_break'>Dedicated Member</li>
+			
+			
+				<li><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span></li>
+			
+
+			<li class='cAuthorPane_photo'>
+				
+
+
+	<a href="http://w3schools.invisionzone.com/profile/27638-iwato/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to iwato's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-27638.png' alt='iwato'>
+	</a>
+
+			</li>
+			<li><span style='color:#'>Members</span></li>
+			
+			
+				<li>
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</li>
+				<li class='ipsType_light'>1,068 posts</li>
+				
+				
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Gender:</span><span class='fc'>Male</span>
+	</li>
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Location:</span><span class='fc'>Seattle, Washington  USA 98104</span>
+	</li>
+	
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class="ft">Languages:</span><span class="fc">HTML, CSS, Javascript, PHP, MySQL and Spoken Language</span>
+	</li>
+	
+
+			
+		</ul>
+	</aside>
+	<div class='ipsColumn ipsColumn_fluid'>
+		
+
+<div id='comment-317379_wrap' data-controller='core.front.core.comment' data-commentApp='forums' data-commentType='forums' data-commentID="317379" data-quoteData='{&quot;userid&quot;:27638,&quot;username&quot;:&quot;iwato&quot;,&quot;timestamp&quot;:1525806123,&quot;contentapp&quot;:&quot;forums&quot;,&quot;contenttype&quot;:&quot;forums&quot;,&quot;contentid&quot;:57849,&quot;contentclass&quot;:&quot;forums_Topic&quot;,&quot;contentcommentid&quot;:317379}' class='ipsComment_content ipsType_medium  ipsFaded_withHover'>
+	
+
+	<div class='ipsComment_meta ipsType_light'>
+		<div class='ipsPos_right ipsType_light ipsType_reset ipsFaded ipsFaded_more ipsType_blendLinks'>
+			<ul class='ipsList_inline ipsComment_tools'>
+				
+					<li><a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=reportComment&amp;comment=317379' data-ipsDialog data-ipsDialog-remoteSubmit data-ipsDialog-size='medium' data-ipsDialog-flashMessage='Thanks for your report.' data-ipsDialog-title="Report post" data-action='reportComment' title='Report this content' class='ipsFaded ipsFaded_more'><span class='ipsResponsive_showPhone ipsResponsive_inline'><i class='fa fa-flag'></i></span><span class='ipsResponsive_hidePhone ipsResponsive_inline'>Report post</span></a></li>
+				
+				
+				
+					<li><a class='ipsType_blendLinks' href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317379' data-ipsTooltip title='Share this post' data-ipsMenu data-ipsMenu-closeOnClick='false' id='elSharePost_317379' data-role='shareComment'><i class='fa fa-share-alt'></i></a></li>
+				
+				
+			</ul>
+		</div>
+
+		<div class='ipsType_reset'>
+			<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317379' class='ipsType_blendLinks'>Posted <time datetime='2018-05-08T19:02:03Z' title='05/08/2018 07:02  PM' data-short='3 dy'>Tuesday at 07:02  PM</time></a>
+			<span class='ipsResponsive_hidePhone'>
+				
+				
+			</span>
+		</div>
+	</div>
+
+	
+
+
+	<div class='cPost_contentWrap ipsPad'>
+		
+		<div data-role='commentContent' class='ipsType_normal ipsType_richText ipsContained' data-controller='core.front.core.lightboxedImages'>
+			
+<p>
+	OK. But what happens to the hash in Item 2?
+</p>
+
+<p>
+	Is it a part of the query string?  Or, does it refer to an anchor on the page to where the query string is sent?  Or, is it something else altogether?
+</p>
+
+<p>
+	Roddy
+</p>
+
+
+			
+		</div>
+
+		<div class='ipsItemControls'>
+			
+				
+					
+
+	<div data-controller='core.front.core.reaction' class='ipsItemControls_right ipsClearfix '>	
+		<div class='ipsReact ipsPos_right'>
+			
+				
+				<div class='ipsReact_blurb ipsHide' data-role='reactionBlurb'>
+					
+				</div>
+			
+			
+			
+		</div>
+	</div>
+
+				
+			
+			<ul class='ipsComment_controls ipsClearfix ipsItemControls_left' data-role="commentControls">
+				
+					
+					
+					
+				
+				<li class='ipsHide' data-role='commentLoading'>
+					<span class='ipsLoading ipsLoading_tiny ipsLoading_noAnim'></span>
+				</li>
+			</ul>
+		</div>
+
+		
+	</div>
+
+	<div class='ipsMenu ipsMenu_wide ipsHide cPostShareMenu' id='elSharePost_317379_menu'>
+		<div class='ipsPad'>
+			<h4 class='ipsType_sectionHead'>Share this post</h4>
+			<hr class='ipsHr'>
+			<h5 class='ipsType_normal ipsType_reset'>Link to post</h5>
+			
+			<input type='text' value='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317379' class='ipsField_fullWidth'>
+			
+
+			
+				<h5 class='ipsType_normal ipsType_reset ipsSpacer_top'>Share on other sites</h5>
+				
+
+	<ul class='ipsList_inline ipsList_noSpacing ipsClearfix' data-controller="core.front.core.sharelink">
+		
+			<li>
+<a href="http://twitter.com/share?text=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request&amp;url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317379" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title='Share on Twitter' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-twitter"></i>
+</a></li>
+		
+			<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317379" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" title='Share on Facebook' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-facebook"></i>
+</a></li>
+		
+			<li>
+<a href="https://plus.google.com/share?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317379" class="cShareLink cShareLink_google" target="_blank" data-role="shareLink" title='Share on Google+' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-google-plus"></i>
+</a></li>
+		
+			<li>
+<a href="http://digg.com/submit?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317379" class="cShareLink cShareLink_digg" target="_blank" data-role="shareLink" title='Share on Digg' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-digg"></i>
+</a></li>
+		
+			<li>
+<a href="https://del.icio.us/save?jump=close&amp;noui=1&amp;v=5&amp;provider=W3Schools%2BForum&amp;url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317379&amp;title=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request" class="cShareLink cShareLink_delicious" target="_blank" data-role='shareLink' title='Save to Delicious' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-delicious"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.reddit.com/submit?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317379&amp;title=Combining+Hashes+and+Query+Strings+in+an+HTTP+Request" class="cShareLink cShareLink_reddit" target="_blank" title='Share on Reddit' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-reddit"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.stumbleupon.com/submit?url=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F%253Fdo%253DfindComment%2526comment%253D317379" class="cShareLink cShareLink_stumble" target="_blank" title='Share on StumbleUpon' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-stumbleupon"></i>
+</a></li>
+		
+			<li>
+<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=email&amp;comment=317379' rel='nofollow' class='cShareLink cShareLink_email' data-ipsDialog data-ipsDialog-title='Email this page' data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='The email has been sent' title='Share via email' data-ipsTooltip>
+	<i class="fa fa-envelope"></i>
+</a></li>
+		
+			<li>
+<a href="http://pinterest.com/pin/create/button/?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317379&amp;media=" class="cShareLink cShareLink_pinterest" target="_blank" data-role="shareLink" title='Share on Pinterest' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-pinterest"></i>
+</a></li>
+		
+	</ul>
+
+			
+		</div>
+	</div>
+</div>
+	</div>
+</article>
+					
+				
+					
+					
+					
+
+
+
+
+<a id='comment-317383'></a>
+<article  id='elComment_317383' class='cPost ipsBox  ipsComment  ipsComment_parent ipsClearfix ipsClear ipsColumns ipsColumns_noSpacing ipsColumns_collapsePhone  '>
+	
+
+	<div class='cAuthorPane cAuthorPane_mobile ipsResponsive_showPhone ipsResponsive_block'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsResponsive_showPhone ipsResponsive_inlineBlock ipsType_break ipsType_blendLinks ipsTruncate ipsTruncate_line'>
+			
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+			<span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 1,014
+	
+		</span>
+	
+</span>
+		</h3>
+		<div class='cAuthorPane_photo'>
+			
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+		</div>
+	</div>
+	<aside class='ipsComment_author cAuthorPane ipsColumn ipsColumn_medium ipsResponsive_hidePhone'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsType_blendLinks ipsType_break'><strong>
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a></strong> <span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 1,014
+	
+		</span>
+	
+</span></h3>
+		
+		<ul class='cAuthorPane_info ipsList_reset'>
+			
+				<li class='ipsType_break'>More Human Than Human</li>
+			
+			
+				<li><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span></li>
+			
+
+			<li class='cAuthorPane_photo'>
+				
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+			</li>
+			<li>Moderator</li>
+			
+			
+				<li>
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 1,014
+	
+		</span>
+	
+</li>
+				<li class='ipsType_light'>30,527 posts</li>
+				
+				
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Location:</span><span class='fc'>Phoenix</span>
+	</li>
+	
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class="ft">Languages:</span><span class="fc">Focusing on PHP and JavaScript</span>
+	</li>
+	
+
+			
+		</ul>
+	</aside>
+	<div class='ipsColumn ipsColumn_fluid'>
+		
+
+<div id='comment-317383_wrap' data-controller='core.front.core.comment' data-commentApp='forums' data-commentType='forums' data-commentID="317383" data-quoteData='{&quot;userid&quot;:4190,&quot;username&quot;:&quot;justsomeguy&quot;,&quot;timestamp&quot;:1525811198,&quot;contentapp&quot;:&quot;forums&quot;,&quot;contenttype&quot;:&quot;forums&quot;,&quot;contentid&quot;:57849,&quot;contentclass&quot;:&quot;forums_Topic&quot;,&quot;contentcommentid&quot;:317383}' class='ipsComment_content ipsType_medium  ipsFaded_withHover'>
+	
+
+	<div class='ipsComment_meta ipsType_light'>
+		<div class='ipsPos_right ipsType_light ipsType_reset ipsFaded ipsFaded_more ipsType_blendLinks'>
+			<ul class='ipsList_inline ipsComment_tools'>
+				
+					<li><a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=reportComment&amp;comment=317383' data-ipsDialog data-ipsDialog-remoteSubmit data-ipsDialog-size='medium' data-ipsDialog-flashMessage='Thanks for your report.' data-ipsDialog-title="Report post" data-action='reportComment' title='Report this content' class='ipsFaded ipsFaded_more'><span class='ipsResponsive_showPhone ipsResponsive_inline'><i class='fa fa-flag'></i></span><span class='ipsResponsive_hidePhone ipsResponsive_inline'>Report post</span></a></li>
+				
+				
+				
+					<li><a class='ipsType_blendLinks' href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317383' data-ipsTooltip title='Share this post' data-ipsMenu data-ipsMenu-closeOnClick='false' id='elSharePost_317383' data-role='shareComment'><i class='fa fa-share-alt'></i></a></li>
+				
+				
+			</ul>
+		</div>
+
+		<div class='ipsType_reset'>
+			<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317383' class='ipsType_blendLinks'>Posted <time datetime='2018-05-08T20:26:38Z' title='05/08/2018 08:26  PM' data-short='3 dy'>Tuesday at 08:26  PM</time></a>
+			<span class='ipsResponsive_hidePhone'>
+				
+				
+			</span>
+		</div>
+	</div>
+
+	
+
+
+	<div class='cPost_contentWrap ipsPad'>
+		
+		<div data-role='commentContent' class='ipsType_normal ipsType_richText ipsContained' data-controller='core.front.core.lightboxedImages'>
+			
+<p>
+	The URL in example 3 is not valid.  In the specification for URLs, the optional querystring precedes the optional fragment/anchor.  Here's the actual RFC:
+</p>
+
+<p>
+	<a href="https://www.ietf.org/rfc/rfc1738.txt" ipsnoembed="true" rel="external nofollow">https://www.ietf.org/rfc/rfc1738.txt</a>
+</p>
+
+<blockquote class="ipsQuote" data-ipsquote="">
+	<div class="ipsQuote_citation">
+		Quote
+	</div>
+
+	<div class="ipsQuote_contents ipsClearfix">
+		<p>
+			OK. But what happens to the hash in Item 2?
+		</p>
+
+		<p>
+			Is it a part of the query string?
+		</p>
+	</div>
+</blockquote>
+	<p>
+		No.
+	</p>
+
+	<blockquote class="ipsQuote" data-ipsquote="">
+		<div class="ipsQuote_citation">
+			 
+		</div>
+
+		<div class="ipsQuote_contents ipsClearfix">
+			<p>
+				Or, does it refer to an anchor on the page to where the query string is sent?
+			</p>
+		</div>
+	</blockquote>
+
+	<p>
+		It's supposed to, that was the original purpose.  When people realized they could set that value without the page refreshing and use it for bookmarking or other clever ways inside their Javascript applications, they extended the usage of it.
+	</p>
+
+
+			
+		</div>
+
+		<div class='ipsItemControls'>
+			
+				
+					
+
+	<div data-controller='core.front.core.reaction' class='ipsItemControls_right ipsClearfix '>	
+		<div class='ipsReact ipsPos_right'>
+			
+				
+				<div class='ipsReact_blurb ' data-role='reactionBlurb'>
+					
+						
+
+	
+	<ul class='ipsReact_reactions'>
+	
+		
+			
+			<li class='ipsReact_reactCount'>
+				
+					<span data-ipsTooltip title="Like">
+				
+						<span>
+							<img src='//content.invisioncic.com/r49260/reactions/react_like.png' alt="Like">
+						</span>
+						<span>
+							1
+						</span>
+				
+					</span>
+				
+			</li>
+		
+	
+	</ul>
+
+<div class='ipsReact_overview ipsType_blendLinks'>
+	
+	
+</div>
+					
+				</div>
+			
+			
+			
+		</div>
+	</div>
+
+				
+			
+			<ul class='ipsComment_controls ipsClearfix ipsItemControls_left' data-role="commentControls">
+				
+					
+					
+					
+				
+				<li class='ipsHide' data-role='commentLoading'>
+					<span class='ipsLoading ipsLoading_tiny ipsLoading_noAnim'></span>
+				</li>
+			</ul>
+		</div>
+
+		
+			
+
+		
+	</div>
+
+	<div class='ipsMenu ipsMenu_wide ipsHide cPostShareMenu' id='elSharePost_317383_menu'>
+		<div class='ipsPad'>
+			<h4 class='ipsType_sectionHead'>Share this post</h4>
+			<hr class='ipsHr'>
+			<h5 class='ipsType_normal ipsType_reset'>Link to post</h5>
+			
+			<input type='text' value='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317383' class='ipsField_fullWidth'>
+			
+
+			
+				<h5 class='ipsType_normal ipsType_reset ipsSpacer_top'>Share on other sites</h5>
+				
+
+	<ul class='ipsList_inline ipsList_noSpacing ipsClearfix' data-controller="core.front.core.sharelink">
+		
+			<li>
+<a href="http://twitter.com/share?text=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request&amp;url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317383" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title='Share on Twitter' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-twitter"></i>
+</a></li>
+		
+			<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317383" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" title='Share on Facebook' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-facebook"></i>
+</a></li>
+		
+			<li>
+<a href="https://plus.google.com/share?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317383" class="cShareLink cShareLink_google" target="_blank" data-role="shareLink" title='Share on Google+' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-google-plus"></i>
+</a></li>
+		
+			<li>
+<a href="http://digg.com/submit?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317383" class="cShareLink cShareLink_digg" target="_blank" data-role="shareLink" title='Share on Digg' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-digg"></i>
+</a></li>
+		
+			<li>
+<a href="https://del.icio.us/save?jump=close&amp;noui=1&amp;v=5&amp;provider=W3Schools%2BForum&amp;url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317383&amp;title=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request" class="cShareLink cShareLink_delicious" target="_blank" data-role='shareLink' title='Save to Delicious' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-delicious"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.reddit.com/submit?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317383&amp;title=Combining+Hashes+and+Query+Strings+in+an+HTTP+Request" class="cShareLink cShareLink_reddit" target="_blank" title='Share on Reddit' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-reddit"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.stumbleupon.com/submit?url=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F%253Fdo%253DfindComment%2526comment%253D317383" class="cShareLink cShareLink_stumble" target="_blank" title='Share on StumbleUpon' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-stumbleupon"></i>
+</a></li>
+		
+			<li>
+<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=email&amp;comment=317383' rel='nofollow' class='cShareLink cShareLink_email' data-ipsDialog data-ipsDialog-title='Email this page' data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='The email has been sent' title='Share via email' data-ipsTooltip>
+	<i class="fa fa-envelope"></i>
+</a></li>
+		
+			<li>
+<a href="http://pinterest.com/pin/create/button/?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317383&amp;media=" class="cShareLink cShareLink_pinterest" target="_blank" data-role="shareLink" title='Share on Pinterest' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-pinterest"></i>
+</a></li>
+		
+	</ul>
+
+			
+		</div>
+	</div>
+</div>
+	</div>
+</article>
+					
+				
+					
+					
+					
+
+
+
+
+<a id='comment-317384'></a>
+<article  id='elComment_317384' class='cPost ipsBox  ipsComment  ipsComment_parent ipsClearfix ipsClear ipsColumns ipsColumns_noSpacing ipsColumns_collapsePhone  '>
+	
+
+	<div class='cAuthorPane cAuthorPane_mobile ipsResponsive_showPhone ipsResponsive_block'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsResponsive_showPhone ipsResponsive_inlineBlock ipsType_break ipsType_blendLinks ipsTruncate ipsTruncate_line'>
+			
+<a href='http://w3schools.invisionzone.com/profile/27638-iwato/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to iwato's profile" class="ipsType_break"><span style='color:#'>iwato</span></a>
+			<span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</span>
+		</h3>
+		<div class='cAuthorPane_photo'>
+			
+
+
+	<a href="http://w3schools.invisionzone.com/profile/27638-iwato/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to iwato's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-27638.png' alt='iwato'>
+	</a>
+
+		</div>
+	</div>
+	<aside class='ipsComment_author cAuthorPane ipsColumn ipsColumn_medium ipsResponsive_hidePhone'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsType_blendLinks ipsType_break'><strong>
+<a href='http://w3schools.invisionzone.com/profile/27638-iwato/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to iwato's profile" class="ipsType_break">iwato</a></strong> <span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</span></h3>
+		
+		<ul class='cAuthorPane_info ipsList_reset'>
+			
+				<li class='ipsType_break'>Dedicated Member</li>
+			
+			
+				<li><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span></li>
+			
+
+			<li class='cAuthorPane_photo'>
+				
+
+
+	<a href="http://w3schools.invisionzone.com/profile/27638-iwato/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to iwato's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-27638.png' alt='iwato'>
+	</a>
+
+			</li>
+			<li><span style='color:#'>Members</span></li>
+			
+			
+				<li>
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</li>
+				<li class='ipsType_light'>1,068 posts</li>
+				
+				
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Gender:</span><span class='fc'>Male</span>
+	</li>
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Location:</span><span class='fc'>Seattle, Washington  USA 98104</span>
+	</li>
+	
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class="ft">Languages:</span><span class="fc">HTML, CSS, Javascript, PHP, MySQL and Spoken Language</span>
+	</li>
+	
+
+			
+		</ul>
+	</aside>
+	<div class='ipsColumn ipsColumn_fluid'>
+		
+
+<div id='comment-317384_wrap' data-controller='core.front.core.comment' data-commentApp='forums' data-commentType='forums' data-commentID="317384" data-quoteData='{&quot;userid&quot;:27638,&quot;username&quot;:&quot;iwato&quot;,&quot;timestamp&quot;:1525812650,&quot;contentapp&quot;:&quot;forums&quot;,&quot;contenttype&quot;:&quot;forums&quot;,&quot;contentid&quot;:57849,&quot;contentclass&quot;:&quot;forums_Topic&quot;,&quot;contentcommentid&quot;:317384}' class='ipsComment_content ipsType_medium  ipsFaded_withHover'>
+	
+
+	<div class='ipsComment_meta ipsType_light'>
+		<div class='ipsPos_right ipsType_light ipsType_reset ipsFaded ipsFaded_more ipsType_blendLinks'>
+			<ul class='ipsList_inline ipsComment_tools'>
+				
+					<li><a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=reportComment&amp;comment=317384' data-ipsDialog data-ipsDialog-remoteSubmit data-ipsDialog-size='medium' data-ipsDialog-flashMessage='Thanks for your report.' data-ipsDialog-title="Report post" data-action='reportComment' title='Report this content' class='ipsFaded ipsFaded_more'><span class='ipsResponsive_showPhone ipsResponsive_inline'><i class='fa fa-flag'></i></span><span class='ipsResponsive_hidePhone ipsResponsive_inline'>Report post</span></a></li>
+				
+				
+				
+					<li><a class='ipsType_blendLinks' href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317384' data-ipsTooltip title='Share this post' data-ipsMenu data-ipsMenu-closeOnClick='false' id='elSharePost_317384' data-role='shareComment'><i class='fa fa-share-alt'></i></a></li>
+				
+				
+			</ul>
+		</div>
+
+		<div class='ipsType_reset'>
+			<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317384' class='ipsType_blendLinks'>Posted <time datetime='2018-05-08T20:50:50Z' title='05/08/2018 08:50  PM' data-short='3 dy'>Tuesday at 08:50  PM</time></a>
+			<span class='ipsResponsive_hidePhone'>
+				
+					(edited)
+				
+				
+			</span>
+		</div>
+	</div>
+
+	
+
+
+	<div class='cPost_contentWrap ipsPad'>
+		
+		<div data-role='commentContent' class='ipsType_normal ipsType_richText ipsContained' data-controller='core.front.core.lightboxedImages'>
+			
+<p>
+	JSG:  OK. Item 3 is invalid.  As you have just stated, however, all that is invalid is not dysfunctional.  How is one to interpret the #? in
+</p>
+
+<pre class="ipsCode prettyprint lang-html prettyprinted">
+<span class="pln">https://www.example.com/index.php
+	?module=CoreHome
+	&amp;action=index
+	&amp;idSite=1
+	&amp;period=day
+	&amp;date=yesterday
+	#?idSite=1
+		&amp;period=day
+		&amp;date=yesterday
+		&amp;category=Dashboard_Dashboard
+		&amp;subcategory=1</span></pre>
+
+<p>
+	Can it function as a  piggy-back ride on the original query that is parsed on arrival and added as a query string to a different URL?
+</p>
+
+<p>
+	1) <a href="https://www.example.com/index.php" rel="external nofollow"><span style="color:#e74c3c;">https://www.example.com/index.php</span></a>?module=CoreHome&amp;action=index&amp;idSite=1&amp;period=day&amp;date=yesterday
+</p>
+
+<p>
+	2) Parse the hash and append to <span style="color:#2980b9;">otherpage.html</span>
+</p>
+
+<p>
+	3) <span style="color:#2980b9;">./otherpage.html</span>?idSite=1&amp;period=day&amp;date=yesterday&amp;category=Dashboard_Dashboard &amp;subcategory=1
+</p>
+
+<p>
+	Roddy
+</p>
+
+
+			
+				
+
+<span class='ipsType_reset ipsType_medium ipsType_light' data-excludequote>
+	<strong>Edited <time datetime='2018-05-08T20:52:47Z' title='05/08/2018 08:52  PM' data-short='3 dy'>Tuesday at 08:52  PM</time> by iwato</strong>
+	
+	
+</span>
+			
+		</div>
+
+		<div class='ipsItemControls'>
+			
+				
+					
+
+	<div data-controller='core.front.core.reaction' class='ipsItemControls_right ipsClearfix '>	
+		<div class='ipsReact ipsPos_right'>
+			
+				
+				<div class='ipsReact_blurb ipsHide' data-role='reactionBlurb'>
+					
+				</div>
+			
+			
+			
+		</div>
+	</div>
+
+				
+			
+			<ul class='ipsComment_controls ipsClearfix ipsItemControls_left' data-role="commentControls">
+				
+					
+					
+					
+				
+				<li class='ipsHide' data-role='commentLoading'>
+					<span class='ipsLoading ipsLoading_tiny ipsLoading_noAnim'></span>
+				</li>
+			</ul>
+		</div>
+
+		
+	</div>
+
+	<div class='ipsMenu ipsMenu_wide ipsHide cPostShareMenu' id='elSharePost_317384_menu'>
+		<div class='ipsPad'>
+			<h4 class='ipsType_sectionHead'>Share this post</h4>
+			<hr class='ipsHr'>
+			<h5 class='ipsType_normal ipsType_reset'>Link to post</h5>
+			
+			<input type='text' value='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317384' class='ipsField_fullWidth'>
+			
+
+			
+				<h5 class='ipsType_normal ipsType_reset ipsSpacer_top'>Share on other sites</h5>
+				
+
+	<ul class='ipsList_inline ipsList_noSpacing ipsClearfix' data-controller="core.front.core.sharelink">
+		
+			<li>
+<a href="http://twitter.com/share?text=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request&amp;url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317384" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title='Share on Twitter' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-twitter"></i>
+</a></li>
+		
+			<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317384" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" title='Share on Facebook' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-facebook"></i>
+</a></li>
+		
+			<li>
+<a href="https://plus.google.com/share?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317384" class="cShareLink cShareLink_google" target="_blank" data-role="shareLink" title='Share on Google+' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-google-plus"></i>
+</a></li>
+		
+			<li>
+<a href="http://digg.com/submit?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317384" class="cShareLink cShareLink_digg" target="_blank" data-role="shareLink" title='Share on Digg' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-digg"></i>
+</a></li>
+		
+			<li>
+<a href="https://del.icio.us/save?jump=close&amp;noui=1&amp;v=5&amp;provider=W3Schools%2BForum&amp;url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317384&amp;title=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request" class="cShareLink cShareLink_delicious" target="_blank" data-role='shareLink' title='Save to Delicious' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-delicious"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.reddit.com/submit?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317384&amp;title=Combining+Hashes+and+Query+Strings+in+an+HTTP+Request" class="cShareLink cShareLink_reddit" target="_blank" title='Share on Reddit' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-reddit"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.stumbleupon.com/submit?url=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F%253Fdo%253DfindComment%2526comment%253D317384" class="cShareLink cShareLink_stumble" target="_blank" title='Share on StumbleUpon' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-stumbleupon"></i>
+</a></li>
+		
+			<li>
+<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=email&amp;comment=317384' rel='nofollow' class='cShareLink cShareLink_email' data-ipsDialog data-ipsDialog-title='Email this page' data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='The email has been sent' title='Share via email' data-ipsTooltip>
+	<i class="fa fa-envelope"></i>
+</a></li>
+		
+			<li>
+<a href="http://pinterest.com/pin/create/button/?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317384&amp;media=" class="cShareLink cShareLink_pinterest" target="_blank" data-role="shareLink" title='Share on Pinterest' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-pinterest"></i>
+</a></li>
+		
+	</ul>
+
+			
+		</div>
+	</div>
+</div>
+	</div>
+</article>
+					
+				
+					
+					
+					
+
+
+
+
+<a id='comment-317385'></a>
+<article  id='elComment_317385' class='cPost ipsBox  ipsComment  ipsComment_parent ipsClearfix ipsClear ipsColumns ipsColumns_noSpacing ipsColumns_collapsePhone  '>
+	
+
+	<div class='cAuthorPane cAuthorPane_mobile ipsResponsive_showPhone ipsResponsive_block'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsResponsive_showPhone ipsResponsive_inlineBlock ipsType_break ipsType_blendLinks ipsTruncate ipsTruncate_line'>
+			
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a>
+			<span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 1,014
+	
+		</span>
+	
+</span>
+		</h3>
+		<div class='cAuthorPane_photo'>
+			
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+		</div>
+	</div>
+	<aside class='ipsComment_author cAuthorPane ipsColumn ipsColumn_medium ipsResponsive_hidePhone'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsType_blendLinks ipsType_break'><strong>
+<a href='http://w3schools.invisionzone.com/profile/4190-justsomeguy/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to justsomeguy's profile" class="ipsType_break">justsomeguy</a></strong> <span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 1,014
+	
+		</span>
+	
+</span></h3>
+		
+		<ul class='cAuthorPane_info ipsList_reset'>
+			
+				<li class='ipsType_break'>More Human Than Human</li>
+			
+			
+				<li><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span></li>
+			
+
+			<li class='cAuthorPane_photo'>
+				
+
+
+	<a href="http://w3schools.invisionzone.com/profile/4190-justsomeguy/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/4190-justsomeguy/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to justsomeguy's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg' alt='justsomeguy'>
+	</a>
+
+			</li>
+			<li>Moderator</li>
+			
+			
+				<li>
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 1,014
+	
+		</span>
+	
+</li>
+				<li class='ipsType_light'>30,527 posts</li>
+				
+				
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Location:</span><span class='fc'>Phoenix</span>
+	</li>
+	
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class="ft">Languages:</span><span class="fc">Focusing on PHP and JavaScript</span>
+	</li>
+	
+
+			
+		</ul>
+	</aside>
+	<div class='ipsColumn ipsColumn_fluid'>
+		
+
+<div id='comment-317385_wrap' data-controller='core.front.core.comment' data-commentApp='forums' data-commentType='forums' data-commentID="317385" data-quoteData='{&quot;userid&quot;:4190,&quot;username&quot;:&quot;justsomeguy&quot;,&quot;timestamp&quot;:1525818689,&quot;contentapp&quot;:&quot;forums&quot;,&quot;contenttype&quot;:&quot;forums&quot;,&quot;contentid&quot;:57849,&quot;contentclass&quot;:&quot;forums_Topic&quot;,&quot;contentcommentid&quot;:317385}' class='ipsComment_content ipsType_medium  ipsFaded_withHover'>
+	
+
+	<div class='ipsComment_meta ipsType_light'>
+		<div class='ipsPos_right ipsType_light ipsType_reset ipsFaded ipsFaded_more ipsType_blendLinks'>
+			<ul class='ipsList_inline ipsComment_tools'>
+				
+					<li><a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=reportComment&amp;comment=317385' data-ipsDialog data-ipsDialog-remoteSubmit data-ipsDialog-size='medium' data-ipsDialog-flashMessage='Thanks for your report.' data-ipsDialog-title="Report post" data-action='reportComment' title='Report this content' class='ipsFaded ipsFaded_more'><span class='ipsResponsive_showPhone ipsResponsive_inline'><i class='fa fa-flag'></i></span><span class='ipsResponsive_hidePhone ipsResponsive_inline'>Report post</span></a></li>
+				
+				
+				
+					<li><a class='ipsType_blendLinks' href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317385' data-ipsTooltip title='Share this post' data-ipsMenu data-ipsMenu-closeOnClick='false' id='elSharePost_317385' data-role='shareComment'><i class='fa fa-share-alt'></i></a></li>
+				
+				
+			</ul>
+		</div>
+
+		<div class='ipsType_reset'>
+			<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317385' class='ipsType_blendLinks'>Posted <time datetime='2018-05-08T22:31:29Z' title='05/08/2018 10:31  PM' data-short='3 dy'>Tuesday at 10:31  PM</time></a>
+			<span class='ipsResponsive_hidePhone'>
+				
+				
+			</span>
+		</div>
+	</div>
+
+	
+
+
+	<div class='cPost_contentWrap ipsPad'>
+		
+		<div data-role='commentContent' class='ipsType_normal ipsType_richText ipsContained' data-controller='core.front.core.lightboxedImages'>
+			
+<p>
+	</p>
+<blockquote class="ipsQuote" data-ipsQuote="">
+<div class="ipsQuote_citation"></div>
+<div class="ipsQuote_contents ipsClearfix"><p>How is one to interpret the #? in</p></div>
+</blockquote>
+<p>
+</p>
+
+<p>
+	There's not a rule that says the hash value cannot contain or start with a question mark, as far as I'm aware.  The question mark has no special meaning in that location.  I don't know why they used it, maybe as a delimiter or maybe as a way to fool some faulty URL checker into considering that a valid URL (which it is).
+</p>
+
+<p>
+	</p>
+<blockquote class="ipsQuote" data-ipsQuote="">
+<div class="ipsQuote_citation"></div>
+<div class="ipsQuote_contents ipsClearfix"><p>Can it function as a  piggy-back ride on the original query that is parsed on arrival and added as a query string to a different URL?</p></div>
+</blockquote>
+<p>
+</p>
+
+<p>
+	I'm not sure what that means.  I don't even know if that part of the URL is even sent by the browser to the server.  You could test that though, if you print the entire $_SERVER array you'll see what the browser sent to the server and what PHP did with it.
+</p>
+
+
+			
+		</div>
+
+		<div class='ipsItemControls'>
+			
+				
+					
+
+	<div data-controller='core.front.core.reaction' class='ipsItemControls_right ipsClearfix '>	
+		<div class='ipsReact ipsPos_right'>
+			
+				
+				<div class='ipsReact_blurb ' data-role='reactionBlurb'>
+					
+						
+
+	
+	<ul class='ipsReact_reactions'>
+	
+		
+			
+			<li class='ipsReact_reactCount'>
+				
+					<span data-ipsTooltip title="Like">
+				
+						<span>
+							<img src='//content.invisioncic.com/r49260/reactions/react_like.png' alt="Like">
+						</span>
+						<span>
+							1
+						</span>
+				
+					</span>
+				
+			</li>
+		
+	
+	</ul>
+
+<div class='ipsReact_overview ipsType_blendLinks'>
+	
+	
+</div>
+					
+				</div>
+			
+			
+			
+		</div>
+	</div>
+
+				
+			
+			<ul class='ipsComment_controls ipsClearfix ipsItemControls_left' data-role="commentControls">
+				
+					
+					
+					
+				
+				<li class='ipsHide' data-role='commentLoading'>
+					<span class='ipsLoading ipsLoading_tiny ipsLoading_noAnim'></span>
+				</li>
+			</ul>
+		</div>
+
+		
+			
+
+		
+	</div>
+
+	<div class='ipsMenu ipsMenu_wide ipsHide cPostShareMenu' id='elSharePost_317385_menu'>
+		<div class='ipsPad'>
+			<h4 class='ipsType_sectionHead'>Share this post</h4>
+			<hr class='ipsHr'>
+			<h5 class='ipsType_normal ipsType_reset'>Link to post</h5>
+			
+			<input type='text' value='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317385' class='ipsField_fullWidth'>
+			
+
+			
+				<h5 class='ipsType_normal ipsType_reset ipsSpacer_top'>Share on other sites</h5>
+				
+
+	<ul class='ipsList_inline ipsList_noSpacing ipsClearfix' data-controller="core.front.core.sharelink">
+		
+			<li>
+<a href="http://twitter.com/share?text=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request&amp;url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317385" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title='Share on Twitter' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-twitter"></i>
+</a></li>
+		
+			<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317385" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" title='Share on Facebook' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-facebook"></i>
+</a></li>
+		
+			<li>
+<a href="https://plus.google.com/share?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317385" class="cShareLink cShareLink_google" target="_blank" data-role="shareLink" title='Share on Google+' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-google-plus"></i>
+</a></li>
+		
+			<li>
+<a href="http://digg.com/submit?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317385" class="cShareLink cShareLink_digg" target="_blank" data-role="shareLink" title='Share on Digg' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-digg"></i>
+</a></li>
+		
+			<li>
+<a href="https://del.icio.us/save?jump=close&amp;noui=1&amp;v=5&amp;provider=W3Schools%2BForum&amp;url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317385&amp;title=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request" class="cShareLink cShareLink_delicious" target="_blank" data-role='shareLink' title='Save to Delicious' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-delicious"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.reddit.com/submit?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317385&amp;title=Combining+Hashes+and+Query+Strings+in+an+HTTP+Request" class="cShareLink cShareLink_reddit" target="_blank" title='Share on Reddit' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-reddit"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.stumbleupon.com/submit?url=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F%253Fdo%253DfindComment%2526comment%253D317385" class="cShareLink cShareLink_stumble" target="_blank" title='Share on StumbleUpon' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-stumbleupon"></i>
+</a></li>
+		
+			<li>
+<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=email&amp;comment=317385' rel='nofollow' class='cShareLink cShareLink_email' data-ipsDialog data-ipsDialog-title='Email this page' data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='The email has been sent' title='Share via email' data-ipsTooltip>
+	<i class="fa fa-envelope"></i>
+</a></li>
+		
+			<li>
+<a href="http://pinterest.com/pin/create/button/?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317385&amp;media=" class="cShareLink cShareLink_pinterest" target="_blank" data-role="shareLink" title='Share on Pinterest' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-pinterest"></i>
+</a></li>
+		
+	</ul>
+
+			
+		</div>
+	</div>
+</div>
+	</div>
+</article>
+					
+				
+					
+					
+					
+
+
+
+
+<a id='comment-317388'></a>
+<article  id='elComment_317388' class='cPost ipsBox  ipsComment  ipsComment_parent ipsClearfix ipsClear ipsColumns ipsColumns_noSpacing ipsColumns_collapsePhone  '>
+	
+
+	<div class='cAuthorPane cAuthorPane_mobile ipsResponsive_showPhone ipsResponsive_block'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsResponsive_showPhone ipsResponsive_inlineBlock ipsType_break ipsType_blendLinks ipsTruncate ipsTruncate_line'>
+			
+<a href='http://w3schools.invisionzone.com/profile/27638-iwato/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to iwato's profile" class="ipsType_break"><span style='color:#'>iwato</span></a>
+			<span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</span>
+		</h3>
+		<div class='cAuthorPane_photo'>
+			
+
+
+	<a href="http://w3schools.invisionzone.com/profile/27638-iwato/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to iwato's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-27638.png' alt='iwato'>
+	</a>
+
+		</div>
+	</div>
+	<aside class='ipsComment_author cAuthorPane ipsColumn ipsColumn_medium ipsResponsive_hidePhone'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsType_blendLinks ipsType_break'><strong>
+<a href='http://w3schools.invisionzone.com/profile/27638-iwato/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to iwato's profile" class="ipsType_break">iwato</a></strong> <span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</span></h3>
+		
+		<ul class='cAuthorPane_info ipsList_reset'>
+			
+				<li class='ipsType_break'>Dedicated Member</li>
+			
+			
+				<li><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span></li>
+			
+
+			<li class='cAuthorPane_photo'>
+				
+
+
+	<a href="http://w3schools.invisionzone.com/profile/27638-iwato/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/27638-iwato/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to iwato's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-thumb-27638.png' alt='iwato'>
+	</a>
+
+			</li>
+			<li><span style='color:#'>Members</span></li>
+			
+			
+				<li>
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 11
+	
+		</span>
+	
+</li>
+				<li class='ipsType_light'>1,068 posts</li>
+				
+				
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Gender:</span><span class='fc'>Male</span>
+	</li>
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Location:</span><span class='fc'>Seattle, Washington  USA 98104</span>
+	</li>
+	
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class="ft">Languages:</span><span class="fc">HTML, CSS, Javascript, PHP, MySQL and Spoken Language</span>
+	</li>
+	
+
+			
+		</ul>
+	</aside>
+	<div class='ipsColumn ipsColumn_fluid'>
+		
+
+<div id='comment-317388_wrap' data-controller='core.front.core.comment' data-commentApp='forums' data-commentType='forums' data-commentID="317388" data-quoteData='{&quot;userid&quot;:27638,&quot;username&quot;:&quot;iwato&quot;,&quot;timestamp&quot;:1525828622,&quot;contentapp&quot;:&quot;forums&quot;,&quot;contenttype&quot;:&quot;forums&quot;,&quot;contentid&quot;:57849,&quot;contentclass&quot;:&quot;forums_Topic&quot;,&quot;contentcommentid&quot;:317388}' class='ipsComment_content ipsType_medium  ipsFaded_withHover'>
+	
+
+	<div class='ipsComment_meta ipsType_light'>
+		<div class='ipsPos_right ipsType_light ipsType_reset ipsFaded ipsFaded_more ipsType_blendLinks'>
+			<ul class='ipsList_inline ipsComment_tools'>
+				
+					<li><a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=reportComment&amp;comment=317388' data-ipsDialog data-ipsDialog-remoteSubmit data-ipsDialog-size='medium' data-ipsDialog-flashMessage='Thanks for your report.' data-ipsDialog-title="Report post" data-action='reportComment' title='Report this content' class='ipsFaded ipsFaded_more'><span class='ipsResponsive_showPhone ipsResponsive_inline'><i class='fa fa-flag'></i></span><span class='ipsResponsive_hidePhone ipsResponsive_inline'>Report post</span></a></li>
+				
+				
+				
+					<li><a class='ipsType_blendLinks' href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317388' data-ipsTooltip title='Share this post' data-ipsMenu data-ipsMenu-closeOnClick='false' id='elSharePost_317388' data-role='shareComment'><i class='fa fa-share-alt'></i></a></li>
+				
+				
+			</ul>
+		</div>
+
+		<div class='ipsType_reset'>
+			<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317388' class='ipsType_blendLinks'>Posted <time datetime='2018-05-09T01:17:02Z' title='05/09/2018 01:17  AM' data-short='3 dy'>Wednesday at 01:17  AM</time></a>
+			<span class='ipsResponsive_hidePhone'>
+				
+				
+			</span>
+		</div>
+	</div>
+
+	
+
+
+	<div class='cPost_contentWrap ipsPad'>
+		
+		<div data-role='commentContent' class='ipsType_normal ipsType_richText ipsContained' data-controller='core.front.core.lightboxedImages'>
+			
+<p>
+	OK. I just reread what Ingolme wrote and would like to change the question
+</p>
+
+<p>
+	Can it serve to send to HTTP Requests from the same page.
+</p>
+
+<p>
+	1) <a href="https://www.example.com/index.php?module=CoreHome&amp;action=index&amp;idSite=1&amp;period=day&amp;date=yesterday" rel="external nofollow">https://www.example.com/index.php?module=CoreHome&amp;action=index&amp;idSite=1&amp;period=day&amp;date=yesterday</a>
+</p>
+
+<p>
+	2) Parse the hash on the same page on which the link resides and use Javascript to append it to another URL
+</p>
+
+<p>
+	3) <a href="https://www.otherURL.com/index.php?" rel="external nofollow">https://www.otherURL.com/index.php?</a>?idSite=1&amp;period=day&amp;date=yesterday&amp;category=Dashboard_Dashboard &amp;subcategory=1
+</p>
+
+
+			
+		</div>
+
+		<div class='ipsItemControls'>
+			
+				
+					
+
+	<div data-controller='core.front.core.reaction' class='ipsItemControls_right ipsClearfix '>	
+		<div class='ipsReact ipsPos_right'>
+			
+				
+				<div class='ipsReact_blurb ipsHide' data-role='reactionBlurb'>
+					
+				</div>
+			
+			
+			
+		</div>
+	</div>
+
+				
+			
+			<ul class='ipsComment_controls ipsClearfix ipsItemControls_left' data-role="commentControls">
+				
+					
+					
+					
+				
+				<li class='ipsHide' data-role='commentLoading'>
+					<span class='ipsLoading ipsLoading_tiny ipsLoading_noAnim'></span>
+				</li>
+			</ul>
+		</div>
+
+		
+	</div>
+
+	<div class='ipsMenu ipsMenu_wide ipsHide cPostShareMenu' id='elSharePost_317388_menu'>
+		<div class='ipsPad'>
+			<h4 class='ipsType_sectionHead'>Share this post</h4>
+			<hr class='ipsHr'>
+			<h5 class='ipsType_normal ipsType_reset'>Link to post</h5>
+			
+			<input type='text' value='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317388' class='ipsField_fullWidth'>
+			
+
+			
+				<h5 class='ipsType_normal ipsType_reset ipsSpacer_top'>Share on other sites</h5>
+				
+
+	<ul class='ipsList_inline ipsList_noSpacing ipsClearfix' data-controller="core.front.core.sharelink">
+		
+			<li>
+<a href="http://twitter.com/share?text=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request&amp;url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317388" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title='Share on Twitter' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-twitter"></i>
+</a></li>
+		
+			<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317388" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" title='Share on Facebook' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-facebook"></i>
+</a></li>
+		
+			<li>
+<a href="https://plus.google.com/share?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317388" class="cShareLink cShareLink_google" target="_blank" data-role="shareLink" title='Share on Google+' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-google-plus"></i>
+</a></li>
+		
+			<li>
+<a href="http://digg.com/submit?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317388" class="cShareLink cShareLink_digg" target="_blank" data-role="shareLink" title='Share on Digg' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-digg"></i>
+</a></li>
+		
+			<li>
+<a href="https://del.icio.us/save?jump=close&amp;noui=1&amp;v=5&amp;provider=W3Schools%2BForum&amp;url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317388&amp;title=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request" class="cShareLink cShareLink_delicious" target="_blank" data-role='shareLink' title='Save to Delicious' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-delicious"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.reddit.com/submit?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317388&amp;title=Combining+Hashes+and+Query+Strings+in+an+HTTP+Request" class="cShareLink cShareLink_reddit" target="_blank" title='Share on Reddit' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-reddit"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.stumbleupon.com/submit?url=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F%253Fdo%253DfindComment%2526comment%253D317388" class="cShareLink cShareLink_stumble" target="_blank" title='Share on StumbleUpon' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-stumbleupon"></i>
+</a></li>
+		
+			<li>
+<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=email&amp;comment=317388' rel='nofollow' class='cShareLink cShareLink_email' data-ipsDialog data-ipsDialog-title='Email this page' data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='The email has been sent' title='Share via email' data-ipsTooltip>
+	<i class="fa fa-envelope"></i>
+</a></li>
+		
+			<li>
+<a href="http://pinterest.com/pin/create/button/?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317388&amp;media=" class="cShareLink cShareLink_pinterest" target="_blank" data-role="shareLink" title='Share on Pinterest' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-pinterest"></i>
+</a></li>
+		
+	</ul>
+
+			
+		</div>
+	</div>
+</div>
+	</div>
+</article>
+					
+				
+					
+					
+					
+
+
+
+
+<a id='comment-317389'></a>
+<article  id='elComment_317389' class='cPost ipsBox  ipsComment  ipsComment_parent ipsClearfix ipsClear ipsColumns ipsColumns_noSpacing ipsColumns_collapsePhone  '>
+	
+
+	<div class='cAuthorPane cAuthorPane_mobile ipsResponsive_showPhone ipsResponsive_block'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsResponsive_showPhone ipsResponsive_inlineBlock ipsType_break ipsType_blendLinks ipsTruncate ipsTruncate_line'>
+			
+<a href='http://w3schools.invisionzone.com/profile/18212-ingolme/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/18212-ingolme/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to Ingolme's profile" class="ipsType_break">Ingolme</a>
+			<span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 877
+	
+		</span>
+	
+</span>
+		</h3>
+		<div class='cAuthorPane_photo'>
+			
+
+
+	<a href="http://w3schools.invisionzone.com/profile/18212-ingolme/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/18212-ingolme/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to Ingolme's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-18212.png' alt='Ingolme'>
+	</a>
+
+		</div>
+	</div>
+	<aside class='ipsComment_author cAuthorPane ipsColumn ipsColumn_medium ipsResponsive_hidePhone'>
+		<h3 class='ipsType_sectionHead cAuthorPane_author ipsType_blendLinks ipsType_break'><strong>
+<a href='http://w3schools.invisionzone.com/profile/18212-ingolme/' data-ipsHover data-ipsHover-target='http://w3schools.invisionzone.com/profile/18212-ingolme/?do=hovercard&amp;referrer=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F' title="Go to Ingolme's profile" class="ipsType_break">Ingolme</a></strong> <span class='ipsResponsive_showPhone ipsResponsive_inline'>&nbsp;&nbsp;
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 877
+	
+		</span>
+	
+</span></h3>
+		
+		<ul class='cAuthorPane_info ipsList_reset'>
+			
+				<li class='ipsType_break'>Foxy Mod</li>
+			
+			
+				<li><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span><span class='ipsPip'></span></li>
+			
+
+			<li class='cAuthorPane_photo'>
+				
+
+
+	<a href="http://w3schools.invisionzone.com/profile/18212-ingolme/" data-ipsHover data-ipsHover-target="http://w3schools.invisionzone.com/profile/18212-ingolme/?do=hovercard" class="ipsUserPhoto ipsUserPhoto_large" title="Go to Ingolme's profile">
+		<img src='//content.invisioncic.com/r49260/profile/photo-18212.png' alt='Ingolme'>
+	</a>
+
+			</li>
+			<li>Moderator</li>
+			
+			
+				<li>
+
+	
+		<span title="Member's total reputation" data-ipsTooltip class='ipsRepBadge ipsRepBadge_positive'>
+	
+			<i class='fa fa-plus-circle'></i> 877
+	
+		</span>
+	
+</li>
+				<li class='ipsType_light'>13,439 posts</li>
+				
+				
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Gender:</span><span class='fc'>Not Telling</span>
+	</li>
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class='ft'>Interests:</span><span class='fc'>Web development, drawing, videogames, foxes.</span>
+	</li>
+	
+
+	
+	<li class='ipsResponsive_hidePhone ipsType_break'>
+		<span class="ft">Languages:</span><span class="fc">Java, PHP, MySQL, Javascript, CSS, HTML</span>
+	</li>
+	
+
+			
+		</ul>
+	</aside>
+	<div class='ipsColumn ipsColumn_fluid'>
+		
+
+<div id='comment-317389_wrap' data-controller='core.front.core.comment' data-commentApp='forums' data-commentType='forums' data-commentID="317389" data-quoteData='{&quot;userid&quot;:18212,&quot;username&quot;:&quot;Ingolme&quot;,&quot;timestamp&quot;:1525834122,&quot;contentapp&quot;:&quot;forums&quot;,&quot;contenttype&quot;:&quot;forums&quot;,&quot;contentid&quot;:57849,&quot;contentclass&quot;:&quot;forums_Topic&quot;,&quot;contentcommentid&quot;:317389}' class='ipsComment_content ipsType_medium  ipsFaded_withHover'>
+	
+
+	<div class='ipsComment_meta ipsType_light'>
+		<div class='ipsPos_right ipsType_light ipsType_reset ipsFaded ipsFaded_more ipsType_blendLinks'>
+			<ul class='ipsList_inline ipsComment_tools'>
+				
+					<li><a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=reportComment&amp;comment=317389' data-ipsDialog data-ipsDialog-remoteSubmit data-ipsDialog-size='medium' data-ipsDialog-flashMessage='Thanks for your report.' data-ipsDialog-title="Report post" data-action='reportComment' title='Report this content' class='ipsFaded ipsFaded_more'><span class='ipsResponsive_showPhone ipsResponsive_inline'><i class='fa fa-flag'></i></span><span class='ipsResponsive_hidePhone ipsResponsive_inline'>Report post</span></a></li>
+				
+				
+				
+					<li><a class='ipsType_blendLinks' href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317389' data-ipsTooltip title='Share this post' data-ipsMenu data-ipsMenu-closeOnClick='false' id='elSharePost_317389' data-role='shareComment'><i class='fa fa-share-alt'></i></a></li>
+				
+				
+			</ul>
+		</div>
+
+		<div class='ipsType_reset'>
+			<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317389' class='ipsType_blendLinks'>Posted <time datetime='2018-05-09T02:48:42Z' title='05/09/2018 02:48  AM' data-short='3 dy'>Wednesday at 02:48  AM</time></a>
+			<span class='ipsResponsive_hidePhone'>
+				
+				
+			</span>
+		</div>
+	</div>
+
+	
+
+
+	<div class='cPost_contentWrap ipsPad'>
+		
+		<div data-role='commentContent' class='ipsType_normal ipsType_richText ipsContained' data-controller='core.front.core.lightboxedImages'>
+			
+<p>
+	To answer your question, Javascript can do pretty much anything. It can read the hash of the URL by accessing the <a href="https://www.w3schools.com/jsref/prop_loc_hash.asp" rel="external nofollow">location.hash</a> property. It can construct a URL using <a href="https://www.w3schools.com/jsref/jsref_obj_string.asp" rel="external nofollow">string manipulation</a> and then redirect the browser to another page using <a href="https://www.w3schools.com/jsref/met_loc_assign.asp" rel="external nofollow">location.assign()</a>.
+</p>
+
+<p>
+	I recommend not doing any of that. On ordinary websites, it's not a good idea to use the hash for any other purpose other than what it was designed for. I don't know why you want to use the hash as a data transfer mechanism, but almost certainly there is a better way. You should clearly define your end goal before deciding which technologies to use to achieve it.
+</p>
+
+
+			
+		</div>
+
+		<div class='ipsItemControls'>
+			
+				
+					
+
+	<div data-controller='core.front.core.reaction' class='ipsItemControls_right ipsClearfix '>	
+		<div class='ipsReact ipsPos_right'>
+			
+				
+				<div class='ipsReact_blurb ipsHide' data-role='reactionBlurb'>
+					
+				</div>
+			
+			
+			
+		</div>
+	</div>
+
+				
+			
+			<ul class='ipsComment_controls ipsClearfix ipsItemControls_left' data-role="commentControls">
+				
+					
+					
+					
+				
+				<li class='ipsHide' data-role='commentLoading'>
+					<span class='ipsLoading ipsLoading_tiny ipsLoading_noAnim'></span>
+				</li>
+			</ul>
+		</div>
+
+		
+			
+
+		
+	</div>
+
+	<div class='ipsMenu ipsMenu_wide ipsHide cPostShareMenu' id='elSharePost_317389_menu'>
+		<div class='ipsPad'>
+			<h4 class='ipsType_sectionHead'>Share this post</h4>
+			<hr class='ipsHr'>
+			<h5 class='ipsType_normal ipsType_reset'>Link to post</h5>
+			
+			<input type='text' value='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment&amp;comment=317389' class='ipsField_fullWidth'>
+			
+
+			
+				<h5 class='ipsType_normal ipsType_reset ipsSpacer_top'>Share on other sites</h5>
+				
+
+	<ul class='ipsList_inline ipsList_noSpacing ipsClearfix' data-controller="core.front.core.sharelink">
+		
+			<li>
+<a href="http://twitter.com/share?text=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request&amp;url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317389" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title='Share on Twitter' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-twitter"></i>
+</a></li>
+		
+			<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317389" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" title='Share on Facebook' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-facebook"></i>
+</a></li>
+		
+			<li>
+<a href="https://plus.google.com/share?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317389" class="cShareLink cShareLink_google" target="_blank" data-role="shareLink" title='Share on Google+' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-google-plus"></i>
+</a></li>
+		
+			<li>
+<a href="http://digg.com/submit?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317389" class="cShareLink cShareLink_digg" target="_blank" data-role="shareLink" title='Share on Digg' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-digg"></i>
+</a></li>
+		
+			<li>
+<a href="https://del.icio.us/save?jump=close&amp;noui=1&amp;v=5&amp;provider=W3Schools%2BForum&amp;url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317389&amp;title=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request" class="cShareLink cShareLink_delicious" target="_blank" data-role='shareLink' title='Save to Delicious' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-delicious"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.reddit.com/submit?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F%3Fdo%3DfindComment%26comment%3D317389&amp;title=Combining+Hashes+and+Query+Strings+in+an+HTTP+Request" class="cShareLink cShareLink_reddit" target="_blank" title='Share on Reddit' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-reddit"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.stumbleupon.com/submit?url=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F%253Fdo%253DfindComment%2526comment%253D317389" class="cShareLink cShareLink_stumble" target="_blank" title='Share on StumbleUpon' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-stumbleupon"></i>
+</a></li>
+		
+			<li>
+<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=email&amp;comment=317389' rel='nofollow' class='cShareLink cShareLink_email' data-ipsDialog data-ipsDialog-title='Email this page' data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='The email has been sent' title='Share via email' data-ipsTooltip>
+	<i class="fa fa-envelope"></i>
+</a></li>
+		
+			<li>
+<a href="http://pinterest.com/pin/create/button/?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment%26comment=317389&amp;media=" class="cShareLink cShareLink_pinterest" target="_blank" data-role="shareLink" title='Share on Pinterest' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-pinterest"></i>
+</a></li>
+		
+	</ul>
+
+			
+		</div>
+	</div>
+</div>
+	</div>
+</article>
+					
+				
+			
+			
+<input type="hidden" name="csrfKey" value="432d61e51499c5976d790c1513da0d76" />
+
+
+		</form>
+	</div>
+
+	
+
+	
+		<a id='replyForm'></a>
+		<div data-role='replyArea' class='cTopicPostArea ipsAreaBackground ipsPad cTopicPostArea_noSize ipsSpacer_top'>
+			
+				
+				
+
+
+
+<div data-controller="core.global.core.login">
+	<input type="hidden" name="csrfKey" value="432d61e51499c5976d790c1513da0d76">
+	
+		<div class='ipsType_center ipsPad cGuestTeaser'>
+			
+				<h2 class='ipsType_pageTitle'>Create an account or sign in to comment</h2>
+				<p class='ipsType_light ipsType_normal ipsType_reset'>You need to be a member in order to leave a comment</p>
+			
+	
+			<div class='ipsBox ipsPad ipsSpacer_top'>
+				<div class='ipsGrid ipsGrid_collapsePhone'>
+					<div class='ipsGrid_span6 cGuestTeaser_left'>
+						<h2 class='ipsType_sectionHead'>Create an account</h2>
+						<p class='ipsType_normal ipsType_reset ipsType_light ipsSpacer_bottom'>Sign up for a new account in our community. It's easy!</p>
+						
+							<a href='http://w3schools.invisionzone.com/register/' class='ipsButton ipsButton_primary ipsButton_small' data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Sign Up'>
+						
+						Register a new account</a>
+					</div>
+					<div class='ipsGrid_span6 cGuestTeaser_right'>
+						<h2 class='ipsType_sectionHead'>Sign in</h2>
+						<p class='ipsType_normal ipsType_reset ipsType_light ipsSpacer_bottom'>Already have an account? Sign in here.</p>
+						<a href='http://w3schools.invisionzone.com/login/?ref=aHR0cDovL3czc2Nob29scy5pbnZpc2lvbnpvbmUuY29tL3RvcGljLzU3ODQ5LWNvbWJpbmluZy1oYXNoZXMtYW5kLXF1ZXJ5LXN0cmluZ3MtaW4tYW4taHR0cC1yZXF1ZXN0LyNyZXBseUZvcm0=' data-ipsDialog data-ipsDialog-size='medium' data-ipsDialog-title="Sign In Now" class='ipsButton ipsButton_primary ipsButton_small'>Sign In Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</div>
+			
+		</div>
+	
+
+	
+		<div class='ipsResponsive_noFloat ipsResponsive_showPhone ipsResponsive_block ipsSpacer_top'>
+			
+
+<div data-followApp='forums' data-followArea='topic' data-followID='57849' data-controller='core.front.core.followButton'>
+	
+		<span class='ipsType_light ipsType_blendLinks ipsResponsive_hidePhone ipsResponsive_inline'><i class='fa fa-info-circle'></i> <a href='http://w3schools.invisionzone.com/login/' title='Go to the sign in page'>Sign in to follow this</a>&nbsp;&nbsp;</span>
+	
+	
+
+	<div class="ipsFollow ipsPos_middle ipsButton ipsButton_link ipsButton_verySmall " data-role="followButton">
+		
+			<a href='http://w3schools.invisionzone.com/index.php?app=core&amp;module=system&amp;controller=notifications&amp;do=followers&amp;follow_app=forums&amp;follow_area=topic&amp;follow_id=57849' title='See who follows this' class='ipsType_blendLinks ipsType_noUnderline' data-ipsTooltip data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Who follows this'>Followers</a>
+			<a class='ipsCommentCount' href='http://w3schools.invisionzone.com/index.php?app=core&amp;module=system&amp;controller=notifications&amp;do=followers&amp;follow_app=forums&amp;follow_area=topic&amp;follow_id=57849' title='See who follows this' data-ipsTooltip data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Who follows this'>1</a>
+		
+	</div>
+
+</div>
+		</div>
+		<div class='ipsResponsive_noFloat ipsResponsive_showPhone ipsResponsive_block ipsSpacer_top'>
+			
+
+
+
+
+
+
+		</div>
+	
+</div>
+
+
+
+<div class='ipsGrid ipsGrid_collapsePhone ipsPager ipsClearfix ipsSpacer_top ipsContained'>
+	<div class="ipsGrid_span6 ipsType_left ipsPager_prev ">
+		
+			<a href="http://w3schools.invisionzone.com/forum/21-web-services/" title="Go to Web Services" rel="up">
+				<span class="ipsPager_type">Go To Topic Listing</span>
+				<span class="ipsPager_title ipsType_light ipsTruncate ipsTruncate_line">Web Services</span>
+			</a>
+		
+	</div>
+	
+</div>
+
+
+	<hr class='ipsHr'>
+	
+
+	<ul class='ipsList_inline ipsList_noSpacing ipsClearfix' data-controller="core.front.core.sharelink">
+		
+			<li>
+<a href="http://twitter.com/share?text=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request&amp;url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F" class="cShareLink cShareLink_twitter" target="_blank" data-role="shareLink" title='Share on Twitter' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-twitter"></i>
+</a></li>
+		
+			<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F" class="cShareLink cShareLink_facebook" target="_blank" data-role="shareLink" title='Share on Facebook' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-facebook"></i>
+</a></li>
+		
+			<li>
+<a href="https://plus.google.com/share?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F" class="cShareLink cShareLink_google" target="_blank" data-role="shareLink" title='Share on Google+' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-google-plus"></i>
+</a></li>
+		
+			<li>
+<a href="http://digg.com/submit?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/" class="cShareLink cShareLink_digg" target="_blank" data-role="shareLink" title='Share on Digg' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-digg"></i>
+</a></li>
+		
+			<li>
+<a href="https://del.icio.us/save?jump=close&amp;noui=1&amp;v=5&amp;provider=W3Schools%2BForum&amp;url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/&amp;title=Combining%20Hashes%20and%20Query%20Strings%20in%20an%20HTTP%20Request" class="cShareLink cShareLink_delicious" target="_blank" data-role='shareLink' title='Save to Delicious' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-delicious"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.reddit.com/submit?url=http%3A%2F%2Fw3schools.invisionzone.com%2Ftopic%2F57849-combining-hashes-and-query-strings-in-an-http-request%2F&amp;title=Combining+Hashes+and+Query+Strings+in+an+HTTP+Request" class="cShareLink cShareLink_reddit" target="_blank" title='Share on Reddit' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-reddit"></i>
+</a></li>
+		
+			<li>
+<a href="http://www.stumbleupon.com/submit?url=http%253A%252F%252Fw3schools.invisionzone.com%252Ftopic%252F57849-combining-hashes-and-query-strings-in-an-http-request%252F" class="cShareLink cShareLink_stumble" target="_blank" title='Share on StumbleUpon' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-stumbleupon"></i>
+</a></li>
+		
+			<li>
+<a href='http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=email' rel='nofollow' class='cShareLink cShareLink_email' data-ipsDialog data-ipsDialog-title='Email this page' data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='The email has been sent' title='Share via email' data-ipsTooltip>
+	<i class="fa fa-envelope"></i>
+</a></li>
+		
+			<li>
+<a href="http://pinterest.com/pin/create/button/?url=http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/&amp;media=" class="cShareLink cShareLink_pinterest" target="_blank" data-role="shareLink" title='Share on Pinterest' data-ipsTooltip rel='noopener'>
+	<i class="fa fa-pinterest"></i>
+</a></li>
+		
+	</ul>
+
+
+
+
+						
+
+
+					</div>
+					
+
+
+					
+<nav class='ipsBreadcrumb ipsBreadcrumb_bottom ipsFaded_withHover'>
+	
+		
+
+
+	
+
+	<ul class='ipsList_inline ipsPos_right'>
+		
+		<li >
+			<a data-action="defaultStream" class='ipsType_light '  href='http://w3schools.invisionzone.com/discover/'><i class='icon-newspaper'></i> <span>All Activity</span></a>
+		</li>
+		
+	</ul>
+
+	<ul data-role="breadcrumbList">
+		<li>
+			<a title="Home" href='http://w3schools.invisionzone.com/'>
+				<span><i class='fa fa-home'></i> Home <i class='fa fa-angle-right'></i></span>
+			</a>
+		</li>
+		
+		
+			<li>
+				
+					<a href='http://w3schools.invisionzone.com/forum/7-xml-forums/'>
+						<span>XML Forums <i class='fa fa-angle-right'></i></span>
+					</a>
+				
+			</li>
+		
+			<li>
+				
+					<a href='http://w3schools.invisionzone.com/forum/21-web-services/'>
+						<span>Web Services <i class='fa fa-angle-right'></i></span>
+					</a>
+				
+			</li>
+		
+			<li>
+				
+					Combining Hashes and Query Strings in an HTTP Request
+				
+			</li>
+		
+	</ul>
+</nav>
+				</div>
+			</div>
+			
+		</main>
+		<footer id='ipsLayout_footer' class='ipsClearfix'>
+			<div class='ipsLayout_container'>
+				
+				
+
+
+<ul class='ipsList_inline ipsType_center ipsSpacer_top' id="elFooterLinks">
+	
+	
+	
+	
+	
+	
+		<li><a rel="nofollow" href='http://w3schools.invisionzone.com/contact/' data-ipsdialog data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='Thanks, your message has been sent to the administrators.' data-ipsdialog-title="Contact Us">Contact Us</a></li>
+	
+</ul>	
+
+
+<p id='elCopyright'>
+	<span id='elCopyright_userLine'></span>
+	<a rel='nofollow' title='Invision Community' href='https://www.invisioncommunity.com/'>Powered by Invision Community</a>
+</p>
+			</div>
+		</footer>
+		
+<div id='elMobileDrawer' class='ipsDrawer ipsHide'>
+	<a href='#' class='ipsDrawer_close' data-action='close'><span>&times;</span></a>
+	<div class='ipsDrawer_menu'>
+		<div class='ipsDrawer_content'>
+			
+
+			<div class='ipsSpacer_bottom ipsPad'>
+				<ul class='ipsToolList ipsToolList_vertical'>
+					
+						<li>
+							<a href='http://w3schools.invisionzone.com/login/' class='ipsButton ipsButton_light ipsButton_small ipsButton_fullWidth'>Existing user? Sign In</a>
+						</li>
+						
+							<li>
+								
+									<a href='http://w3schools.invisionzone.com/register/' data-ipsDialog data-ipsDialog-size='narrow' data-ipsDialog-title='Sign Up' id='elRegisterButton_mobile' class='ipsButton ipsButton_small ipsButton_fullWidth ipsButton_important'>Sign Up</a>
+								
+							</li>
+						
+					
+
+					
+				</ul>
+			</div>
+
+			<ul class='ipsDrawer_list'>
+				
+
+				
+				
+				
+				
+					
+						
+						
+							<li class='ipsDrawer_itemParent'>
+								<h4 class='ipsDrawer_title'><a href='#'>Browse</a></h4>
+								<ul class='ipsDrawer_list'>
+									<li data-action="back"><a href='#'>Back</a></li>
+									
+										<li><a href='http://w3schools.invisionzone.com'>Browse</a></li>
+									
+									
+									
+										
+
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com' >
+					Forums
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/calendar/' >
+					Calendar
+				</a>
+			</li>
+		
+	
+
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/staff/' >
+					Staff
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/online/' >
+					Online Users
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/leaderboard/' >
+					Leaderboard
+				</a>
+			</li>
+		
+	
+
+										
+								</ul>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li class='ipsDrawer_itemParent'>
+								<h4 class='ipsDrawer_title'><a href='#'>Activity</a></h4>
+								<ul class='ipsDrawer_list'>
+									<li data-action="back"><a href='#'>Back</a></li>
+									
+										<li><a href='http://w3schools.invisionzone.com/discover/'>Activity</a></li>
+									
+									
+									
+										
+
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/discover/' >
+					All Activity
+				</a>
+			</li>
+		
+	
+
+	
+
+	
+
+	
+
+	
+		
+			<li>
+				<a href='http://w3schools.invisionzone.com/search/' >
+					Search
+				</a>
+			</li>
+		
+	
+
+										
+								</ul>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li><a href='http://w3schools.invisionzone.com/leaderboard/' >Leaderboard</a></li>
+						
+					
+				
+					
+				
+					
+				
+			</ul>
+		</div>
+	</div>
+</div>
+		
+
+	<script type='text/javascript'>
+		var ipsDebug = false;		
+	
+		var CKEDITOR_BASEPATH = '//w3schools.invisionzone.com/applications/core/interface/ckeditor/ckeditor/';
+	
+		var ipsSettings = {
+			
+			
+			cookie_path: "/",
+			
+			cookie_prefix: "ips4_",
+			
+			
+			cookie_ssl: false,
+			
+			upload_imgURL: "",
+			message_imgURL: "",
+			notification_imgURL: "",
+			baseURL: "//w3schools.invisionzone.com/",
+			jsURL: "//w3schools.invisionzone.com/applications/core/interface/js/js.php",
+			csrfKey: "432d61e51499c5976d790c1513da0d76",
+			antiCache: "225d2b9d62",
+			disableNotificationSounds: false,
+			useCompiledFiles: true,
+			links_external: true,
+			memberID: 0,
+			analyticsProvider: "none",
+			viewProfiles: true,
+			mapProvider: 'none',
+			mapApiKey: '',
+			
+		};
+	</script>
+
+
+
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_library.js.83581e37d7b4aa8eaf956484081de68f.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_js_lang_1.js.669aa62e1eaf3094bc709c2805979474.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_framework.js.382aba2e65d18441602dadb08ef0d3c2.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_core/global_global_core.js.a0dfc0580dba1beb30939e1c1ce62fd6.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//w3schools.invisionzone.com/applications/core/interface/howler/howler.core.min.js?v=225d2b9d62' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_front.js.470f7c9d31558a12ef36248b952d003c.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_forums/front_front_topic.js.5374353ade11d3c061b650f73a04b7bd.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_core/front_front_core.js.f87992da3bf52e09cfcde2ace1f69009.js.gz' data-ips></script>
+
+
+<script type='text/javascript' src='//content.invisioncic.com/r49260/javascript_global/root_map.js.75fee57ba02a4b8785472db3d404fc41.js.gz' data-ips></script>
+
+
+
+	<script type='text/javascript'>
+		
+			ips.setSetting( 'date_format', jQuery.parseJSON('"mm\/dd\/yy"') );
+		
+			ips.setSetting( 'date_first_day', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'remote_image_proxy', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'ipb_url_filter_option', jQuery.parseJSON('"none"') );
+		
+			ips.setSetting( 'url_filter_any_action', jQuery.parseJSON('"allow"') );
+		
+			ips.setSetting( 'bypass_profanity', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'emoji_style', jQuery.parseJSON('"native"') );
+		
+			ips.setSetting( 'emoji_shortcodes', jQuery.parseJSON('"1"') );
+		
+			ips.setSetting( 'emoji_ascii', jQuery.parseJSON('"1"') );
+		
+			ips.setSetting( 'emoji_cache', jQuery.parseJSON('"1"') );
+		
+		
+	</script>
+
+
+
+<script type='application/ld+json'>
+{
+    "@context": "http://schema.org",
+    "@type": "DiscussionForumPosting",
+    "url": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/",
+    "discussionUrl": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/",
+    "name": "Combining Hashes and Query Strings in an HTTP Request",
+    "headline": "Combining Hashes and Query Strings in an HTTP Request",
+    "text": "BACKGROUND:\u00a0 I was recently introduced to the idea of using a hash as a means to transfer information in lieu of a query string in an HTTP request.\u00a0 Having thought that I understood the idea I was then introduced to the following query string:\n\n\n\nhttps://www.example.com/index.php\n\t?module=CoreHome\n\t\u0026amp;action=index\n\t\u0026amp;idSite=1\n\t\u0026amp;period=day\n\t\u0026amp;date=yesterday\n\t#?idSite=1\n\t\t\u0026amp;period=day\n\t\t\u0026amp;date=yesterday\n\t\t\u0026amp;category=Dashboard_Dashboard\n\t\t\u0026amp;subcategory=1\n\n\n\tI do not understand the user the expression\u00a0 ... #? ...\u00a0\u00a0 From the point of view of parsing an HTTP request are the following two hash expressions treated the same?\n\n\n\n\t1) https://www.example.com/index.php#blahblahblah\n\n\n\n\t2) https://www.example.com/index.php?some_query_string#blahblahblah\n\n\n\n\tAccept for the order of parsing do items 2) and 3) achieve the same task?\n\n\n\n\t3) https://www.example.com/index.php#blahblahblah?some_query_string\n\n\n\n\tRoddy\n\n\n\n\tps:\u00a0 In which forum to questions about HTTP requests belong anyway?\n\n",
+    "dateCreated": "2018-05-08T15:12:14+0000",
+    "datePublished": "2018-05-08T15:12:14+0000",
+    "pageStart": 1,
+    "pageEnd": 1,
+    "image": "http://content.invisioncic.com/r49260/profile/photo-thumb-27638.png",
+    "author": {
+        "@type": "Person",
+        "name": "iwato",
+        "image": "//content.invisioncic.com/r49260/profile/photo-thumb-27638.png",
+        "url": "http://w3schools.invisionzone.com/profile/27638-iwato/"
+    },
+    "interactionStatistic": [
+        {
+            "@type": "InteractionCounter",
+            "interactionType": "http://schema.org/ViewAction",
+            "userInteractionCount": 142
+        },
+        {
+            "@type": "InteractionCounter",
+            "interactionType": "http://schema.org/CommentAction",
+            "userInteractionCount": 8
+        },
+        {
+            "@type": "InteractionCounter",
+            "interactionType": "http://schema.org/FollowAction",
+            "userInteractionCount": 9
+        }
+    ],
+    "comment": [
+        {
+            "@type": "Comment",
+            "url": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment\u0026comment=317375",
+            "author": {
+                "@type": "Person",
+                "name": "iwato",
+                "image": "//content.invisioncic.com/r49260/profile/photo-thumb-27638.png",
+                "url": "http://w3schools.invisionzone.com/profile/27638-iwato/"
+            },
+            "dateCreated": "2018-05-08T15:12:14+0000",
+            "text": "BACKGROUND:\u00a0 I was recently introduced to the idea of using a hash as a means to transfer information in lieu of a query string in an HTTP request.\u00a0 Having thought that I understood the idea I was then introduced to the following query string:\n\n\n\nhttps://www.example.com/index.php\n\t?module=CoreHome\n\t\u0026amp;action=index\n\t\u0026amp;idSite=1\n\t\u0026amp;period=day\n\t\u0026amp;date=yesterday\n\t#?idSite=1\n\t\t\u0026amp;period=day\n\t\t\u0026amp;date=yesterday\n\t\t\u0026amp;category=Dashboard_Dashboard\n\t\t\u0026amp;subcategory=1\n\n\n\tI do not understand the user the expression\u00a0 ... #? ...\u00a0\u00a0 From the point of view of parsing an HTTP request are the following two hash expressions treated the same?\n\n\n\n\t1) https://www.example.com/index.php#blahblahblah\n\n\n\n\t2) https://www.example.com/index.php?some_query_string#blahblahblah\n\n\n\n\tAccept for the order of parsing do items 2) and 3) achieve the same task?\n\n\n\n\t3) https://www.example.com/index.php#blahblahblah?some_query_string\n\n\n\n\tRoddy\n\n\n\n\tps:\u00a0 In which forum to questions about HTTP requests belong anyway?\n\n",
+            "mainEntityOfPage": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/"
+        },
+        {
+            "@type": "Comment",
+            "url": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment\u0026comment=317378",
+            "author": {
+                "@type": "Person",
+                "name": "Ingolme",
+                "image": "//content.invisioncic.com/r49260/profile/photo-18212.png",
+                "url": "http://w3schools.invisionzone.com/profile/18212-ingolme/"
+            },
+            "dateCreated": "2018-05-08T18:46:14+0000",
+            "text": "Nothing that follows the hash ever gets sent to the server, not even if it looks like a query string. The hash is always the last part of the URL.\n\n\n\n\tIn item 1), the server loads the index page. In item 2) the server loads the index page with access to the contents of the query string. Item 3) is identical to item 1), no additional information is sent to the server because all of the remaining data is in the hash, which is only used by the browser.\u00a0\n\n\n\n\tHTTP is very commonly used in web services, so it\u0027s not out of place to ask about it on the Web Services forum, but most of your usage of HTTP pertains to HTML and PHP, so either of those forums would work as well.\u00a0\n\n",
+            "mainEntityOfPage": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/"
+        },
+        {
+            "@type": "Comment",
+            "url": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment\u0026comment=317379",
+            "author": {
+                "@type": "Person",
+                "name": "iwato",
+                "image": "//content.invisioncic.com/r49260/profile/photo-thumb-27638.png",
+                "url": "http://w3schools.invisionzone.com/profile/27638-iwato/"
+            },
+            "dateCreated": "2018-05-08T19:02:03+0000",
+            "text": "OK. But what happens to the hash in Item 2?\n\n\n\n\tIs it a part of the query string?\u00a0 Or, does it refer to an anchor on the page to where the query string is sent?\u00a0 Or, is it something else altogether?\n\n\n\n\tRoddy\n\n",
+            "mainEntityOfPage": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/"
+        },
+        {
+            "@type": "Comment",
+            "url": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment\u0026comment=317383",
+            "author": {
+                "@type": "Person",
+                "name": "justsomeguy",
+                "image": "//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg",
+                "url": "http://w3schools.invisionzone.com/profile/4190-justsomeguy/"
+            },
+            "dateCreated": "2018-05-08T20:26:38+0000",
+            "text": "The URL in example 3 is not valid.\u00a0 In the specification for URLs, the optional querystring precedes the optional fragment/anchor.\u00a0 Here\u0027s the actual RFC:\n\n\n\n\thttps://www.ietf.org/rfc/rfc1738.txt\n\n\n\n\t\n\t\tNo.\n\t\n\n\t\n\n\t\n\t\tIt\u0027s supposed to, that was the original purpose.\u00a0 When people realized they could set that value without the page refreshing and use it for bookmarking or other clever ways inside their Javascript applications, they extended the usage of it.\n\t\n",
+            "mainEntityOfPage": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/"
+        },
+        {
+            "@type": "Comment",
+            "url": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment\u0026comment=317384",
+            "author": {
+                "@type": "Person",
+                "name": "iwato",
+                "image": "//content.invisioncic.com/r49260/profile/photo-thumb-27638.png",
+                "url": "http://w3schools.invisionzone.com/profile/27638-iwato/"
+            },
+            "dateCreated": "2018-05-08T20:50:50+0000",
+            "text": "JSG:\u00a0 OK. Item 3 is invalid.\u00a0 As you have just stated, however, all that is invalid is not dysfunctional.\u00a0 How is one to interpret the #? in\n\n\n\nhttps://www.example.com/index.php\n\t?module=CoreHome\n\t\u0026amp;action=index\n\t\u0026amp;idSite=1\n\t\u0026amp;period=day\n\t\u0026amp;date=yesterday\n\t#?idSite=1\n\t\t\u0026amp;period=day\n\t\t\u0026amp;date=yesterday\n\t\t\u0026amp;category=Dashboard_Dashboard\n\t\t\u0026amp;subcategory=1\n\n\n\tCan it function as a\u00a0 piggy-back ride on the original query that is parsed on arrival and added as a query string to a different URL?\n\n\n\n\t1) https://www.example.com/index.php?module=CoreHome\u0026amp;action=index\u0026amp;idSite=1\u0026amp;period=day\u0026amp;date=yesterday\n\n\n\n\t2) Parse the hash and append to otherpage.html\n\n\n\n\t3) ./otherpage.html?idSite=1\u0026amp;period=day\u0026amp;date=yesterday\u0026amp;category=Dashboard_Dashboard \u0026amp;subcategory=1\n\n\n\n\tRoddy\n\n",
+            "mainEntityOfPage": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/"
+        },
+        {
+            "@type": "Comment",
+            "url": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment\u0026comment=317385",
+            "author": {
+                "@type": "Person",
+                "name": "justsomeguy",
+                "image": "//content.invisioncic.com/r49260/profile/photo-thumb-4190.jpg",
+                "url": "http://w3schools.invisionzone.com/profile/4190-justsomeguy/"
+            },
+            "dateCreated": "2018-05-08T22:31:29+0000",
+            "text": "There\u0027s not a rule that says the hash value cannot contain or start with a question mark, as far as I\u0027m aware.\u00a0 The question mark has no special meaning in that location.\u00a0 I don\u0027t know why they used it, maybe as a delimiter or maybe as a way to fool some faulty URL checker into considering that a valid URL (which it is).\n\n\n\n\t\n\n\n\n\n\n\tI\u0027m not sure what that means.\u00a0 I don\u0027t even know if that part of the URL is even sent by the browser to the server.\u00a0 You could test that though, if you print the entire $_SERVER array you\u0027ll see what the browser sent to the server and what PHP did with it.\n\n",
+            "mainEntityOfPage": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/"
+        },
+        {
+            "@type": "Comment",
+            "url": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment\u0026comment=317388",
+            "author": {
+                "@type": "Person",
+                "name": "iwato",
+                "image": "//content.invisioncic.com/r49260/profile/photo-thumb-27638.png",
+                "url": "http://w3schools.invisionzone.com/profile/27638-iwato/"
+            },
+            "dateCreated": "2018-05-09T01:17:02+0000",
+            "text": "OK. I just reread what Ingolme wrote and would like to change the question\n\n\n\n\tCan it serve to send to HTTP Requests from the same page.\n\n\n\n\t1) https://www.example.com/index.php?module=CoreHome\u0026amp;action=index\u0026amp;idSite=1\u0026amp;period=day\u0026amp;date=yesterday\n\n\n\n\t2) Parse the hash on the same page on which the link resides and use Javascript to append it to another URL\n\n\n\n\t3) https://www.otherURL.com/index.php??idSite=1\u0026amp;period=day\u0026amp;date=yesterday\u0026amp;category=Dashboard_Dashboard \u0026amp;subcategory=1\n\n",
+            "mainEntityOfPage": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/"
+        },
+        {
+            "@type": "Comment",
+            "url": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/?do=findComment\u0026comment=317389",
+            "author": {
+                "@type": "Person",
+                "name": "Ingolme",
+                "image": "//content.invisioncic.com/r49260/profile/photo-18212.png",
+                "url": "http://w3schools.invisionzone.com/profile/18212-ingolme/"
+            },
+            "dateCreated": "2018-05-09T02:48:42+0000",
+            "text": "To answer your question, Javascript can do pretty much anything. It can read the hash of the URL by accessing the location.hash property. It can construct a URL using string manipulation and then redirect the browser to another page using location.assign().\n\n\n\n\tI recommend not doing any of that. On ordinary websites, it\u0027s not a good idea to use the hash for any other purpose other than what it was designed for. I don\u0027t know why you want to use the hash as a data transfer mechanism, but almost certainly there is a better way. You should clearly define your end goal before deciding which technologies to use to achieve it.\n\n",
+            "mainEntityOfPage": "http://w3schools.invisionzone.com/topic/57849-combining-hashes-and-query-strings-in-an-http-request/"
+        }
+    ]
+}	
+</script>
+
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "WebSite",
+    "name": "W3Schools Forum",
+    "url": "http://w3schools.invisionzone.com/",
+    "potentialAction": {
+        "type": "SearchAction",
+        "query-input": "required name=query",
+        "target": "http://w3schools.invisionzone.com/search/?q={query}"
+    },
+    "inLanguage": [
+        {
+            "@type": "Language",
+            "name": "English (USA)",
+            "alternateName": "en-US"
+        }
+    ]
+}	
+</script>
+
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "Organization",
+    "name": "W3Schools Forum",
+    "url": "http://w3schools.invisionzone.com/",
+    "logo": "//content.invisioncic.com/r49260/monthly_2017_03/w3schools.png.9a860c675c07154b1ec49276a2a69658.png",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": null,
+        "addressRegion": null,
+        "postalCode": null,
+        "addressCountry": null
+    }
+}	
+</script>
+
+<script type='application/ld+json'>
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "http://w3schools.invisionzone.com/forum/7-xml-forums/",
+                "name": "XML Forums"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@id": "http://w3schools.invisionzone.com/forum/21-web-services/",
+                "name": "Web Services"
+            }
+        }
+    ]
+}	
+</script>
+
+<script type='application/ld+json'>
+{
+    "@context": "http://schema.org",
+    "@type": "ContactPage",
+    "url": "http://w3schools.invisionzone.com/contact/"
+}	
+</script>
+
+
+		
+		
+		
+		<!--ipsQueryLog-->
+		<!--ipsCachingLog-->
+		
+		
+	</body>
+</html>

@@ -1,0 +1,21 @@
+
+CREATE TABLE produit (
+  idProd int,
+  codeProd text,
+  nomProd text,
+  description text,
+  image text,
+  poid float,
+  prixU int,
+  prixV int,
+  dateAjout datetime,
+  dateModif datetime,
+  idUser int
+);
+sudo mysql
+SHOW DATABASES;
+USE boutique;
+SELECT * FROM user;
+DELETE FROM produit;
+SELECT * FROM produit;
+SELECT COUNT(*) AS count FROM produit;
